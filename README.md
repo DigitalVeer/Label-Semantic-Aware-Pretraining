@@ -1,4 +1,4 @@
-# LSAP: Label Semantic Aware Pretraining for Few-Shot Text Classification
+# Label Semantic Aware Pretraining
 In this project, we explore the effectiveness of LSAP on few-shot intent classification tasks. *in progress*
 # Setup Project with Poetry
 [Poetry](https://python-poetry.org/) is a more powerful version of pip w/ easier virtual environment management. I recommend using it but you can also just use Pip (see below).
