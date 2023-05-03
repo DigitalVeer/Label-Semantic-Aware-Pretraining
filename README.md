@@ -1,7 +1,8 @@
 # Label Semantic Aware Pretraining
 In this project, we explore the effectiveness of LSAP on few-shot intent classification tasks. *in progress*
 # Setup Project with Poetry
-[Poetry](https://python-poetry.org/) is a more powerful version of pip w/ easier virtual environment management. I recommend using it but you can also just use Pip (see below).
+[Poetry](https://python-poetry.org/) is a more powerful version of pip w/ easier virtual environment management. I recommend using it but you can also just use Pip (see below). I've simplified the Poetry installation process here and should take less than 5 minutes to have the project running.
+
 1. Install Poetry (Run in Powershell).
 ```bash
 (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
