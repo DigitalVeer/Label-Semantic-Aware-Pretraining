@@ -17,6 +17,7 @@ torch = "^2.0.0"
 matplotlib = "^3.7.1"
 gdown = "^4.7.1"
 plotly = "^5.14.1"
+sentencepiece = "^0.1.99"
 
 
 [tool.poetry.group.dev.dependencies]
