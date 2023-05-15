@@ -18,6 +18,7 @@ matplotlib = "^3.7.1"
 gdown = "^4.7.1"
 plotly = "^5.14.1"
 sentencepiece = "^0.1.99"
+nltk = "^3.8.1"
 
 
 [tool.poetry.group.dev.dependencies]
