@@ -4,6 +4,8 @@ import os, json, pandas
 JSON_PATH  = "dataset/json"
 JSON_DIR   = os.listdir( JSON_PATH )
 
+COMBINED_JSON_PATH = f"{JSON_PATH }/combined"
+
 
 @dataclass
 class Args:
@@ -131,7 +133,42 @@ class Preprocessor:
         
 
 
+def combine_all_jsons():
+    train_jsons, val_jsons = [], []
 
+    for dataset in JSON_DIR:
+        for json in os.listdir(f"{ JSON_PATH }/{ dataset }"):
+            if json.endswith("train.json"):
+                train_jsons.append(f"{ JSON_PATH }/{ dataset }/{ json }")
+            elif json.endswith("val.json"):
+                val_jsons.append(f"{ JSON_PATH }/{ dataset }/{ json }")
+
+    os.makedirs( COMBINED_JSON_PATH, exist_ok=True )
+
+    output_files = {
+        'train': open(f"{COMBINED_JSON_PATH}/full_train.json", "w"),
+        'val': open(f"{COMBINED_JSON_PATH}/full_val.json", "w"),
+        'combined': open(f"{COMBINED_JSON_PATH}/combined.json", "w"),
+    }
+
+    for train_json, val_json in zip(train_jsons, val_jsons):
+        for json_file, out_key in [(train_json, 'train'), (val_json, 'val')]:
+            with open(json_file, "r") as in_file:
+                for line in in_file:
+                    output_files[out_key].write(line)
+                    output_files['combined'].write(line)
+
+    # Don't forget to close your files when you're done
+    for file in output_files.values():
+        file.close()
+
+
+                
+
+#Create a combined dataset
+combine_all_jsons()
+
+#Begin preprocessing
 for DATASET in JSON_DIR:
     for JSON in os.listdir(f"{ JSON_PATH }/{ DATASET }"):
         args = Args(
@@ -152,9 +189,3 @@ for DATASET in JSON_DIR:
 
         datahandler.write_data( preprocess.format_pretraining() )
 
-
-train_jsons = []
-for DATASET in JSON_DIR:
-    for JSON in os.listdir(f"{ JSON_PATH }/{ DATASET }"):
-        if JSON.endswith("train.json"):
-            train_jsons.append( f"dataset/json/{ DATASET }/{ JSON }" )
