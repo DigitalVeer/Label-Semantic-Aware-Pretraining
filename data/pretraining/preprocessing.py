@@ -158,14 +158,14 @@ class DataHandler:
             str += "."
         return str
 
-    def load_data(self, in_file):
+    def load_data(self, in_file, prefix=""):
         utterances, intents = [], []
         with open( in_file, 'r') as datastrings:
             for datastring in datastrings:
                 data = json.loads(datastring)
 
                 #Clean utterance and intent
-                utterance = self.clean_str( data["translation"]["src"] )
+                utterance = self.clean_str( prefix + data["translation"]["src"] )
                 intent    = self.clean_str( data["translation"]["tgt"] )
 
                 #Tokenize and append to list
@@ -219,13 +219,15 @@ class Preprocessor:
 
         ds = []
         prefix = "intent classification: "
+        self.utterances, self.intents = self.datahandler.load_data( self.datahandler.args.dataset, prefix=prefix )
+        self.ic_package = zip( self.utterances, self.intents )
 
         for utterance, intent in self.ic_package:
             input   = utterance["targets"]
             target  = intent["targets"]
             if input.shape[0] > 512:
-                input = input[: 512 - len( prefix )]
-            ds.append( {'inputs': prefix + input, 'targets': target} )
+                input = input[: 512 ]
+            ds.append( {'inputs': input, 'targets': target} )
         return ds
     
     def random_denoising( self ):
@@ -316,7 +318,7 @@ if __name__ == "__main__":
             args = Args(
                 dataset         = f"{ JSON_PATH }/{ DATASET }/{ JSON }",
                 seed            = 1248,
-                labelsemantics  = "label_denoising",
+                labelsemantics  = "intent_classification",
                 tokenizer       = "t5-base",
             )
 
