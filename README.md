@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ```
 
 # Data
-We utilized the below datasets for different parts of our process.
+We utilized the below datasets for different parts of our process. 
 
 ### Pretraining:
 - [PolyAI Bank](https://huggingface.co/datasets/PolyAI/banking77)
@@ -41,6 +41,11 @@ We utilized the below datasets for different parts of our process.
 ### Evaluation:
 - [SNIPS](https://paperswithcode.com/dataset/snips)
 - [ATIS](https://github.com/yvchen/JointSLU/tree/master/data)
+
+To generate the pretraining data, run:
+```
+sh data/pretraining/preprocess_data.sh
+```
 
 # Data Layout
 
