@@ -4,10 +4,14 @@ from datasets import ClassLabel
 import os, json
 import pandas as pd
 
+#Path settings
+CURR_PATH = os.path.dirname( os.path.abspath( __file__ ) )
+DATA_PATH = os.path.join( CURR_PATH, 'dataset' )
+
 #Where to save the data
-csv_cache  = "dataset/csv"
-json_cache = "dataset/json"
-preprocessed_cache = "preprocessed_data"
+csv_cache  = f"{DATA_PATH}/csv"
+json_cache = f"{DATA_PATH}/json"
+preprocessed_cache = f"{CURR_PATH}/preprocessed_data"
 
 def create_dir( path ):
     os.makedirs( path, exist_ok=True )
@@ -18,8 +22,8 @@ create_dir( json_cache )
 create_dir( preprocessed_cache )
 
 #Path settings
-JSON_PATH  = "dataset/json"
-COMBINED_JSON_PATH = f"{JSON_PATH }/combined"
+JSON_PATH  = json_cache
+COMBINED_JSON_PATH = f"{ JSON_PATH }/combined"
 
 # All data folders
 data_folders = ['polyai-bank', 'wikihow']
@@ -35,8 +39,10 @@ class DFHandler:
         self.data = pd.concat([self.data, data])
 
     def get_data(self):
-        files = os.listdir(f'{self.folder_name}/data')
-        return {file: pd.read_csv(f'{self.folder_name}/data/{file}') for file in files}
+        """Gets the data from the data folder."""
+        curr_folder = os.path.join(CURR_PATH, self.folder_name)
+        files = os.listdir(f'{curr_folder}/data')
+        return {file: pd.read_csv(f'{curr_folder}/data/{file}') for file in files}
         
     def convert_intent_labels_to_integers(self, df):
         """Converts the intent labels in a DataFrame to integers.

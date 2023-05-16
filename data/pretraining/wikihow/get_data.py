@@ -1,9 +1,13 @@
 import numpy as np
 import pandas as pd
-import re
+import re, os
 
 #Set train split
 TRAIN_SPLIT = 0.6
+
+CURR_PATH = os.path.dirname( os.path.abspath( __file__ ) )
+DATA_PATH = os.path.join( CURR_PATH, 'data' )
+TRAIN     = os.path.join( CURR_PATH, 'en_wikihow_train.csv' )
 
 def create_label_name(df):
     """
@@ -28,8 +32,16 @@ def remove_how_to(df):
     df[ 'label_name' ] = df[ 'label_name' ].apply( lambda x: re.sub( pattern, '', x ).strip() )
     return df
 
+def remove_long_examples(df):
+    """
+    Remove examples that are too long.
+    """
+    #remove when text is over 500 words
+    df = df[ df[ 'text' ].apply( lambda x: len( x.split() ) < 500 ) ]
+    return df
+
 # Load data
-wikihow_df = pd.read_csv( 'en_wikihow_train.csv', index_col=0 )
+wikihow_df = pd.read_csv( TRAIN, index_col=0 )
 
 # Drop unnecessary columns
 wikihow_df = wikihow_df.drop(['startphrase', 'video-id', 'gold-source', 'fold-ind', 'sent1'], axis = 1)
@@ -43,6 +55,9 @@ wikihow_df = drop_ending_columns( wikihow_df )
 # Remove "How to" from the 'label_name' column (case-insensitive)
 wikihow_df = remove_how_to( wikihow_df ).rename( columns={'sent2': 'text'} )[ ['text', 'label', 'label_name'] ]
 
+# Remove examples that are too long
+wikihow_df = remove_long_examples( wikihow_df )
+
 #Change label value to position i.e. 0, 1, 2, 3, 4... n (n = number of labels)
 wikihow_df[ 'label' ] = wikihow_df.index.values
 
@@ -55,7 +70,8 @@ n = len( shuffled_df )
 train_size = int( TRAIN_SPLIT * n )
 train, validate = np.split( shuffled_df, [ train_size ])
 
+print(DATA_PATH)
 
-wikihow_df.to_csv( "data/combined.csv" )
-train.to_csv( "data/train.csv" ); 
-validate.to_csv( "data/val.csv" );
+wikihow_df.to_csv( f"{DATA_PATH}/combined.csv" )
+train.to_csv( f"{DATA_PATH}/train.csv" ); 
+validate.to_csv( f"{DATA_PATH}/val.csv" );
