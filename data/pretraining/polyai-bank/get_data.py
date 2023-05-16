@@ -1,10 +1,8 @@
 from datasets import load_dataset, concatenate_datasets
 import numpy, pandas, os
 
-#Set train, val, and test split sizes
+#Set train, and val split
 TRAIN_SPLIT = 0.6
-VAL_SPLIT   = 0.2
-TEST_SPLIT  = 0.2
 
 #Add Label Names for each label
 def add_labelname( row ):
@@ -17,7 +15,7 @@ def correct_label( row ):
 #Load PolyBanking Dataset from HuggingFace
 #get path to current directory
 path = os.path.dirname( os.path.realpath(__file__) )
-banking_dataset = load_dataset( "PolyAI/banking77", cache_dir="D:\digit\Documents\Development\HuggingFace\Datasets\PolyAIBanking")
+banking_dataset = load_dataset( "PolyAI/banking77")
 
 #Return Dataframe to perform operations on
 banking_dataset.set_format( type="pandas" )
