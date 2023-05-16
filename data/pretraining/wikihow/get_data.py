@@ -1,9 +1,13 @@
 import numpy as np
 import pandas as pd
-import re
+import re, os
 
 #Set train split
 TRAIN_SPLIT = 0.6
+
+CURR_PATH = os.path.dirname( os.path.abspath( __file__ ) )
+DATA_PATH = os.path.join( CURR_PATH, 'data' )
+TRAIN     = os.path.join( CURR_PATH, 'en_wikihow_train.csv' )
 
 def create_label_name(df):
     """
@@ -29,7 +33,7 @@ def remove_how_to(df):
     return df
 
 # Load data
-wikihow_df = pd.read_csv( 'en_wikihow_train.csv', index_col=0 )
+wikihow_df = pd.read_csv( TRAIN, index_col=0 )
 
 # Drop unnecessary columns
 wikihow_df = wikihow_df.drop(['startphrase', 'video-id', 'gold-source', 'fold-ind', 'sent1'], axis = 1)
@@ -56,6 +60,6 @@ train_size = int( TRAIN_SPLIT * n )
 train, validate = np.split( shuffled_df, [ train_size ])
 
 
-wikihow_df.to_csv( "data/combined.csv" )
-train.to_csv( "data/train.csv" ); 
-validate.to_csv( "data/val.csv" );
+wikihow_df.to_csv( f"{DATA_PATH}/combined.csv" )
+train.to_csv( f"{DATA_PATH}/train.csv" ); 
+validate.to_csv( f"{DATA_PATH}/val.csv" );

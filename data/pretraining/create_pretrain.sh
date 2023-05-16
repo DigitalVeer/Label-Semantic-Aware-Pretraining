@@ -1,5 +1,4 @@
-#activate the environment in .venv
-source .venv/bin/activate
+source ../../.venv/Scripts/activate
 
 python polyai-bank/get_data.py
 python wikihow/get_data.py

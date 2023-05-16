@@ -1,6 +1,9 @@
 from datasets import load_dataset, concatenate_datasets
 import numpy, pandas, os
 
+CURR_PATH = os.path.dirname( os.path.abspath( __file__ ) )
+DATA_PATH = os.path.join( CURR_PATH, 'data' )
+
 #Set train, and val split
 TRAIN_SPLIT = 0.6
 
@@ -29,8 +32,8 @@ train_df["label_name"] = train_df["label_name"].apply( correct_label )
 val_df["label_name"] = val_df["label"].apply( add_labelname )
 val_df["label_name"] = val_df["label_name"].apply( correct_label )
 
-train_df.to_csv( "data/train.csv" )
-val_df.to_csv( "data/val.csv" )
+train_df.to_csv( f"{DATA_PATH}/train.csv" )
+val_df.to_csv( f"{DATA_PATH}/val.csv" )
 
 #Concatenate train/test into one dataframe
 banking_dict = concatenate_datasets( [banking_dataset["train"], banking_dataset["test"]] )
@@ -42,4 +45,4 @@ banking_df = banking_dict.data.to_pandas()
 banking_df["label_name"] = banking_df["label"].apply( add_labelname )
 banking_df["label_name"] = banking_df["label_name"].apply( correct_label )
 
-banking_df.to_csv( "data/combined.csv" )
+banking_df.to_csv( f"{DATA_PATH}/combined.csv" )
