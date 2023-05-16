@@ -1,11 +1,18 @@
-source ../../.venv/Scripts/activate
+#!/bin/bash
 
-python polyai-bank/get_data.py
-python wikihow/get_data.py
+# Retrieve the directory of the script
+SCRIPT_DIR="$(dirname "$0")"
 
-#delete preprocessed data
-rm -rf preprocessed_data
-rm -rf dataset/csv
-rm -rf dataset/json
+# Activate virtual environment
+source "$SCRIPT_DIR/../../.venv/Scripts/activate"
 
-python preprocessing.py
+python "$SCRIPT_DIR/polyai-bank/get_data.py"
+python "$SCRIPT_DIR/wikihow/get_data.py"
+
+# Delete preprocessed data
+rm -rf "$SCRIPT_DIR/preprocessed_data"
+rm -rf "$SCRIPT_DIR/dataset/csv"
+rm -rf "$SCRIPT_DIR/dataset/json"
+
+# Run preprocessing
+python "$SCRIPT_DIR/preprocessing.py"

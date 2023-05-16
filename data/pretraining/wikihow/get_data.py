@@ -32,6 +32,14 @@ def remove_how_to(df):
     df[ 'label_name' ] = df[ 'label_name' ].apply( lambda x: re.sub( pattern, '', x ).strip() )
     return df
 
+def remove_long_examples(df):
+    """
+    Remove examples that are too long.
+    """
+    #remove when text is over 500 words
+    df = df[ df[ 'text' ].apply( lambda x: len( x.split() ) < 500 ) ]
+    return df
+
 # Load data
 wikihow_df = pd.read_csv( TRAIN, index_col=0 )
 
@@ -47,6 +55,9 @@ wikihow_df = drop_ending_columns( wikihow_df )
 # Remove "How to" from the 'label_name' column (case-insensitive)
 wikihow_df = remove_how_to( wikihow_df ).rename( columns={'sent2': 'text'} )[ ['text', 'label', 'label_name'] ]
 
+# Remove examples that are too long
+wikihow_df = remove_long_examples( wikihow_df )
+
 #Change label value to position i.e. 0, 1, 2, 3, 4... n (n = number of labels)
 wikihow_df[ 'label' ] = wikihow_df.index.values
 
@@ -59,6 +70,7 @@ n = len( shuffled_df )
 train_size = int( TRAIN_SPLIT * n )
 train, validate = np.split( shuffled_df, [ train_size ])
 
+print(DATA_PATH)
 
 wikihow_df.to_csv( f"{DATA_PATH}/combined.csv" )
 train.to_csv( f"{DATA_PATH}/train.csv" ); 
