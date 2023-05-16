@@ -264,7 +264,7 @@ class Args:
 
     def __post_init__(self):
         assert self.dataset.endswith(".json")
-        assert self.labelsemantics in ["random_denoising", "intent_classification", "label_denoising"]
+        assert self.labelsemantics in ["random_denoising", "intent_classification", "label_denoising", "random_span_denoising"]
 @dataclass
 class DataHandler:
     """
@@ -324,7 +324,7 @@ class Preprocessor:
     datahandler: DataHandler
 
     def __post_init__(self):
-        if self.datahandler.args.labelsemantics in ["random_denoising", "label_denoising"]:
+        if self.datahandler.args.labelsemantics in ["random_denoising", "label_denoising", "random_span_denoising"]:
             self.utterances, self.intents = self.datahandler.load_data( self.datahandler.args.dataset )
             self.ic_package = zip( self.utterances, self.intents )
 
@@ -369,7 +369,23 @@ class Preprocessor:
         return random_denoiser.span_corruption(
             utterances=utterances
         )
+    
+    def random_denoising_concat(self):
+        """
+        Concatenate each intent label to its utterance and randomly noise 15% of the tokens.
+        Returns preprocessed tokenized and encoded data.
+        """
+        ds = [{
+            'inputs': "",
+            'targets': torch.cat((utterance["targets"], intent["targets"]))} 
+            for utterance, intent in self.ic_package
+        ]
         
+        random_denoiser = RandomNoise( tokenizer=self.datahandler.tokenizer )
+        return random_denoiser.span_corruption(
+            utterances=ds
+        )
+            
 
     def format_pretraining( self ):
         pretrain_format = self.datahandler.args.labelsemantics
@@ -379,6 +395,8 @@ class Preprocessor:
             return self.intent_classification()
         elif pretrain_format == "random_denoising":
             return self.random_denoising()
+        elif pretrain_format == "random_span_denoising":
+            return self.random_denoising_concat()
         else:
             raise ValueError("Invalid pretraining format")  
         
@@ -448,10 +466,9 @@ if __name__ == "__main__":
 
     #Begin preprocessing
     for DATASET in JSON_DIR:
-
         print(f"[Preprocessing {DATASET}...]")
         for JSON in os.listdir(f"{ JSON_PATH }/{ DATASET }"):
-            for pretraining_format in ["intent_classification", "label_denoising", "random_denoising"]:
+            for pretraining_format in ["intent_classification", "label_denoising", "random_denoising", "random_span_denoising"]:
                 print(green(f"Preprocessing {JSON} for {pretraining_format}..."))
                 args = Args(
                     dataset         = f"{ JSON_PATH }/{ DATASET }/{ JSON }",
@@ -470,7 +487,6 @@ if __name__ == "__main__":
                 )
 
                 datahandler.write_data( preprocess.format_pretraining() )
-
         print(highlight(f"Finished preprocessing {DATASET}"))
 
     print("-"*50)
