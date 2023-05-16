@@ -1,8 +1,16 @@
-from dataclasses import dataclass
-from datasets import ClassLabel
 
-import os, json
+#PyTorch Imports
+from transformers import T5Tokenizer, PreTrainedTokenizerBase
+from datasets import ClassLabel
+import torch
+
+#Typing imports
 import pandas as pd
+from dataclasses import dataclass
+
+#System Imports
+import os, json, functools
+
 
 #Path settings
 CURR_PATH = os.path.dirname( os.path.abspath( __file__ ) )
@@ -122,7 +130,128 @@ class DFHandler:
             #Save to csv and json
             df.to_csv( f'{csv_cache}/{self.folder_name}/{folder_file}.csv' )
             self.write_to_json( df, f'{json_cache}/{self.folder_name}/{folder_file}.json' )
-            
+
+
+from dataclasses import dataclass
+from transformers import T5Tokenizer, PreTrainedTokenizerBase
+
+@dataclass
+class RandomNoise:
+    """Randomly corrupts a span of tokens in the input."""
+
+    tokenizer: PreTrainedTokenizerBase
+
+    def span_corruption(self, utterances, mean_noise_span_length=3.0, noise_density=0.15):
+
+        dataset = [self.get_random_segment(data, max_length=512) 
+                   for data in list(filter(lambda x: x["targets"].shape[0] > 0, utterances))]
+        
+        return self.denoise(dataset, noise_density=noise_density, noise_mask_fn=functools.partial(
+                self.random_spans_noise_mask,
+                mean_noise_span_length=mean_noise_span_length
+            )
+        )
+
+    def get_random_segment(self, data, max_length):
+        """Extract a chunk from the data, given a maximum length."""
+        tokens = data[ "targets" ]
+        if tokens.shape[0] < max_length:
+            return {"targets": tokens}
+        start = torch.randint(0, tokens.shape[0] - max_length + 1, (1,)).item()
+        return {"targets": tokens[start: start + max_length]}
+
+
+    def random_spans_noise_mask(self, length, noise_density=0.15, mean_noise_span_length=3.0):
+        """Calculate which spans to mask given input length.
+        Returns a vector of Booleans of length `length`, where `True`
+        corresponds to masking and `False` corresponds to keeping a token.
+        """
+        orig_length = length
+        length = torch.tensor(length, dtype=torch.int32)
+        # avoid degenerate length values
+        length = torch.maximum(length, torch.tensor(2, dtype=torch.int32))
+        # helper functions for concise type conversion
+        def to_int(x):
+            return x.type(torch.int32)
+        def to_float(x):
+            return x.type(torch.float32)
+        # calculate number of noised and non-noised tokens
+        num_noise_tokens = to_int(torch.round(to_float(length) * noise_density))
+        num_noise_tokens = torch.minimum(
+            torch.maximum(num_noise_tokens, torch.tensor(1, dtype=torch.int32)), length-1)
+        num_noise_spans = to_int(
+            torch.round(to_float(num_noise_tokens) / mean_noise_span_length))
+        num_noise_spans = torch.maximum(num_noise_spans, torch.tensor(1, dtype=torch.int32))
+        num_nonnoise_tokens = length - num_noise_tokens
+        # pick lengths of noise spans and non-noise spans
+        def _random_segmentation(num_items, num_segments):
+            """Partition items randomly into non-empty segments."""
+            first_in_segment = torch.nn.functional.pad(
+                self.shuffle(to_int(torch.arange(num_items - 1) < num_segments - 1)),
+                [1, 0])
+            segment_id = torch.cumsum(first_in_segment, 0)
+            segment_length = self.segment_sum(torch.ones_like(segment_id), segment_id)
+            return segment_length
+
+        noise_span_lengths = _random_segmentation(
+            num_noise_tokens, num_noise_spans)
+        nonnoise_span_lengths = _random_segmentation(
+            num_nonnoise_tokens, num_noise_spans)
+        interleaved_span_lengths = torch.reshape(
+            torch.stack([nonnoise_span_lengths, noise_span_lengths], axis=1),
+                        [num_noise_spans * 2])
+        span_starts = torch.cumsum(interleaved_span_lengths, 0)[:-1]
+        span_start_indicator = self.segment_sum(
+            torch.ones_like(span_starts), span_starts, length)
+        span_num = torch.cumsum(span_start_indicator, 0)
+        is_noise = torch.eq(span_num % 2, torch.tensor(1, dtype=torch.int64))
+        return is_noise[:orig_length]
+
+
+    def denoise(self, dataset, noise_density=0.15, noise_mask_fn=None):
+        vocab_size = self.tokenizer.vocab_size
+        def map_fn(features):
+            tokens = features['targets']
+            noise_mask = noise_mask_fn(tokens.shape[0], noise_density)
+            inputs = self.noise_span_to_unique_sentinel(tokens, noise_mask, vocab_size)
+            return {
+                'inputs': inputs,
+                'targets': self.nonnoise_span_to_unique_sentinel(tokens, noise_mask, vocab_size)
+            }
+        return [map_fn(data) for data in dataset]
+
+
+    def noise_span_to_unique_sentinel(self, tokens, noise_mask, vocab_size):
+        prev_token_is_noise = torch.nn.functional.pad(
+            noise_mask[:-1], [1, 0])
+
+        first_noise_tokens = torch.logical_and(
+            noise_mask, torch.logical_not(prev_token_is_noise))
+        subsequent_noise_tokens = torch.logical_and(
+            noise_mask, prev_token_is_noise)
+
+        sentinel = vocab_size - torch.cumsum(first_noise_tokens.int(), 0)
+
+        tokens = torch.where(first_noise_tokens, sentinel, tokens)
+        return torch.masked_select(tokens, torch.logical_not(subsequent_noise_tokens))
+
+
+    def nonnoise_span_to_unique_sentinel(self, tokens, noise_mask, vocab_size):
+        return self.noise_span_to_unique_sentinel(
+            tokens, torch.logical_not(noise_mask), vocab_size)
+
+
+    """============= UTILITY FUNCTIONS ==============="""
+    def shuffle(self, value):
+        """Randomly shuffle a tensor."""
+        return value[torch.randperm(value.numel())].reshape(value.shape)
+
+    def segment_sum(self, data, segment_ids, num_segments=None):
+        """Compute the sum along segments of a tensor."""
+        if num_segments is None:
+            num_segments = segment_ids.unique().numel()
+        shape = [num_segments] + list(data.shape[1:])
+        return torch.zeros(*shape, dtype=data.dtype).scatter_add_(0, segment_ids, data)
 
 @dataclass
 class Args:
@@ -136,11 +265,6 @@ class Args:
     def __post_init__(self):
         assert self.dataset.endswith(".json")
         assert self.labelsemantics in ["random_denoising", "intent_classification", "label_denoising"]
-
-
-from transformers import T5Tokenizer, PreTrainedTokenizerBase
-import torch, json
-
 @dataclass
 class DataHandler:
     """
@@ -193,8 +317,6 @@ class DataHandler:
                 data = {"inputs": self.tokenizer.decode( data["inputs"] ),
                         "targets": self.tokenizer.decode( data["targets"] )}
                 out_file.write( json.dumps( data ) + "\n")
-
-
 @dataclass
 class Preprocessor:
     """ Preprocessor class for preprocessing data for pretraining. Responsible for implementing masking strategies. """
@@ -202,8 +324,9 @@ class Preprocessor:
     datahandler: DataHandler
 
     def __post_init__(self):
-        self.utterances, self.intents = self.datahandler.load_data( self.datahandler.args.dataset )
-        self.ic_package = zip( self.utterances, self.intents )
+        if self.datahandler.args.labelsemantics in ["random_denoising", "label_denoising"]:
+            self.utterances, self.intents = self.datahandler.load_data( self.datahandler.args.dataset )
+            self.ic_package = zip( self.utterances, self.intents )
 
     def label_denoise( self ):
         """Preprocessing for T5 denoising objective. Returns preprocessed
@@ -236,8 +359,17 @@ class Preprocessor:
             ds.append( {'inputs': input, 'targets': target} )
         return ds
     
-    def random_denoising( self ):
-        pass
+    def random_denoising(self):
+        """
+        Concatenate each intent label to its utterance and randomly noise 15% of the tokens.
+        Returns preprocessed tokenized and encoded data.
+        """
+        utterances = [ utterance for utterance, _ in self.ic_package ]
+        random_denoiser = RandomNoise( tokenizer=self.datahandler.tokenizer )
+        return random_denoiser.span_corruption(
+            utterances=utterances
+        )
+        
 
     def format_pretraining( self ):
         pretrain_format = self.datahandler.args.labelsemantics
@@ -250,8 +382,6 @@ class Preprocessor:
         else:
             raise ValueError("Invalid pretraining format")  
         
-
-
 def combine_all_jsons():
     train_jsons, val_jsons = [], []
 
@@ -319,25 +449,27 @@ if __name__ == "__main__":
     #Begin preprocessing
     for DATASET in JSON_DIR:
 
-        print(f"[ Preprocessing {DATASET}... ]\n")
+        print(f"[Preprocessing {DATASET}...]")
         for JSON in os.listdir(f"{ JSON_PATH }/{ DATASET }"):
-            args = Args(
-                dataset         = f"{ JSON_PATH }/{ DATASET }/{ JSON }",
-                seed            = 1248,
-                labelsemantics  = "intent_classification",
-                tokenizer       = "t5-base",
-            )
+            for pretraining_format in ["intent_classification", "label_denoising", "random_denoising"]:
+                print(green(f"Preprocessing {JSON} for {pretraining_format}..."))
+                args = Args(
+                    dataset         = f"{ JSON_PATH }/{ DATASET }/{ JSON }",
+                    seed            = 1248,
+                    labelsemantics  = pretraining_format,
+                    tokenizer       = "t5-base",
+                )
 
-            datahandler = DataHandler(
-                punc = (".", "?", "!", ",", ";", ":"),
-                args = args
-            )
+                datahandler = DataHandler(
+                    punc = (".", "?", "!", ",", ";", ":"),
+                    args = args
+                )
 
-            preprocess = Preprocessor(
-                datahandler = datahandler,
-            )
+                preprocess = Preprocessor(
+                    datahandler = datahandler,
+                )
 
-            datahandler.write_data( preprocess.format_pretraining() )
+                datahandler.write_data( preprocess.format_pretraining() )
 
         print(highlight(f"Finished preprocessing {DATASET}"))
 

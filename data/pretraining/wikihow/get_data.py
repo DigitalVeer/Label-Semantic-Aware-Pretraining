@@ -36,8 +36,8 @@ def remove_long_examples(df):
     """
     Remove examples that are too long.
     """
-    #remove when text is over 500 words
     df = df[ df[ 'text' ].apply( lambda x: len( x.split() ) < 500 ) ]
+    df = df[ ~df[ 'text' ].apply( lambda x: 'www.wikihow.com' in x ) ]
     return df
 
 # Load data
@@ -61,6 +61,8 @@ wikihow_df = remove_long_examples( wikihow_df )
 #Change label value to position i.e. 0, 1, 2, 3, 4... n (n = number of labels)
 wikihow_df[ 'label' ] = wikihow_df.index.values
 
+#Print how many samples are longer than 500 words
+print( f"Number of samples longer than 500 words: {len( wikihow_df[ wikihow_df[ 'text' ].apply( lambda x: len( x.split() ) > 500 ) ] )}" )
 
 #Split data into train, validation and test sets
 shuffled_df = wikihow_df.sample( frac = 1, random_state=42 )
