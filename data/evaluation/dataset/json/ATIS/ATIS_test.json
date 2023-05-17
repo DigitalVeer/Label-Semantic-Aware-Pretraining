@@ -1,0 +1,446 @@
+{"translation": {"src": "list american airlines flights from houston to milwaukee departing friday pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "please find a flight that goes from kansas city to newark to orlando back to kansas city", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list all flights leaving denver between 8 pm and 9 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me northwest flight 608 from kansas city to st. paul", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the flights from minneapolis to indiana", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is a d9s", "tgt": "Abbreviation.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like a flight from san diego to las vegas", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list american airlines flights from milwaukee to san jose wednesday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like to find a flight from charlotte to las vegas that makes a stop in st. louis", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i 'd like to book two flights to westchester county", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "get saturday fares from washington to toronto", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me all of the daily flights arriving in denver between 8 pm and 9 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i 'd like a flight to san diego from washington dc", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what the abbreviation us stand for", "tgt": "Abbreviation.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the flights in from minneapolis to indianapolis on tuesday afternoon", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "minneapolis to pittsburgh first class flight", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "flight numbers from chicago to seattle", "tgt": "Flight No.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me all the flights from kansas city to st. paul", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list direct flights from new york city to los angeles after 10 am", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list airports in new york", "tgt": "Airport.", "prefix": "intent classification: "}}
+{"translation": {"src": "what ground transportation is there in baltimore", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from indianapolis to memphis with fares on monday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "new york to las vegas on sunday afternoon", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "first class flights pittsburgh to newark monday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me flights between detroit and st. louis on delta northwest us air and united airlines", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me a flight from charlotte to baltimore on tuesday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "does us air fly from cincinnati to denver on june sixth", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from ontario california to orlando", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me round trip flights from montreal to orlando", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the cheapest fare from charlotte to las vegas", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "what class is fare code q", "tgt": "Abbreviation.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the seating capacity of a dc9", "tgt": "Capacity.", "prefix": "intent classification: "}}
+{"translation": {"src": "st. louis to st. paul thursday after 10 am", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "can i have a morning flight from baltimore to newark please", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the cheapest one way flight from san francisco to houston", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "please show ground transportation to milwaukee", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the cheapest round trip fares from san francisco to houston", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "what 's the cheapest flight from san francisco to denver", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight from st. louis to charlotte", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i want to fly from san francisco to milwaukee and from milwaukee to denver", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what ground transportation is available between phoenix airport and downtown phoenix", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "list last wednesday flight from oakland to salt lake city", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is cvg", "tgt": "Abbreviation.", "prefix": "intent classification: "}}
+{"translation": {"src": "what airlines fly from baltimore to san francisco", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "how much is a limousine service in la guardia", "tgt": "Ground Fare.", "prefix": "intent classification: "}}
+{"translation": {"src": "find me a flight that flies from memphis to tacoma", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the fares for flights between boston and washington dc", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the earliest flight between baltimore and oakland that serves breakfast", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "find flight from detroit to san diego on tuesday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "which flights leave chicago next tuesday and arrive in detroit around 6 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me the flights from los angeles to pittsburgh on tuesday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the airfare for a round trip first class ticket from detroit to st. petersburg", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "las vegas to baltimore economy", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "which flights are available on april twenty first in the morning from nashville to tacoma", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from toronto to washington dc", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight from denver to salt lake city on monday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "los angeles to pittsburgh afternoon tuesday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the nonstop flights from cincinnati to charlotte leaving after noon and arriving before 7 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me the flights from phoenix to milwaukee on wednesday on american airlines", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the flights from houston to orlando", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the tower air flights on mondays", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is airline wn", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "what does m mean", "tgt": "Abbreviation.", "prefix": "intent classification: "}}
+{"translation": {"src": "which flights leave detroit and arrive at st. petersburg around 9 am", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i 'd like to fly from miami to chicago on american airlines", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the flights from westchester county to denver on june seventh", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me all the flights from minneapolis to indianapolis on tuesday that leave after 2 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "cheapest fare from indianapolis to orlando on the twenty seventh of december", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "what meals are served on american flight 811 from tampa to milwaukee", "tgt": "Meal.", "prefix": "intent classification: "}}
+{"translation": {"src": "what ground transportation is available at denver", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the flights from las vegas to ontario", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what united airlines flights on june eighth go from westchester county to cincinnati", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list saturday flights from washington to boston", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like to fly from atlanta to san diego", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me the saturday morning flights from chicago to st. paul on continental that have meals", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me flights from montreal to orlando", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show flights from burbank to st. louis on monday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the earliest arriving flight between boston and washington dc", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "new york city to las vegas and memphis to las vegas on sunday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what ground transportation is available from la guardia airport into new york city", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a round trip from phoenix to washington dc and the fare leaving in the morning", "tgt": "Flight+airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me round trips between montreal and orlando", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight that goes from boston to orlando", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is meal code sb", "tgt": "Abbreviation.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from seattle to salt lake city on delta be1", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show delta airlines flights from jfk to miami", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me nonstop flights from toronto to st. petersburg", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me a combination of continental flights from chicago to seattle that have meals early saturday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what airlines serve denver", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "what airlines off from love field between 6 and 10 am on june sixth", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like a flight leaving san francisco for san diego", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "round trip flights from orlando to montreal please", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show flights tomorrow evening from milwaukee to st. louis", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me flight us 1207 from indianapolis to charlotte on monday and flight us 1500 from charlotte to minneapolis on monday and flight twa 639 from minneapolis to indianapolis", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight from new york to los angeles on saturday evening on us air", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from ontario california to orlando florida", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me one way flights from indianapolis to memphis before 10 am on any day", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i 'd like to travel from burbank to milwaukee", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "how far is new york 's la guardia from downtown", "tgt": "Distance.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me all the morning flights from philadelphia to fort worth", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the flights from indianapolis to memphis", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list all tower air flights with meals", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me flights from columbus to chicago first class that leave before 10 am", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me the flights from memphis to las vegas nonstop", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "new york city to las vegas and memphis to las vegas on sunday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from cincinnati to tampa before noon", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from houston to milwaukee", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what does fare code h mean", "tgt": "Abbreviation.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight from memphis to seattle", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "like to book a flight from burbank to milwaukee", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight from toronto to st. louis", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list all flights departing from seattle", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the flights from cleveland to memphis", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me the flights from phoenix to milwaukee on wednesday evening", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the flights from detroit to las vegas", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show flights from burbank to milwaukee for today", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "please list afternoon flights between st. petersburg and charlotte", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight from tampa to milwaukee", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i 'd like a round trip flight from kansas city to chicago on wednesday may twenty sixth arriving at 7 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the earliest arriving flight from boston to washington dc", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what type of aircraft are flying from cleveland to dallas before noon", "tgt": "Aircraft.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from milwaukee to san jose on wednesday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "get flight from toronto to san diego stopping at dtw", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like flights from salt lake city to cincinnati", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me first class flights from new york to miami round trip", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from atlanta to toronto friday afternoon", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "which flights travel from las vegas to los angeles california and arrive on april ninth between 4 and 5 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i 'd like to book a flight from cincinnati to new york city on united airlines for next saturday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list fares from washington dc to montreal", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the nonstop flights between san jose and houston texas", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what airline is dl", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the airfare for american airlines flight 19 from jfk to lax", "tgt": "Airfare+flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the flights from tacoma to san jose", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "can you find me a flight from salt lake city to new york city next saturday before arriving before 6 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what airline is aa", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "get the saturday fare from washington to toronto", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "can you list all of the delta flights from salt lake city to new york next saturday arriving before 6 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the seating capacity on the aircraft 733", "tgt": "Capacity.", "prefix": "intent classification: "}}
+{"translation": {"src": "list airlines that fly from seattle to salt lake city", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "how much is the limousine service in boston", "tgt": "Ground Fare.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the seating capacity of the aircraft 72s", "tgt": "Capacity.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is 73s", "tgt": "Abbreviation.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the arizona airport", "tgt": "Airport.", "prefix": "intent classification: "}}
+{"translation": {"src": "i 'd like to travel from kansas city to chicago next wednesday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show delta airlines from boston to salt lake", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "from milwaukee to orlando one way after 5 pm wednesday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i 'd like to fly from miami to chicago on on american airlines arriving around 5 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the flights on canadian airlines international", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from new york to la", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the flights from cincinnati to westchester county on june seventh", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from phoenix to las vegas", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list la", "tgt": "City.", "prefix": "intent classification: "}}
+{"translation": {"src": "flight numbers on american airlines from phoenix to milwaukee", "tgt": "Flight No.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me all lufthansa flights from seattle to boston with stopovers in minneapolis", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from toronto to washington dc saturday am", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "chicago to seattle saturday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the most expensive one way fare between detroit and westchester county", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "please list flights from milwaukee to philadelphia", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "please list flights from orlando to philadelphia", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me flights from phoenix to fort worth", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the ground transportation between the charlotte airport charlotte airport and downtown charlotte", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight from las vegas to ontario", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the flights from denver to cincinnati on june sixth after 4 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight from san diego to washington dc", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight from salt lake to newark airport that arrives on saturday before 6 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list all flights and their fares from memphis to miami on a wednesday evening", "tgt": "Flight+airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the earliest arriving flight from houston to orlando", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a friday flight from newark to tampa", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "after 12 pm on wednesday april sixth i would like to fly from long beach to columbus", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "how many northwest flights leave washington dc", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what days of the week do flights from san jose to nashville fly on", "tgt": "Day Name.", "prefix": "intent classification: "}}
+{"translation": {"src": "flights from washington to seattle", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from memphis to miami wednesday evening", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me nonstop flights from kansas city to phoenix", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me the flights from phoenix to milwaukee on american airlines", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what airline is us", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "find flight from memphis to cincinnati on sunday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "how about a flight from milwaukee to st. louis that leaves monday night", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the fare for a first class round trip ticket from detroit to st. petersburg", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from chicago to san diego", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like flights leaving san francisco to san diego", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight from indianapolis to seattle arriving in seattle at 1205 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the flights from denver to cincinnati on june eighth", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "cleveland to miami on wednesday arriving before 4 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "is there ground transportation from the memphis airport into town when if i arrive at 842 in the morning", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "what does fare code bh mean", "tgt": "Abbreviation.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need flight information for flights departing from cleveland to milwaukee on wednesday after 5 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the flights from westchester county to cincinnati on june eighth", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the flights from denver to westchester county on june seventh", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the flights from tampa to milwaukee", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "is there taxi service at the ontario airport", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me the fares for round trip flights from cleveland to miami next wednesday", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "what 's the cheapest flight from san francisco to detroit today", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight from cleveland to dallas that leaves before noon see if too much information", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight from san francisco to milwaukee on monday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "which flights depart from philadelphia and arrive in atlanta", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me flight us 1500 on monday from charlotte to minneapolis please", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the seating capacity of a 72s", "tgt": "Capacity.", "prefix": "intent classification: "}}
+{"translation": {"src": "what airline is hp", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "on june eighth what flights go from westchester county to cincinnati", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "please list the flights from newark to los angeles", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "how much is limousine service in los angeles", "tgt": "Ground Fare.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from chicago to san diego", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like flights leaving from milwaukee to orlando", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like a flight from toronto to detroit", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like to fly from san diego to seattle", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the direct flights from charlotte to minneapolis on tuesday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what flights leave from cincinnati in the morning and arrive in tampa", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "at the charlotte airport how many different types of aircraft are there for us air", "tgt": "Aircraft.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from washington dc to montreal", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from boston to pittsburgh daily", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i want a flight round trip from memphis to seattle", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "please list the flights from nashville to memphis on monday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "which different airlines go from las vegas to new york city", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from indianapolis to memphis on monday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight from kansas city to minneapolis", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list all alaska airlines flights", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the first class and coach flights between jfk and orlando", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i want a flight from los angeles to charlotte early in the morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "please list flights from st. louis to st. paul which depart after 10 am thursday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list type of aircraft for all flights from charlotte", "tgt": "Aircraft.", "prefix": "intent classification: "}}
+{"translation": {"src": "i 'd like a morning flight from newark to los angeles", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me the flights from seattle to chicago that have meals on continental saturday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like a flight on tuesday which leaves from san diego to indianapolis indiana and that leaves in the afternoon", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list airports in la", "tgt": "Airport.", "prefix": "intent classification: "}}
+{"translation": {"src": "please list the flights from memphis to new york city on a monday night", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "milwaukee to phoenix on saturday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list a flight from toronto to san diego", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "yes i 'd like to find a flight from memphis to tacoma stopping in los angeles", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from oakland to salt lake city before 6 am thursday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "atlanta to st. louis tuesday before 230 pm flights", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what type of plane is a d9s", "tgt": "Aircraft.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from washington dc to montreal", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight from oakland to salt lake city on wednesday departing after 6 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me all flights from seattle to boston with stopovers in minneapolis", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the distance in miles from new york 's la guardia airport to downtown new york city", "tgt": "Distance.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like a flight from cincinnati to burbank on american", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me weekday flights from milwaukee to orlando one way", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me the flights from chicago to seattle saturday morning that have meals", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "are there any flights between dallas and phoenix using a dc10 aircraft", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "please find a flight round trip from los angeles to tacoma washington with a stopover in san francisco not exceeding the price of 300 dollars for june tenth 1993", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what 's the earliest arriving flight between boston and washington dc", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the distance in miles from toronto international airport to downtown toronto", "tgt": "Distance.", "prefix": "intent classification: "}}
+{"translation": {"src": "indianapolis to orlando december twenty seventh", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me the saturday morning flights with meals from chicago to minneapolis", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me round trip fares from toronto to detroit on delta northwest us air and united airlines", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from minneapolis to pittsburgh on friday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the lowest fare from toronto to washington dc", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "tell me about the ground transportation from nashville airport", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me flights between toronto and san diego", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from salt lake city utah to phoenix arizona monday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list airports in la", "tgt": "Airport.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from la guardia to burbank", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like flights from minneapolis to san diego", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the flights between milwaukee and pittsburgh", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list a flight on delta airlines from toronto to san diego", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from philadelphia to atlanta friday am", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the flights between memphis and cincinnati on wednesday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "find flight from san diego to phoenix on monday am", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "get flights from milwaukee to dtw", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "can i get a flight today from san francisco to detroit michigan", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from las vegas to phoenix", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from miami to indianapolis on sunday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "now show me all the flights from st. louis to burbank", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the flights from ontario to memphis", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "which airline is as", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from san jose to dallas on friday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the seating capacity of the aircraft m80", "tgt": "Capacity.", "prefix": "intent classification: "}}
+{"translation": {"src": "list airfares for first class round trip from detroit to st. petersburg", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the flights between houston and orlando", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me round trip flights from orlando to montreal", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "please list the flights from charlotte to newark", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what airline is hp", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "please find the flights from columbus to houston with a layover in nashville tomorrow", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the seating capacity for aircraft l10", "tgt": "Capacity.", "prefix": "intent classification: "}}
+{"translation": {"src": "tampa to charlotte sunday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the flights from denver to baltimore arriving on july first", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need information on flights from toronto to san diego", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the flights from tacoma to san jose", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "now show me all round trip flights from burbank to seattle that arrive before 7 pm in seattle", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the flights from orlando to houston", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list seating capacities of delta flights from seattle to salt lake city", "tgt": "Capacity.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the seating capacity of an m80", "tgt": "Capacity.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the flights between houston and orlando", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "how about a flight leaving tuesday night from st. louis to burbank", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "which flights arrive in burbank from kansas city on saturdays in the afternoon", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "kansas city to las vegas economy", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from dallas to houston arriving sunday afternoon", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "which airline is us", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "saturday flight on american airlines from milwaukee to phoenix", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need the flights from washington to montreal on a saturday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me one way flights from milwaukee to orlando after 6 pm on wednesday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "tell me about the type of aircraft called an m80", "tgt": "Aircraft.", "prefix": "intent classification: "}}
+{"translation": {"src": "list all flights and their fares from indianapolis to memphis on a monday morning", "tgt": "Flight+airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from washington dc to pittsburgh leaving after 1800", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i want to fly from washington dc to phoenix arizona", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the flights from houston to orlando", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "which flights are leaving from kansas city to atlanta early monday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like a flight from orlando to salt lake city for april first on delta airlines", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights and fares from tacoma to orlando round trip leaving saturday returning next saturday", "tgt": "Flight+airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me the flights from new york city to nashville leaving after 5 pm on wednesday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from denver to phoenix", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the first class and coach flights from jfk to miami", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "please list all flights from new york to miami any any type of class", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what cities does northwest fly out of", "tgt": "City.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a sunday flight from tampa to charlotte", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what flights are available from indianapolis to san diego on april twenty first in the late afternoon", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what cities does northwest fly to", "tgt": "City.", "prefix": "intent classification: "}}
+{"translation": {"src": "which airline is us", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a round trip from atlanta to washington dc and the fares leaving in the morning", "tgt": "Flight+airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "list california nevada arizona airports", "tgt": "Airport.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight on united airlines from la guardia to san jose", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "does tacoma airport offer transportation from the airport to the downtown area", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the flights between washington dc and columbus ohio", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "is there an american airlines flight from houston to newark on june tenth after 3 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "which flights on us air go from orlando to cleveland", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the seating capacity of the m80", "tgt": "Capacity.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is fare code m", "tgt": "Abbreviation.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need flight information for flights departing from cleveland to milwaukee on wednesday after 5 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the flights between pittsburgh and washington dc", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like flights from san diego to las vegas", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i want to fly from indianapolis to seattle round trip with the cheapest fare", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me the flights from chicago to seattle on continental that have meals early saturday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from milwaukee to washington dc before 1200", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me all round trip flights from miami to new york nonstop", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need flight and fare information departing from oakland to salt lake city on thursday before 8 am", "tgt": "Flight+airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the fares for ground transportation in denver", "tgt": "Ground Fare.", "prefix": "intent classification: "}}
+{"translation": {"src": "which round trip flights leave chicago next tuesday and arrive in detroit around 6 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list saturday flights from boston to washington", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from pittsburgh to newark on monday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me all the flights from las vegas to new york city", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "find flight from cincinnati to san jose on monday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need flight information from milwaukee to tampa", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "which flights leave chicago on april twelfth and arrive in indianapolis in the morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "find flights arriving new york city next saturday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the flights from montreal to philly before 9 am", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "are there any flights from boston to orlando connecting in columbus", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need flight and airline information for a flight from denver to salt lake city on monday departing after 5 pm", "tgt": "Flight+airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "what ground transportation is available between dca and downtown washington", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "which flights depart from a atlanta and arrive in toronto", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the seating capacity of the type of aircraft m80", "tgt": "Capacity.", "prefix": "intent classification: "}}
+{"translation": {"src": "how long does a flight from baltimore to san francisco take", "tgt": "Distance.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need a flight from memphis to las vegas", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what 's the cheapest round trip flight on twa from columbus to st. paul", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the lowest fare from bwi to salt lake city", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "phoenix to milwaukee on sunday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "how many flights does northwest have leaving dulles", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like a flight from toronto to st. louis", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "dallas to houston after 1201 am", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list first class airfare round trip from indianapolis to memphis", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the cities from which northwest flies", "tgt": "City.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need the fares on flights from washington to toronto on a saturday", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like flight information from phoenix to denver", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "find me a flight from cincinnati to any airport in the new york city area", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "st. paul to kansas city friday night", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the fares for all flights between washington and columbus", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the flights from pittsburgh to baltimore arriving on july first", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me round trip flights from burbank to seattle", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "please list all the flights from dallas to san francisco", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like to fly from orlando to kansas city", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "houston to dallas before midnight", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "get last flight from oakland to salt lake city on wednesday or first flight from oakland to salt lake city on thursday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is seating capacity on the aircraft 73s", "tgt": "Capacity.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the departure times from detroit to westchester county", "tgt": "Flight Time.", "prefix": "intent classification: "}}
+{"translation": {"src": "what airline is hp", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights between phoenix and las vegas", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "on april first i need a ticket from tacoma to san jose departing before 7 am", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the flights on thursday leaving from st. paul minnesota to st. louis", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the cheapest one way flights from orlando to montreal", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "please find a flight from miami florida to las vegas nevada arriving before 4 o'clock pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list all flights from memphis to miami", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what day of the week do flights from nashville to tacoma fly on", "tgt": "Day Name.", "prefix": "intent classification: "}}
+{"translation": {"src": "list all of the daily flights arriving in denver between 8 and 9 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list wednesday night flights from oakland to salt lake city", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from phoenix to houston", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "flights from san diego to seattle", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the flights between los angeles and dallas", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "please find a flight from orlando to kansas city", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "can i get the shortest flight from milwaukee to orlando", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "kansas city to las vegas economy", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the shortest flight from milwaukee to san diego", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list all of the daily flights arriving in denver from 8 to 9 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list airlines flying from seattle to salt lake city", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "flight on american from miami to chicago arrive in chicago about 5 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "and now show me ground transportation that i could get in boston late night", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "what airline is as", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from oakland to salt lake city leaving after 1700 wednesday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "nashville to cleveland sunday before 9", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the flights on american airlines which fly from st. petersburg to ontario canada with a stopover in st. louis", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "tell me all the airports near westchester county", "tgt": "Airport.", "prefix": "intent classification: "}}
+{"translation": {"src": "list coach round trip airfare from detroit to st. petersburg", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like a flight on friday morning from toronto to montreal", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "is there ground transportation available at the indianapolis airport", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "find american flight from newark to nashville around 630 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list california airports", "tgt": "Airport.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the flights on mondays that travel from charlotte north carolina to phoenix arizona", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the seating capacity for delta be1", "tgt": "Capacity.", "prefix": "intent classification: "}}
+{"translation": {"src": "ground transportation in las vegas", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the cheapest economy flights from miami to new york", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "cheapest round trip fare from or indianapolis to orlando on december twenty fifth", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "which flights depart from new york and arrive in los angeles after 10 am", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the seating capacity of the 733", "tgt": "Capacity.", "prefix": "intent classification: "}}
+{"translation": {"src": "charlotte to baltimore on tuesday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "get flights from toronto to milwaukee", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me the cheapest round trip flights from indianapolis to orlando around december twenty fifth", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "which airlines fly between toronto and san diego", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "which flights on northwest airline leave detroit and arrive at st. petersburg", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "get flights from detroit to toronto", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me the cheapest one way flights from montreal to orlando", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "please list all the flights from kansas city to chicago on june sixteenth", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what are the lowest fares from washington dc to salt lake city", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is fare code f", "tgt": "Abbreviation.", "prefix": "intent classification: "}}
+{"translation": {"src": "show flights tuesday evening from milwaukee to st. louis", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "now show me ground transportation in houston on monday afternoon", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "i need information on flights from washington to boston that leave on a saturday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the flights from dallas to baltimore arriving july first", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "los angeles to minneapolis thursday afternoon", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "how far is toronto international from downtown", "tgt": "Distance.", "prefix": "intent classification: "}}
+{"translation": {"src": "list a flight on american airlines from toronto to san diego", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list the alaska airlines flights arriving in burbank", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i want a flight from memphis to seattle that arrives no later than 3 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "is there ground transportation available at the denver airport", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the shortest flight from milwaukee to st. petersburg", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the capacity of the 73s", "tgt": "Capacity.", "prefix": "intent classification: "}}
+{"translation": {"src": "now show me the cheapest one way flight from houston to boston", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me the round trip flights from cleveland to miami next wednesday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me all the flights on america west and twa from las vegas to jfk on a friday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "give me the flights and fares for a trip to cleveland from miami on wednesday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "find flight from houston to memphis on friday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what flights leave cleveland going to indianapolis on april twenty first in the morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the seating capacity for the aircraft m80", "tgt": "Capacity.", "prefix": "intent classification: "}}
+{"translation": {"src": "please find flights available from kansas city to newark", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i would like information on flights leaving from washington dc to denver", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "i 'll need to rent a car in washington dc", "tgt": "Ground Service.", "prefix": "intent classification: "}}
+{"translation": {"src": "what airlines are departing from baltimore", "tgt": "Airline.", "prefix": "intent classification: "}}
+{"translation": {"src": "get fares from washington to montreal", "tgt": "Airfare.", "prefix": "intent classification: "}}
+{"translation": {"src": "show me all the flights from charlotte to minneapolis on tuesday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "list flights from las vegas to san diego", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show flights from burbank to milwaukee on monday", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "baltimore to newark wednesday morning", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "on sunday evening i would like to leave montreal quebec on a flight to san diego california", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "what is the latest flight from baltimore to oakland that serves dinner", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "cleveland to kansas city arrive monday before 3 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "can you find me another flight from cincinnati to new york on saturday before 6 pm", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "show flights from kansas city to orlando", "tgt": "Flight.", "prefix": "intent classification: "}}
+{"translation": {"src": "which flights are available from san jose to nashville leaving in the morning on april twenty three", "tgt": "Flight.", "prefix": "intent classification: "}}

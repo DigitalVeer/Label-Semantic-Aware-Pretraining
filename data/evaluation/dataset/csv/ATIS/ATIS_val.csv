@@ -1,0 +1,448 @@
+,text,intent
+0,new york to las vegas sunday afternoon,Flight.
+1,list fares from washington dc to boston,Airfare.
+2,i need information on flights from toronto to san diego,Flight.
+3,a flight from baltimore to san francisco arriving between 5 and 8 pm,Flight.
+4,are there any flights from boston to orlando connecting in new york,Flight.
+5,i would like flights from las vegas to san francisco,Flight.
+6,show me one way flights from milwaukee to orlando on wednesday,Flight.
+7,how much does it cost to fly on twa from columbus to milwaukee,Airfare.
+8,list all flights and their fares for all flights between miami and indianapolis,Flight+airfare.
+9,what 's the ground transportation in denver,Ground Service.
+10,what 's the fare for a taxi to denver,Ground Fare.
+11,newark to tampa on friday,Flight.
+12,i need flight information for a flight departing from cleveland to milwaukee wednesday after 6 pm,Flight.
+13,list flights from seattle to salt lake city on delta l10,Flight.
+14,what is the shortest flight from milwaukee to long beach,Flight.
+15,please list the flights from los angeles to charlotte,Flight.
+16,which airline is us,Airline.
+17,i would like a connecting flight from dallas to san francisco leaving after 4 o'clock,Flight.
+18,please find all the flights from cincinnati to any airport in the new york city area that arrive next saturday before 6 pm,Flight.
+19,what is the latest breakfast flight from dallas to tampa,Flight.
+20,i would like a flight from detroit to st. louis,Flight.
+21,what types of ground transportation are available in denver,Ground Service.
+22,how far is los angeles international from downtown,Distance.
+23,what airline is as,Airline.
+24,please show me first class flights from indianapolis to memphis one way leaving before 10 am,Flight.
+25,what airline is as,Airline.
+26,which flights go from cleveland to indianapolis on april fifth,Flight.
+27,find flight from san jose to houston on wednesday,Flight.
+28,which flights leave on monday from montreal and arrive in chicago in the morning,Flight.
+29,i 'd like to fly from cleveland to dallas,Flight.
+30,show me all flights from san jose to phoenix,Flight.
+31,i need to take a united airlines flight on june eighth from westchester county to cincinnati after 3 pm,Flight.
+32,is there ground transportation from lga into new york city,Ground Service.
+33,list limousine rates for the city of boston,Ground Fare.
+34,what is the first class round trip airfare from india indianapolis to memphis,Airfare.
+35,list distance from airports to downtown in new york,Distance.
+36,which flights travel from kansas city to los angeles,Flight.
+37,what airlines fly between washington dc and columbus ohio,Airline.
+38,i need a flight from memphis to tacoma that goes through los angeles,Flight.
+39,are snacks served on tower air,Meal.
+40,show me all the flights from charlotte to minneapolis that leave at 2 pm or later on monday,Flight.
+41,get last flight from oakland to salt lake city on wednesday,Flight.
+42,flight numbers from chicago to seattle on continental,Flight No.
+43,are meals ever served on tower air,Meal.
+44,what does not sa mean,Abbreviation.
+45,please give me the flights from nashville to houston nonstop with dinner served,Flight.
+46,i 'd like to go from long beach to st. louis and i 'd like to stop in dallas i 'd also like to have lunch during my flight,Flight.
+47,what 's the cheapest flight from san francisco to milwaukee,Flight.
+48,list all flights from kansas city to cleveland,Flight.
+49,give me the flights from pittsburgh to los angeles thursday evening,Flight.
+50,what flights go from denver to st. louis on tuesday morning,Flight.
+51,i need a flight leaving kansas city to chicago leaving next wednesday and returning the following day,Flight.
+52,what is mci,Abbreviation.
+53,list the alaska airline flights from burbank,Flight.
+54,what does hp stand for,Abbreviation.
+55,show me weekday flights from milwaukee to orlando one way,Flight.
+56,i would like to leave this afternoon on an american flight from cincinnati to burbank,Flight.
+57,show me a one way flight from milwaukee to orlando leaving wednesday afternoon after 6 pm,Flight.
+58,list all flights from cleveland to nashville,Flight.
+59,i need a nonstop flight from toronto to st. louis,Flight.
+60,what is the lowest fare for a flight from washington dc to boston,Airfare.
+61,i need an early flight from milwaukee to denver,Flight.
+62,list flights from houston to phoenix,Flight.
+63,which airport is closest to ontario california,Airport.
+64,how much is a limousine service in toronto international,Ground Fare.
+65,how many people will a 757 hold,Capacity.
+66,what are the flights on sunday from montreal quebec to san diego california,Flight.
+67,please list flights from philadelphia to san francisco,Flight.
+68,i 'd like a one way ticket from milwaukee to orlando either wednesday evening or thursday morning,Airfare.
+69,and from milwaukee to atlanta before 10 am daily,Flight.
+70,show me the cheapest one way fare from san francisco to houston on february twenty eighth 1994,Airfare.
+71,show me the cheapest round trip fare from san francisco to houston on february twenty eighth 1994,Airfare.
+72,list flights from washington dc to boston,Flight.
+73,i need a morning flight from burbank to milwaukee on next monday,Flight.
+74,what are the flights from st. louis to charlotte north carolina leaving on friday,Flight.
+75,show me ground transportation in fort worth,Ground Service.
+76,list all flights arriving in denver between 8 and 9 pm,Flight.
+77,show me the morning flights from memphis to new york city,Flight.
+78,what airline is us,Airline.
+79,list flights from miami to indianapolis sunday,Flight.
+80,kansas city to atlanta monday morning flights,Flight.
+81,which flights leave april twelfth from indianapolis and arrive in montreal around 10 pm,Flight.
+82,show me flights from montreal to orlando and long beach,Flight.
+83,what is tpa,Abbreviation.
+84,show me the delta flights which serve a snack to coach passengers,Flight.
+85,i need a flight from salt lake city to phoenix departing wednesday after 5 pm,Flight.
+86,which airlines fly from baltimore to san francisco,Airline.
+87,show me the cheapest round trip fares from houston to boston,Airfare.
+88,what are the flights from memphis to las vegas,Flight.
+89,list us air flights leaving saturday from charlotte airport around 1 pm,Flight.
+90,how many canadian airlines flights use aircraft dh8,Quantity.
+91,what airline is dl,Airline.
+92,list flights from kansas city to denver,Flight.
+93,list flights from oakland to salt lake city leaving after midnight thursday,Flight.
+94,i would like an early morning flight today from los angeles to charlotte,Flight.
+95,i would like flights from ontario to tacoma,Flight.
+96,list flights from dallas to houston,Flight.
+97,i want to fly from milwaukee to los angeles,Flight.
+98,i need a flight from milwaukee to washington dc on monday night,Flight.
+99,i need a flight on friday afternoon in june from new york to cleveland,Flight.
+100,what are the flights between cincinnati and san jose california which leave after 6 pm,Flight.
+101,show me all round trip flights from new york to miami nonstop,Flight.
+102,what does fare code bn mean,Abbreviation.
+103,find me all the round trip flights from burbank to milwaukee stopping in st. louis,Flight.
+104,columbus to chicago one way before 10 am,Flight.
+105,list airports in arizona nevada and california please,Airport.
+106,list airports,Airport.
+107,list flights from charlotte on saturday afternoon,Flight.
+108,i would like flights from miami to new york,Flight.
+109,list all flights from cleveland to kansas city on monday,Flight.
+110,give me the meal flights departing early saturday morning from chicago to seattle nonstop,Flight.
+111,list flights from washington dc to philadelphia saturday pm,Flight.
+112,i need the flight numbers of flights leaving from cleveland and arriving at dallas,Flight No.
+113,what are the flights from cleveland to dallas,Flight.
+114,get first flight from oakland to salt lake city on thursday,Flight.
+115,show me all the flights from burbank to milwaukee,Flight.
+116,which flights arrive in burbank from las vegas on saturday april twenty third in the afternoon,Flight.
+117,i would like to have the airline that flies toronto detroit and st. louis,Airline.
+118,i 'd like a red eye flight from new york to los angeles on saturday evening on us air,Flight.
+119,please list all the flights from chicago to kansas city on june seventeenth,Flight.
+120,what does fare code qo mean,Abbreviation.
+121,which flights are leaving atlanta and arriving in st. louis close to 230 pm on tuesday,Flight.
+122,flights newark to los angeles wednesday morning,Flight.
+123,on friday night i would like a flight from newark to los angeles,Flight.
+124,list all flights arriving in denver between 8 and 9 pm,Flight.
+125,show me the nonstop flights from toronto to st. petersburg,Flight.
+126,what is the earliest arriving flight from houston to orlando,Flight.
+127,i need to fly from denver to westchester county on june seventh after 3 pm,Flight.
+128,list the flights from indianapolis to memphis that leave before noon,Flight.
+129,what is the seating capacity on the aircraft m80,Capacity.
+130,what is phl,Abbreviation.
+131,which flights leave on wednesday april thirteenth from indianapolis and arrive in montreal in the morning,Flight.
+132,i need a flight from milwaukee to indianapolis leaving monday before 9 am,Flight.
+133,what is the seating capacity of the 757,Capacity.
+134,what are the flights from phoenix arizona to st. paul minnesota on tuesday,Flight.
+135,i need a flight on american airlines from miami to chicago that arrives around 5 pm,Flight.
+136,now show me all the round trips from new york to miami,Flight.
+137,list the distance in miles from boston airport to downtown boston,Distance.
+138,give me the fares from miami to cleveland next sunday,Airfare.
+139,i need a flight from milwaukee to seattle,Flight.
+140,list delta flights from seattle to salt lake city,Flight.
+141,i would like a flight that leaves on sunday from montreal quebec to san diego california,Flight.
+142,what does ap 57 mean,Abbreviation.
+143,show me round trip flights from burbank to tacoma,Flight.
+144,tell me all the airports in the new york city area,Airport.
+145,i want to fly from nashville to seattle and i want the cheapest fare round trip,Flight.
+146,list all sunday flights from cleveland to nashville and their fares,Flight+airfare.
+147,which flights travel from tacoma to san jose,Flight.
+148,which flights travel from nashville to tacoma,Flight.
+149,give me the flights from phoenix to milwaukee,Flight.
+150,show me ground transportation in phoenix,Ground Service.
+151,ground transportation for las vegas,Ground Service.
+152,flight number from houston to dallas,Flight No.
+153,what airline flies from boston to san diego,Airline.
+154,on wednesday night i would like a flight from charlotte to newark,Flight.
+155,give me flights from seattle to chicago that have meals on continental,Flight.
+156,list flights from orlando to tacoma on saturday of fare basis code of q,Flight.
+157,please find a flight from detroit michigan to st. petersburg arriving before 10 pm,Flight.
+158,flight number from dallas to houston,Flight No.
+159,list flights from baltimore to san francisco on friday,Flight.
+160,i would like flights from san francisco to long beach,Flight.
+161,what type of aircraft is used for the american flight leaving at 419 pm,Aircraft.
+162,get flights between st. petersburg and charlotte,Flight.
+163,show me the flights between milwaukee and indiana,Flight.
+164,i need a flight from toronto to newark one way leaving wednesday evening or thursday morning,Flight.
+165,i need a flight from ontario to memphis,Flight.
+166,i need a flight from phoenix to atlanta,Flight.
+167,find me all the flights from milwaukee to st. louis,Flight.
+168,i need a daily flight from st. louis to milwaukee,Flight.
+169,what is the earliest daily flight between oakland and salt lake city,Flight.
+170,which flights are available from orlando to cleveland that arrive around 10 pm,Flight.
+171,i want to fly from memphis to seattle round trip with the cheapest fare,Flight.
+172,los angeles to pittsburgh afternoon on monday,Flight.
+173,please list the flights from cincinnati to burbank on american airlines,Flight.
+174,show flights from kansas city to orlando,Flight.
+175,how many passengers can fly on a 757,Capacity.
+176,which flights travel from kansas city to los angeles on april ninth,Flight.
+177,please find a flight from san diego to toronto on alaska airlines,Flight.
+178,find a flight from memphis to tacoma dinner,Flight.
+179,can i get a flight on tuesday night from washington dc to oakland,Flight.
+180,what is a d9s,Abbreviation.
+181,determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon,Aircraft.
+182,cheapest fare round trip from indianapolis to orlando on december twenty seventh,Airfare.
+183,i 'd like an evening flight from newark to los angeles,Flight.
+184,show me all the flights from indianapolis to charlotte on monday,Flight.
+185,what does fare code y mean,Abbreviation.
+186,show me the flights between oakland and salt lake city,Flight.
+187,which flights travel from indianapolis to san diego on april fifth,Flight.
+188,which flights go from milwaukee to tampa and stop in nashville,Flight.
+189,find flight from phoenix to detroit on monday,Flight.
+190,what does the restriction ap58 mean,Abbreviation.
+191,list american airlines flights from san jose to dallas friday afternoon,Flight.
+192,what does fare code f mean,Abbreviation.
+193,please find a flight from las vegas to michigan,Flight.
+194,list flights from salt lake city to phoenix arizona tuesday,Flight.
+195,i need flight information for flights departing from cleveland going back to milwaukee wednesday after 5 pm,Flight.
+196,show me nonstop flights from montreal to orlando,Flight.
+197,how many flights does alaska airlines have to burbank,Flight.
+198,what are the american flights from newark to nashville,Flight.
+199,show me all delta airlines flights from montreal to orlando,Flight.
+200,what does ua mean,Abbreviation.
+201,show delta airlines flights from boston to salt lake,Flight.
+202,what does fare code h mean,Abbreviation.
+203,tell me the flights that leave philadelphia and go to dallas,Flight.
+204,list all flights on all types of aircraft arriving in denver between 8 and 9 pm,Flight.
+205,show me flights from milwaukee to orlando,Flight.
+206,chicago to las vegas saturday morning,Flight.
+207,list flights from las vegas to denver,Flight.
+208,the flights from ontario to westchester that stop in chicago,Flight.
+209,i need a flight departing from milwaukee to indianapolis leaving monday before 8 am,Flight.
+210,what ground transportation is available between pittsburgh airport and downtown pittsburgh,Ground Service.
+211,what is the latest daily flight between oakland and salt lake city,Flight.
+212,i want a flight from nashville to seattle that arrives no later than 3 pm,Flight.
+213,show me all flights from san jose to phoenix,Flight.
+214,what is the lowest fare from washington dc to montreal,Airfare.
+215,on wednesday april sixth i would like to fly from long beach to columbus after 3 pm,Flight.
+216,what airline is yx,Airline.
+217,what flights arrive at love field on june sixth,Flight.
+218,list fares from washington dc to toronto that should be good,Airfare.
+219,list flights from houston to denver,Flight.
+220,which flights are available from tacoma to san jose in the morning on april twenty second,Flight.
+221,what flights are there between washington dc and columbus ohio,Flight.
+222,please list flights from san francisco to milwaukee,Flight.
+223,i would like a flight from san francisco to st. petersburg,Flight.
+224,please list the ground transportation from lga into new york city,Ground Service.
+225,list flights from pittsburgh to newark daily,Flight.
+226,list flights from la to orlando,Flight.
+227,show me the cheapest first class round trip from new york to miami,Flight.
+228,show me airlines that have flights between toronto and detroit between detroit and st. louis and between st. louis and toronto,Airline.
+229,on april first i need a flight going from phoenix to san diego,Flight.
+230,i need a round trip flight from san diego to washington dc and the fares,Flight+airfare.
+231,show me first class flights from new york to miami round trip,Flight.
+232,list flights from phoenix arizona to ontario california wednesday,Flight.
+233,what ground transportation is available from dallas fort worth airport to downtown dallas,Ground Service.
+234,list the flights from memphis to cleveland,Flight.
+235,i need a ticket from nashville to seattle,Airfare.
+236,what are the flights from la guardia to san jose on united,Flight.
+237,what type of ground transportation is there at the las vegas airport,Ground Service.
+238,what are the flights between dca and milwaukee,Flight.
+239,how many northwest flights leave st. paul,Flight.
+240,show me the cheapest round trip between st. petersburg and detroit that arrives before 7 pm,Flight.
+241,show flights from kansas city to minneapolis,Flight.
+242,i need flights departing from oakland and arriving salt lake city,Flight.
+243,i need a flight from washington dc to san diego,Flight.
+244,i need information on flights from indianapolis to seattle,Flight.
+245,what flights leave from cleveland and go to dallas,Flight.
+246,get saturday fares from washington to boston,Airfare.
+247,list delta flights from seattle to salt lake city with aircraft type,Flight.
+248,list all flights from nashville to cleveland on sunday,Flight.
+249,is ground transportation available in st. louis,Ground Service.
+250,find a flight from tampa to montreal by way of new york,Flight.
+251,list the flights from cincinnati to westchester county on june sixth,Flight.
+252,list flights from newark to houston,Flight.
+253,show me round trip flights from chicago to detroit leaving next tuesday and returning the day after,Flight.
+254,list flights from memphis to miami on wednesday,Flight.
+255,tell me again the morning flights on american airlines from philadelphia to dallas,Flight.
+256,i 'd like a flight from cincinnati to newark airport that arrives on saturday before 6 pm,Flight.
+257,list the airlines with flights to or from denver,Airline.
+258,monday morning flights from atlanta to kansas city,Flight.
+259,is there an american airlines flight from houston to newark on june tenth after 6 pm,Flight.
+260,get fares from washington to boston,Airfare.
+261,which airline is kw,Airline.
+262,what does ap 20 mean,Abbreviation.
+263,is there a fare from pittsburgh to cleveland under 200 dollars,Airfare.
+264,list flights from ontario california to orlando,Flight.
+265,could i have flight information on flights from pittsburgh to phoenix please,Flight.
+266,list flights from oakland to salt lake city,Flight.
+267,show flights from st. petersburg to charlotte,Flight.
+268,what flights go from phoenix to salt lake city,Flight.
+269,list flights from tampa to cincinnati after 3 pm,Flight.
+270,show me the cheapest round trip coach fare from las vegas to detroit,Airfare.
+271,i need to fly from st. louis to milwaukee on wednesday afternoon,Flight.
+272,now show me one way flights from houston to boston,Flight.
+273,how about from dc to oakland on wednesday morning,Flight.
+274,list the alaska airline flights from burbank to anywhere,Flight.
+275,please find a flight from newark to orlando,Flight.
+276,what are the flights from boston to orlando that stop in new york,Flight.
+277,what flights depart from baltimore,Flight.
+278,i need a ticket from nashville tennessee to seattle,Airfare.
+279,please list ground transportation from ewr into new york city,Ground Service.
+280,i would like to return from chicago around 7 pm to kansas city,Flight.
+281,what are the flights from tacoma to miami that leave after 6 pm tomorrow,Flight.
+282,what does q mean,Abbreviation.
+283,list flights from milwaukee to detroit,Flight.
+284,i need to get from cincinnati to denver on june sixth by 6 pm,Flight.
+285,how many canadian airlines international flights use aircraft 320,Quantity.
+286,which flights travel from cleveland to indianapolis on april fifth,Flight.
+287,is there ground transportation available at the salt lake city airport,Ground Service.
+288,how far is san francisco international from downtown,Distance.
+289,are there any flights on june tenth from burbank to tacoma,Flight.
+290,show me the airports serviced by tower air,Airport.
+291,list california airports,Airport.
+292,what ground transportation is available between milwaukee airport and downtown milwaukee,Ground Service.
+293,what 's the ground transportation in westchester county,Ground Service.
+294,show me the cheapest round trip coach fare on twa from las vegas to detroit,Airfare.
+295,monday morning i would like to fly from columbus to indianapolis,Flight.
+296,st. petersburg to detroit,Flight.
+297,what are the nonstop flights between houston and memphis,Flight.
+298,on tuesday are the flights from san diego california to indianapolis indiana i would like the flight to be in the afternoon,Flight.
+299,list flights from chicago to kansas city in the morning,Flight.
+300,how about flights from milwaukee to washington dc on tuesday mornings,Flight.
+301,what flights go from long beach to st. louis,Flight.
+302,list the flights from cincinnati to denver on june sixth,Flight.
+303,list the distance in miles from san francisco international airport to san francisco downtown,Distance.
+304,list flights from st. paul to kansas city friday in the evening with a meal included,Flight.
+305,what are the flights between dallas and phoenix,Flight.
+306,i would like a morning flight from charlotte to newark,Flight.
+307,i 'd like to fly from san diego to houston on june tenth,Flight.
+308,could i have flight information on flights from salt lake city to phoenix please,Flight.
+309,list the alaska airlines flights a departing from burbank,Flight.
+310,which flights depart from tampa in the early evening and arrive in cincinnati,Flight.
+311,does this flight serve dinner,Flight.
+312,show me a return flight from miami to jfk please,Flight.
+313,to what cities from boston does america west fly first class,City.
+314,show me the nonstop flights and fares from toronto to st. petersburg,Flight+airfare.
+315,which flights leave newark after noon next saturday and arrive in los angeles,Flight.
+316,list flights between pittsburgh and milwaukee,Flight.
+317,miami to cleveland sunday afternoon,Flight.
+318,i need flight and fare information for thursday departing prior to 9 am from oakland going to salt lake city,Flight+airfare.
+319,what flights travel from las vegas to los angeles,Flight.
+320,i need to rent a car in milwaukee,Ground Service.
+321,show flights from denver to houston,Flight.
+322,i would like to book a round trip flight from kansas city to chicago,Flight.
+323,what meals are served on american flight 665 673 from milwaukee to seattle,Meal.
+324,i need information on flights between st. petersburg and charlotte,Flight.
+325,i would like to leave thursday morning from indianapolis to toronto,Flight.
+326,baltimore to kansas city economy,Flight.
+327,kansas city to atlanta monday morning flights,Flight.
+328,which airline is us,Airline.
+329,i want to book a flight from salt lake city to westchester county,Flight.
+330,flight numbers from seattle to chicago on continental,Flight No.
+331,what 's the cheapest flight tomorrow from milwaukee to denver,Flight.
+332,show flights saturday evening from st. louis to burbank,Flight.
+333,what is the least expensive fare from boston to salt lake city,Airfare.
+334,show me the first class and coach flights from kennedy airport to miami,Flight.
+335,please find a flight from st. petersburg to miami on thursday,Flight.
+336,which round trip flights leave chicago next tuesday around 6 pm and arrive in detroit,Flight.
+337,cleveland to nashville flight friday morning,Flight.
+338,i 'd like flights from new york to miami,Flight.
+339,how much is coach flight from pittsburgh to atlanta,Airfare.
+340,i want to go from boston to washington on a saturday,Flight.
+341,show flight and prices kansas city to chicago on next wednesday arriving in chicago by 7 pm,Flight+airfare.
+342,what flights depart from baltimore and arrive at san francisco on a friday,Flight.
+343,what flights go from dallas to phoenix,Flight.
+344,show me the cost of a first class ticket from detroit to las vegas and back,Airfare.
+345,list evening flights from tampa to cincinnati,Flight.
+346,please list only the flights from cleveland to dallas that leave before noon,Flight.
+347,list la,City.
+348,show me flights from fort worth to san jose,Flight.
+349,list airports in la,Airport.
+350,i want a flight from toronto to san diego,Flight.
+351,what does fare code bh mean,Abbreviation.
+352,what meals are available on dl 468 which al arrives in san francisco at 950 am,Meal.
+353,what airline is as as in sam,Airline.
+354,list flights from washington dc to toronto,Flight.
+355,how many canadian airlines international flights use j31,Quantity.
+356,list flights from newark to boston daily,Flight.
+357,list airports in new york,Airport.
+358,please list all flights from nashville to memphis on monday morning,Flight.
+359,on thursday morning i would like a nonstop flight from indianapolis to toronto,Flight.
+360,list philadelphia to san francisco flights with stopovers in dallas,Flight.
+361,i need to rent a car at tampa,Ground Service.
+362,is there ground transportation available at the phoenix airport,Ground Service.
+363,what airlines fly between detroit and westchester county,Airline.
+364,show me the connecting flights between boston and denver and the types of aircraft used,Flight.
+365,how many passengers can an l1011 aircraft hold,Capacity.
+366,i would like to fly from columbus to phoenix through cincinnati in the afternoon,Flight.
+367,what is the seating capacity of a 757,Capacity.
+368,please find a flight from kansas city to newark,Flight.
+369,what 's the cheapest flight from columbus to st. louis round trip on twa,Flight.
+370,is there one airline that flies from burbank to milwaukee milwaukee to st. louis and from st. louis to burbank,Airline.
+371,and a flight from st. louis to burbank that leaves tuesday afternoon,Flight.
+372,what are the flights from milwaukee to seattle,Flight.
+373,show me all flights from orlando to montreal please,Flight.
+374,what does fare code bh mean,Abbreviation.
+375,does the airport at burbank have a flight that comes in from kansas city,Flight.
+376,on next wednesday flight from kansas city to chicago should arrive in chicago around 7 pm return flight on thursday,Flight.
+377,show flights from orlando to kansas city,Flight.
+378,i need a nonstop flight from miami to toronto,Flight.
+379,i need a flight from charlotte to miami,Flight.
+380,what meals are there on flight 382 from milwaukee to washington dc on tuesday morning,Meal.
+381,show me the flights on american airlines which go from st. petersburg to ontario california by way of st. louis,Flight.
+382,tell me about the m80 aircraft,Aircraft.
+383,what are restrictions ap 57,Abbreviation.
+384,give me the saturday morning flights on continental that have meals from chicago to minneapolis,Flight.
+385,i need flight numbers for those flights departing on thursday before 8 am from oakland going to salt lake city,Flight No.
+386,show me delta flight 486,Flight.
+387,what airline is hp,Airline.
+388,list all flights arriving or leaving denver between 8 and 9 pm,Flight.
+389,what does fare code f mean,Abbreviation.
+390,show me the delta flights from tampa to san francisco,Flight.
+391,list flights before 9 am from cincinnati to tampa,Flight.
+392,memphis to las vegas sunday afternoon,Flight.
+393,list flights from houston to san jose,Flight.
+394,find a flight between st. petersburg and charlotte the flight should leave in the afternoon and arrive as soon after 5 pm as possible it should be a nonstop flight,Flight.
+395,list flights from ontario california to salt lake city utah monday,Flight.
+396,get saturday fares from washington to montreal,Airfare.
+397,how much does it cost to fly from columbus to st. louis round trip on twa,Airfare.
+398,what does fare code bh mean,Abbreviation.
+399,find nonstop flights from salt lake city to new york on saturday april ninth,Flight.
+400,i would like a flight traveling one way from phoenix to san diego on april first,Flight.
+401,i want a flight from montreal to washington dc,Flight.
+402,list flights from ontario california to salt lake city utah,Flight.
+403,las vegas to baltimore economy,Flight.
+404,please give me the flights from kansas city to chicago on june sixteenth,Flight.
+405,list the airports in la,Airport.
+406,list flights from washington dc to pittsburgh,Flight.
+407,list early evening flights from tampa to cincinnati,Flight.
+408,list airports,Airport.
+409,flights from atlanta to seattle,Flight.
+410,please list flights from san francisco to charlotte,Flight.
+411,i 'd like a flight from new york to los angeles on saturday morning on us air,Flight.
+412,show me flights from milwaukee to orlando one way,Flight.
+413,are there any flights from long beach to columbus on wednesday april sixth,Flight.
+414,list us air flights leaving saturday from charlotte airport at 1 pm,Flight.
+415,show flights wednesday evening from st. louis to burbank,Flight.
+416,show me all nonstop flights from st. petersburg to charlotte,Flight.
+417,list early morning flights from cincinnati to tampa,Flight.
+418,show me nonstop flights from st. petersburg to toronto,Flight.
+419,what airlines fly into denver,Airline.
+420,please find a flight from ontario to westchester that makes a stop in chicago on may seventeenth one way with dinner,Flight.
+421,which flights go from new york to miami and back,Flight.
+422,what is the shortest flight from milwaukee to long beach,Flight.
+423,show delta airlines flights from boston to salt lake city,Flight.
+424,tell me about the m80 aircraft,Aircraft.
+425,list all us air flights arriving in charlotte on saturday at 1 pm,Flight.
+426,list flights from houston to milwaukee friday pm,Flight.
+427,i would like to know what airports are in los angeles,Airport.
+428,i need flight information for a flight departing from indianapolis to cleveland departing tuesday at noon,Flight.
+429,give me the flights from new york to las vegas nonstop,Flight.
+430,please give me the flights from chicago to kansas city on june seventeenth,Flight.
+431,i would like to see flights from cincinnati to salt lake city,Flight.
+432,which flights depart from tampa and arrive in cincinnati in the evening,Flight.
+433,phoenix to milwaukee on wednesday,Flight.
+434,show flights from minneapolis to kansas city,Flight.
+435,i need flight numbers and airlines for flights departing from oakland to salt lake city on thursday departing before 8 am,Flight No+airline.
+436,list the flights from westchester county to cincinnati on june seventh leaving after 5 pm,Flight.
+437,on friday morning i would like to fly from toronto to montreal,Flight.
+438,list ground transportation in baltimore,Ground Service.
+439,what does fare code bh mean,Abbreviation.
+440,minneapolis to pittsburgh flight,Flight.
+441,next wednesday i would like to leave kansas city on a trip to chicago which arrives in chicago around 7 pm,Flight.
+442,give me the flights from milwaukee to phoenix on saturday or sunday on american airlines,Flight.
+443,which flights depart from toronto and arrive in washington dc,Flight.
+444,kansas city to cleveland flight arrive wednesday before 5 pm,Flight.
+445,cheapest one way fare from indianapolis to orlando on december twenty seventh,Airfare.
+446,pittsburgh to los angeles thursday evening,Flight.

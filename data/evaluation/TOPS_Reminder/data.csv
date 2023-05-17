@@ -1,4 +1,4 @@
-,utterance,intent
+,text,intent
 0,remind me to write thank you letters to invited,Create Reminder.
 1,Remind me of the information in the note section of my  doctor's appointment,Create Reminder.
 2,remind me to take my meds at 8am and 6pm daily,Create Reminder.
