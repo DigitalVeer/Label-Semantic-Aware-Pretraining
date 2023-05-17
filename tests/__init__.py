@@ -1,7 +1,5 @@
-import json
-import argparse
-
-from transformers import T5Tokenizer
+import json, torch
+from transformers import T5Tokenizer, T5ForConditionalGeneration
 
 def load_dataset(dataset):
     """
@@ -15,7 +13,7 @@ def load_dataset(dataset):
     return ds
 
 
-def calculate_metric(dataset, metric, tokenizer):
+def calculate_metric(dataset, metric, tokenizer, model=None):
     """Calculate complexity of evaluation set. Returns float or int.
     Arguments:
         dataset: dev or test file on which we evaluate
@@ -39,6 +37,27 @@ def calculate_metric(dataset, metric, tokenizer):
         num_unique_tokens = len(set(all_tokens))
         return num_unique_tokens
 
+    if metric == "perplexity":
+        total_log_likelihood = 0
+        total_tokens = 0
+
+        for example in ds:
+            sentence = example["translation"]["tgt"]
+            input_ids = tokenizer.encode(sentence, return_tensors='pt')
+            
+            # Calculate the log likelihood of the sentence
+            with torch.no_grad():
+                outputs = model(input_ids, labels=input_ids)
+                log_likelihood = outputs[0]
+
+            total_log_likelihood += log_likelihood.item()
+            total_tokens += len(input_ids[0])
+            
+        perplexity = torch.exp(-total_log_likelihood / total_tokens)
+
+        return perplexity.item()
+
+
     return None
 
 
@@ -46,6 +65,7 @@ if __name__ == "__main__":
 
     tokenizer = T5Tokenizer.from_pretrained('t5-base')
     metric = "token vocabulary"
-    dataset = "../data/evaluation/dataset/json/ATIS/ATIS_combined.json"
+    dataset = "../data/evaluation/dataset/json/SNIPS/SNIPS_combined.json"
+    model = T5ForConditionalGeneration.from_pretrained('t5-base').eval()
 
-    print("{}: {}".format(metric, calculate_metric(dataset, metric, tokenizer)))
+    print("{}: {}".format("perplexity", calculate_metric(dataset, metric, tokenizer, model)))
