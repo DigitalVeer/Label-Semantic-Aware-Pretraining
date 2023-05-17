@@ -1,0 +1,448 @@
+label,text
+Flight.,new york to las vegas sunday afternoon
+Airfare.,list fares from washington dc to boston
+Flight.,i need information on flights from toronto to san diego
+Flight.,a flight from baltimore to san francisco arriving between 5 and 8 pm
+Flight.,are there any flights from boston to orlando connecting in new york
+Flight.,i would like flights from las vegas to san francisco
+Flight.,show me one way flights from milwaukee to orlando on wednesday
+Airfare.,how much does it cost to fly on twa from columbus to milwaukee
+Flight+airfare.,list all flights and their fares for all flights between miami and indianapolis
+Ground Service.,what 's the ground transportation in denver
+Ground Fare.,what 's the fare for a taxi to denver
+Flight.,newark to tampa on friday
+Flight.,i need flight information for a flight departing from cleveland to milwaukee wednesday after 6 pm
+Flight.,list flights from seattle to salt lake city on delta l10
+Flight.,what is the shortest flight from milwaukee to long beach
+Flight.,please list the flights from los angeles to charlotte
+Airline.,which airline is us
+Flight.,i would like a connecting flight from dallas to san francisco leaving after 4 o'clock
+Flight.,please find all the flights from cincinnati to any airport in the new york city area that arrive next saturday before 6 pm
+Flight.,what is the latest breakfast flight from dallas to tampa
+Flight.,i would like a flight from detroit to st. louis
+Ground Service.,what types of ground transportation are available in denver
+Distance.,how far is los angeles international from downtown
+Airline.,what airline is as
+Flight.,please show me first class flights from indianapolis to memphis one way leaving before 10 am
+Airline.,what airline is as
+Flight.,which flights go from cleveland to indianapolis on april fifth
+Flight.,find flight from san jose to houston on wednesday
+Flight.,which flights leave on monday from montreal and arrive in chicago in the morning
+Flight.,i 'd like to fly from cleveland to dallas
+Flight.,show me all flights from san jose to phoenix
+Flight.,i need to take a united airlines flight on june eighth from westchester county to cincinnati after 3 pm
+Ground Service.,is there ground transportation from lga into new york city
+Ground Fare.,list limousine rates for the city of boston
+Airfare.,what is the first class round trip airfare from india indianapolis to memphis
+Distance.,list distance from airports to downtown in new york
+Flight.,which flights travel from kansas city to los angeles
+Airline.,what airlines fly between washington dc and columbus ohio
+Flight.,i need a flight from memphis to tacoma that goes through los angeles
+Meal.,are snacks served on tower air
+Flight.,show me all the flights from charlotte to minneapolis that leave at 2 pm or later on monday
+Flight.,get last flight from oakland to salt lake city on wednesday
+Flight No.,flight numbers from chicago to seattle on continental
+Meal.,are meals ever served on tower air
+Abbreviation.,what does not sa mean
+Flight.,please give me the flights from nashville to houston nonstop with dinner served
+Flight.,i 'd like to go from long beach to st. louis and i 'd like to stop in dallas i 'd also like to have lunch during my flight
+Flight.,what 's the cheapest flight from san francisco to milwaukee
+Flight.,list all flights from kansas city to cleveland
+Flight.,give me the flights from pittsburgh to los angeles thursday evening
+Flight.,what flights go from denver to st. louis on tuesday morning
+Flight.,i need a flight leaving kansas city to chicago leaving next wednesday and returning the following day
+Abbreviation.,what is mci
+Flight.,list the alaska airline flights from burbank
+Abbreviation.,what does hp stand for
+Flight.,show me weekday flights from milwaukee to orlando one way
+Flight.,i would like to leave this afternoon on an american flight from cincinnati to burbank
+Flight.,show me a one way flight from milwaukee to orlando leaving wednesday afternoon after 6 pm
+Flight.,list all flights from cleveland to nashville
+Flight.,i need a nonstop flight from toronto to st. louis
+Airfare.,what is the lowest fare for a flight from washington dc to boston
+Flight.,i need an early flight from milwaukee to denver
+Flight.,list flights from houston to phoenix
+Airport.,which airport is closest to ontario california
+Ground Fare.,how much is a limousine service in toronto international
+Capacity.,how many people will a 757 hold
+Flight.,what are the flights on sunday from montreal quebec to san diego california
+Flight.,please list flights from philadelphia to san francisco
+Airfare.,i 'd like a one way ticket from milwaukee to orlando either wednesday evening or thursday morning
+Flight.,and from milwaukee to atlanta before 10 am daily
+Airfare.,show me the cheapest one way fare from san francisco to houston on february twenty eighth 1994
+Airfare.,show me the cheapest round trip fare from san francisco to houston on february twenty eighth 1994
+Flight.,list flights from washington dc to boston
+Flight.,i need a morning flight from burbank to milwaukee on next monday
+Flight.,what are the flights from st. louis to charlotte north carolina leaving on friday
+Ground Service.,show me ground transportation in fort worth
+Flight.,list all flights arriving in denver between 8 and 9 pm
+Flight.,show me the morning flights from memphis to new york city
+Airline.,what airline is us
+Flight.,list flights from miami to indianapolis sunday
+Flight.,kansas city to atlanta monday morning flights
+Flight.,which flights leave april twelfth from indianapolis and arrive in montreal around 10 pm
+Flight.,show me flights from montreal to orlando and long beach
+Abbreviation.,what is tpa
+Flight.,show me the delta flights which serve a snack to coach passengers
+Flight.,i need a flight from salt lake city to phoenix departing wednesday after 5 pm
+Airline.,which airlines fly from baltimore to san francisco
+Airfare.,show me the cheapest round trip fares from houston to boston
+Flight.,what are the flights from memphis to las vegas
+Flight.,list us air flights leaving saturday from charlotte airport around 1 pm
+Quantity.,how many canadian airlines flights use aircraft dh8
+Airline.,what airline is dl
+Flight.,list flights from kansas city to denver
+Flight.,list flights from oakland to salt lake city leaving after midnight thursday
+Flight.,i would like an early morning flight today from los angeles to charlotte
+Flight.,i would like flights from ontario to tacoma
+Flight.,list flights from dallas to houston
+Flight.,i want to fly from milwaukee to los angeles
+Flight.,i need a flight from milwaukee to washington dc on monday night
+Flight.,i need a flight on friday afternoon in june from new york to cleveland
+Flight.,what are the flights between cincinnati and san jose california which leave after 6 pm
+Flight.,show me all round trip flights from new york to miami nonstop
+Abbreviation.,what does fare code bn mean
+Flight.,find me all the round trip flights from burbank to milwaukee stopping in st. louis
+Flight.,columbus to chicago one way before 10 am
+Airport.,list airports in arizona nevada and california please
+Airport.,list airports
+Flight.,list flights from charlotte on saturday afternoon
+Flight.,i would like flights from miami to new york
+Flight.,list all flights from cleveland to kansas city on monday
+Flight.,give me the meal flights departing early saturday morning from chicago to seattle nonstop
+Flight.,list flights from washington dc to philadelphia saturday pm
+Flight No.,i need the flight numbers of flights leaving from cleveland and arriving at dallas
+Flight.,what are the flights from cleveland to dallas
+Flight.,get first flight from oakland to salt lake city on thursday
+Flight.,show me all the flights from burbank to milwaukee
+Flight.,which flights arrive in burbank from las vegas on saturday april twenty third in the afternoon
+Airline.,i would like to have the airline that flies toronto detroit and st. louis
+Flight.,i 'd like a red eye flight from new york to los angeles on saturday evening on us air
+Flight.,please list all the flights from chicago to kansas city on june seventeenth
+Abbreviation.,what does fare code qo mean
+Flight.,which flights are leaving atlanta and arriving in st. louis close to 230 pm on tuesday
+Flight.,flights newark to los angeles wednesday morning
+Flight.,on friday night i would like a flight from newark to los angeles
+Flight.,list all flights arriving in denver between 8 and 9 pm
+Flight.,show me the nonstop flights from toronto to st. petersburg
+Flight.,what is the earliest arriving flight from houston to orlando
+Flight.,i need to fly from denver to westchester county on june seventh after 3 pm
+Flight.,list the flights from indianapolis to memphis that leave before noon
+Capacity.,what is the seating capacity on the aircraft m80
+Abbreviation.,what is phl
+Flight.,which flights leave on wednesday april thirteenth from indianapolis and arrive in montreal in the morning
+Flight.,i need a flight from milwaukee to indianapolis leaving monday before 9 am
+Capacity.,what is the seating capacity of the 757
+Flight.,what are the flights from phoenix arizona to st. paul minnesota on tuesday
+Flight.,i need a flight on american airlines from miami to chicago that arrives around 5 pm
+Flight.,now show me all the round trips from new york to miami
+Distance.,list the distance in miles from boston airport to downtown boston
+Airfare.,give me the fares from miami to cleveland next sunday
+Flight.,i need a flight from milwaukee to seattle
+Flight.,list delta flights from seattle to salt lake city
+Flight.,i would like a flight that leaves on sunday from montreal quebec to san diego california
+Abbreviation.,what does ap 57 mean
+Flight.,show me round trip flights from burbank to tacoma
+Airport.,tell me all the airports in the new york city area
+Flight.,i want to fly from nashville to seattle and i want the cheapest fare round trip
+Flight+airfare.,list all sunday flights from cleveland to nashville and their fares
+Flight.,which flights travel from tacoma to san jose
+Flight.,which flights travel from nashville to tacoma
+Flight.,give me the flights from phoenix to milwaukee
+Ground Service.,show me ground transportation in phoenix
+Ground Service.,ground transportation for las vegas
+Flight No.,flight number from houston to dallas
+Airline.,what airline flies from boston to san diego
+Flight.,on wednesday night i would like a flight from charlotte to newark
+Flight.,give me flights from seattle to chicago that have meals on continental
+Flight.,list flights from orlando to tacoma on saturday of fare basis code of q
+Flight.,please find a flight from detroit michigan to st. petersburg arriving before 10 pm
+Flight No.,flight number from dallas to houston
+Flight.,list flights from baltimore to san francisco on friday
+Flight.,i would like flights from san francisco to long beach
+Aircraft.,what type of aircraft is used for the american flight leaving at 419 pm
+Flight.,get flights between st. petersburg and charlotte
+Flight.,show me the flights between milwaukee and indiana
+Flight.,i need a flight from toronto to newark one way leaving wednesday evening or thursday morning
+Flight.,i need a flight from ontario to memphis
+Flight.,i need a flight from phoenix to atlanta
+Flight.,find me all the flights from milwaukee to st. louis
+Flight.,i need a daily flight from st. louis to milwaukee
+Flight.,what is the earliest daily flight between oakland and salt lake city
+Flight.,which flights are available from orlando to cleveland that arrive around 10 pm
+Flight.,i want to fly from memphis to seattle round trip with the cheapest fare
+Flight.,los angeles to pittsburgh afternoon on monday
+Flight.,please list the flights from cincinnati to burbank on american airlines
+Flight.,show flights from kansas city to orlando
+Capacity.,how many passengers can fly on a 757
+Flight.,which flights travel from kansas city to los angeles on april ninth
+Flight.,please find a flight from san diego to toronto on alaska airlines
+Flight.,find a flight from memphis to tacoma dinner
+Flight.,can i get a flight on tuesday night from washington dc to oakland
+Abbreviation.,what is a d9s
+Aircraft.,determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon
+Airfare.,cheapest fare round trip from indianapolis to orlando on december twenty seventh
+Flight.,i 'd like an evening flight from newark to los angeles
+Flight.,show me all the flights from indianapolis to charlotte on monday
+Abbreviation.,what does fare code y mean
+Flight.,show me the flights between oakland and salt lake city
+Flight.,which flights travel from indianapolis to san diego on april fifth
+Flight.,which flights go from milwaukee to tampa and stop in nashville
+Flight.,find flight from phoenix to detroit on monday
+Abbreviation.,what does the restriction ap58 mean
+Flight.,list american airlines flights from san jose to dallas friday afternoon
+Abbreviation.,what does fare code f mean
+Flight.,please find a flight from las vegas to michigan
+Flight.,list flights from salt lake city to phoenix arizona tuesday
+Flight.,i need flight information for flights departing from cleveland going back to milwaukee wednesday after 5 pm
+Flight.,show me nonstop flights from montreal to orlando
+Flight.,how many flights does alaska airlines have to burbank
+Flight.,what are the american flights from newark to nashville
+Flight.,show me all delta airlines flights from montreal to orlando
+Abbreviation.,what does ua mean
+Flight.,show delta airlines flights from boston to salt lake
+Abbreviation.,what does fare code h mean
+Flight.,tell me the flights that leave philadelphia and go to dallas
+Flight.,list all flights on all types of aircraft arriving in denver between 8 and 9 pm
+Flight.,show me flights from milwaukee to orlando
+Flight.,chicago to las vegas saturday morning
+Flight.,list flights from las vegas to denver
+Flight.,the flights from ontario to westchester that stop in chicago
+Flight.,i need a flight departing from milwaukee to indianapolis leaving monday before 8 am
+Ground Service.,what ground transportation is available between pittsburgh airport and downtown pittsburgh
+Flight.,what is the latest daily flight between oakland and salt lake city
+Flight.,i want a flight from nashville to seattle that arrives no later than 3 pm
+Flight.,show me all flights from san jose to phoenix
+Airfare.,what is the lowest fare from washington dc to montreal
+Flight.,on wednesday april sixth i would like to fly from long beach to columbus after 3 pm
+Airline.,what airline is yx
+Flight.,what flights arrive at love field on june sixth
+Airfare.,list fares from washington dc to toronto that should be good
+Flight.,list flights from houston to denver
+Flight.,which flights are available from tacoma to san jose in the morning on april twenty second
+Flight.,what flights are there between washington dc and columbus ohio
+Flight.,please list flights from san francisco to milwaukee
+Flight.,i would like a flight from san francisco to st. petersburg
+Ground Service.,please list the ground transportation from lga into new york city
+Flight.,list flights from pittsburgh to newark daily
+Flight.,list flights from la to orlando
+Flight.,show me the cheapest first class round trip from new york to miami
+Airline.,show me airlines that have flights between toronto and detroit between detroit and st. louis and between st. louis and toronto
+Flight.,on april first i need a flight going from phoenix to san diego
+Flight+airfare.,i need a round trip flight from san diego to washington dc and the fares
+Flight.,show me first class flights from new york to miami round trip
+Flight.,list flights from phoenix arizona to ontario california wednesday
+Ground Service.,what ground transportation is available from dallas fort worth airport to downtown dallas
+Flight.,list the flights from memphis to cleveland
+Airfare.,i need a ticket from nashville to seattle
+Flight.,what are the flights from la guardia to san jose on united
+Ground Service.,what type of ground transportation is there at the las vegas airport
+Flight.,what are the flights between dca and milwaukee
+Flight.,how many northwest flights leave st. paul
+Flight.,show me the cheapest round trip between st. petersburg and detroit that arrives before 7 pm
+Flight.,show flights from kansas city to minneapolis
+Flight.,i need flights departing from oakland and arriving salt lake city
+Flight.,i need a flight from washington dc to san diego
+Flight.,i need information on flights from indianapolis to seattle
+Flight.,what flights leave from cleveland and go to dallas
+Airfare.,get saturday fares from washington to boston
+Flight.,list delta flights from seattle to salt lake city with aircraft type
+Flight.,list all flights from nashville to cleveland on sunday
+Ground Service.,is ground transportation available in st. louis
+Flight.,find a flight from tampa to montreal by way of new york
+Flight.,list the flights from cincinnati to westchester county on june sixth
+Flight.,list flights from newark to houston
+Flight.,show me round trip flights from chicago to detroit leaving next tuesday and returning the day after
+Flight.,list flights from memphis to miami on wednesday
+Flight.,tell me again the morning flights on american airlines from philadelphia to dallas
+Flight.,i 'd like a flight from cincinnati to newark airport that arrives on saturday before 6 pm
+Airline.,list the airlines with flights to or from denver
+Flight.,monday morning flights from atlanta to kansas city
+Flight.,is there an american airlines flight from houston to newark on june tenth after 6 pm
+Airfare.,get fares from washington to boston
+Airline.,which airline is kw
+Abbreviation.,what does ap 20 mean
+Airfare.,is there a fare from pittsburgh to cleveland under 200 dollars
+Flight.,list flights from ontario california to orlando
+Flight.,could i have flight information on flights from pittsburgh to phoenix please
+Flight.,list flights from oakland to salt lake city
+Flight.,show flights from st. petersburg to charlotte
+Flight.,what flights go from phoenix to salt lake city
+Flight.,list flights from tampa to cincinnati after 3 pm
+Airfare.,show me the cheapest round trip coach fare from las vegas to detroit
+Flight.,i need to fly from st. louis to milwaukee on wednesday afternoon
+Flight.,now show me one way flights from houston to boston
+Flight.,how about from dc to oakland on wednesday morning
+Flight.,list the alaska airline flights from burbank to anywhere
+Flight.,please find a flight from newark to orlando
+Flight.,what are the flights from boston to orlando that stop in new york
+Flight.,what flights depart from baltimore
+Airfare.,i need a ticket from nashville tennessee to seattle
+Ground Service.,please list ground transportation from ewr into new york city
+Flight.,i would like to return from chicago around 7 pm to kansas city
+Flight.,what are the flights from tacoma to miami that leave after 6 pm tomorrow
+Abbreviation.,what does q mean
+Flight.,list flights from milwaukee to detroit
+Flight.,i need to get from cincinnati to denver on june sixth by 6 pm
+Quantity.,how many canadian airlines international flights use aircraft 320
+Flight.,which flights travel from cleveland to indianapolis on april fifth
+Ground Service.,is there ground transportation available at the salt lake city airport
+Distance.,how far is san francisco international from downtown
+Flight.,are there any flights on june tenth from burbank to tacoma
+Airport.,show me the airports serviced by tower air
+Airport.,list california airports
+Ground Service.,what ground transportation is available between milwaukee airport and downtown milwaukee
+Ground Service.,what 's the ground transportation in westchester county
+Airfare.,show me the cheapest round trip coach fare on twa from las vegas to detroit
+Flight.,monday morning i would like to fly from columbus to indianapolis
+Flight.,st. petersburg to detroit
+Flight.,what are the nonstop flights between houston and memphis
+Flight.,on tuesday are the flights from san diego california to indianapolis indiana i would like the flight to be in the afternoon
+Flight.,list flights from chicago to kansas city in the morning
+Flight.,how about flights from milwaukee to washington dc on tuesday mornings
+Flight.,what flights go from long beach to st. louis
+Flight.,list the flights from cincinnati to denver on june sixth
+Distance.,list the distance in miles from san francisco international airport to san francisco downtown
+Flight.,list flights from st. paul to kansas city friday in the evening with a meal included
+Flight.,what are the flights between dallas and phoenix
+Flight.,i would like a morning flight from charlotte to newark
+Flight.,i 'd like to fly from san diego to houston on june tenth
+Flight.,could i have flight information on flights from salt lake city to phoenix please
+Flight.,list the alaska airlines flights a departing from burbank
+Flight.,which flights depart from tampa in the early evening and arrive in cincinnati
+Flight.,does this flight serve dinner
+Flight.,show me a return flight from miami to jfk please
+City.,to what cities from boston does america west fly first class
+Flight+airfare.,show me the nonstop flights and fares from toronto to st. petersburg
+Flight.,which flights leave newark after noon next saturday and arrive in los angeles
+Flight.,list flights between pittsburgh and milwaukee
+Flight.,miami to cleveland sunday afternoon
+Flight+airfare.,i need flight and fare information for thursday departing prior to 9 am from oakland going to salt lake city
+Flight.,what flights travel from las vegas to los angeles
+Ground Service.,i need to rent a car in milwaukee
+Flight.,show flights from denver to houston
+Flight.,i would like to book a round trip flight from kansas city to chicago
+Meal.,what meals are served on american flight 665 673 from milwaukee to seattle
+Flight.,i need information on flights between st. petersburg and charlotte
+Flight.,i would like to leave thursday morning from indianapolis to toronto
+Flight.,baltimore to kansas city economy
+Flight.,kansas city to atlanta monday morning flights
+Airline.,which airline is us
+Flight.,i want to book a flight from salt lake city to westchester county
+Flight No.,flight numbers from seattle to chicago on continental
+Flight.,what 's the cheapest flight tomorrow from milwaukee to denver
+Flight.,show flights saturday evening from st. louis to burbank
+Airfare.,what is the least expensive fare from boston to salt lake city
+Flight.,show me the first class and coach flights from kennedy airport to miami
+Flight.,please find a flight from st. petersburg to miami on thursday
+Flight.,which round trip flights leave chicago next tuesday around 6 pm and arrive in detroit
+Flight.,cleveland to nashville flight friday morning
+Flight.,i 'd like flights from new york to miami
+Airfare.,how much is coach flight from pittsburgh to atlanta
+Flight.,i want to go from boston to washington on a saturday
+Flight+airfare.,show flight and prices kansas city to chicago on next wednesday arriving in chicago by 7 pm
+Flight.,what flights depart from baltimore and arrive at san francisco on a friday
+Flight.,what flights go from dallas to phoenix
+Airfare.,show me the cost of a first class ticket from detroit to las vegas and back
+Flight.,list evening flights from tampa to cincinnati
+Flight.,please list only the flights from cleveland to dallas that leave before noon
+City.,list la
+Flight.,show me flights from fort worth to san jose
+Airport.,list airports in la
+Flight.,i want a flight from toronto to san diego
+Abbreviation.,what does fare code bh mean
+Meal.,what meals are available on dl 468 which al arrives in san francisco at 950 am
+Airline.,what airline is as as in sam
+Flight.,list flights from washington dc to toronto
+Quantity.,how many canadian airlines international flights use j31
+Flight.,list flights from newark to boston daily
+Airport.,list airports in new york
+Flight.,please list all flights from nashville to memphis on monday morning
+Flight.,on thursday morning i would like a nonstop flight from indianapolis to toronto
+Flight.,list philadelphia to san francisco flights with stopovers in dallas
+Ground Service.,i need to rent a car at tampa
+Ground Service.,is there ground transportation available at the phoenix airport
+Airline.,what airlines fly between detroit and westchester county
+Flight.,show me the connecting flights between boston and denver and the types of aircraft used
+Capacity.,how many passengers can an l1011 aircraft hold
+Flight.,i would like to fly from columbus to phoenix through cincinnati in the afternoon
+Capacity.,what is the seating capacity of a 757
+Flight.,please find a flight from kansas city to newark
+Flight.,what 's the cheapest flight from columbus to st. louis round trip on twa
+Airline.,is there one airline that flies from burbank to milwaukee milwaukee to st. louis and from st. louis to burbank
+Flight.,and a flight from st. louis to burbank that leaves tuesday afternoon
+Flight.,what are the flights from milwaukee to seattle
+Flight.,show me all flights from orlando to montreal please
+Abbreviation.,what does fare code bh mean
+Flight.,does the airport at burbank have a flight that comes in from kansas city
+Flight.,on next wednesday flight from kansas city to chicago should arrive in chicago around 7 pm return flight on thursday
+Flight.,show flights from orlando to kansas city
+Flight.,i need a nonstop flight from miami to toronto
+Flight.,i need a flight from charlotte to miami
+Meal.,what meals are there on flight 382 from milwaukee to washington dc on tuesday morning
+Flight.,show me the flights on american airlines which go from st. petersburg to ontario california by way of st. louis
+Aircraft.,tell me about the m80 aircraft
+Abbreviation.,what are restrictions ap 57
+Flight.,give me the saturday morning flights on continental that have meals from chicago to minneapolis
+Flight No.,i need flight numbers for those flights departing on thursday before 8 am from oakland going to salt lake city
+Flight.,show me delta flight 486
+Airline.,what airline is hp
+Flight.,list all flights arriving or leaving denver between 8 and 9 pm
+Abbreviation.,what does fare code f mean
+Flight.,show me the delta flights from tampa to san francisco
+Flight.,list flights before 9 am from cincinnati to tampa
+Flight.,memphis to las vegas sunday afternoon
+Flight.,list flights from houston to san jose
+Flight.,find a flight between st. petersburg and charlotte the flight should leave in the afternoon and arrive as soon after 5 pm as possible it should be a nonstop flight
+Flight.,list flights from ontario california to salt lake city utah monday
+Airfare.,get saturday fares from washington to montreal
+Airfare.,how much does it cost to fly from columbus to st. louis round trip on twa
+Abbreviation.,what does fare code bh mean
+Flight.,find nonstop flights from salt lake city to new york on saturday april ninth
+Flight.,i would like a flight traveling one way from phoenix to san diego on april first
+Flight.,i want a flight from montreal to washington dc
+Flight.,list flights from ontario california to salt lake city utah
+Flight.,las vegas to baltimore economy
+Flight.,please give me the flights from kansas city to chicago on june sixteenth
+Airport.,list the airports in la
+Flight.,list flights from washington dc to pittsburgh
+Flight.,list early evening flights from tampa to cincinnati
+Airport.,list airports
+Flight.,flights from atlanta to seattle
+Flight.,please list flights from san francisco to charlotte
+Flight.,i 'd like a flight from new york to los angeles on saturday morning on us air
+Flight.,show me flights from milwaukee to orlando one way
+Flight.,are there any flights from long beach to columbus on wednesday april sixth
+Flight.,list us air flights leaving saturday from charlotte airport at 1 pm
+Flight.,show flights wednesday evening from st. louis to burbank
+Flight.,show me all nonstop flights from st. petersburg to charlotte
+Flight.,list early morning flights from cincinnati to tampa
+Flight.,show me nonstop flights from st. petersburg to toronto
+Airline.,what airlines fly into denver
+Flight.,please find a flight from ontario to westchester that makes a stop in chicago on may seventeenth one way with dinner
+Flight.,which flights go from new york to miami and back
+Flight.,what is the shortest flight from milwaukee to long beach
+Flight.,show delta airlines flights from boston to salt lake city
+Aircraft.,tell me about the m80 aircraft
+Flight.,list all us air flights arriving in charlotte on saturday at 1 pm
+Flight.,list flights from houston to milwaukee friday pm
+Airport.,i would like to know what airports are in los angeles
+Flight.,i need flight information for a flight departing from indianapolis to cleveland departing tuesday at noon
+Flight.,give me the flights from new york to las vegas nonstop
+Flight.,please give me the flights from chicago to kansas city on june seventeenth
+Flight.,i would like to see flights from cincinnati to salt lake city
+Flight.,which flights depart from tampa and arrive in cincinnati in the evening
+Flight.,phoenix to milwaukee on wednesday
+Flight.,show flights from minneapolis to kansas city
+Flight No+airline.,i need flight numbers and airlines for flights departing from oakland to salt lake city on thursday departing before 8 am
+Flight.,list the flights from westchester county to cincinnati on june seventh leaving after 5 pm
+Flight.,on friday morning i would like to fly from toronto to montreal
+Ground Service.,list ground transportation in baltimore
+Abbreviation.,what does fare code bh mean
+Flight.,minneapolis to pittsburgh flight
+Flight.,next wednesday i would like to leave kansas city on a trip to chicago which arrives in chicago around 7 pm
+Flight.,give me the flights from milwaukee to phoenix on saturday or sunday on american airlines
+Flight.,which flights depart from toronto and arrive in washington dc
+Flight.,kansas city to cleveland flight arrive wednesday before 5 pm
+Airfare.,cheapest one way fare from indianapolis to orlando on december twenty seventh
+Flight.,pittsburgh to los angeles thursday evening
