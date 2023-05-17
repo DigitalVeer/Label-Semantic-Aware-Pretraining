@@ -28,9 +28,9 @@ python ../models/preTraining.py $1 $2 $3 $4 $5 $6
 # sbatch preTrain.sh t5-small ../data/pretraining/preprocessed_data/intent_classification/full_train.json ../data/pretraining/preprocessed_data/intent_classification/full_val.json ../output/intent_classification/gold_silver_model_3 False
 
 # Span Denoising:
-## TODO:
+## Job: 7510654
 # For: Gold + Silver + t5-small (model_3)
-# sbatch preTrain.sh t5-small ../data/pretraining/preprocessed_data/span_denoising/full_train.json ../data/pretraining/preprocessed_data/span_denoising/full_val.json ../output/span_denoising/gold_silver_model_3 False
+# sbatch preTrain.sh t5-small ../data/pretraining/preprocessed_data/random_span_denoising/full_train.json ../data/pretraining/preprocessed_data/random_span_denoising/full_val.json ../output/span_denoising/gold_silver_model_3 False
 
 # Once we choose label denoising as best, the models we built are:
 

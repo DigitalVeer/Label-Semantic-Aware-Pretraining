@@ -1,0 +1,1 @@
+{"test_loss": NaN, "test_accuracy": 0.0, "test_runtime": 7.0095, "test_samples_per_second": 380.483, "test_steps_per_second": 11.984}
