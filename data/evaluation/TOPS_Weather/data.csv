@@ -1,4 +1,4 @@
-,utterance,intent
+,text,intent
 0,Whats the weather supposed to be today,Get Weather.
 1,how cold is it?,Get Weather.
 2,Can I get the 10 day forecast for Phoenix?,Get Weather.
