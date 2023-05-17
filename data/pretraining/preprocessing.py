@@ -424,7 +424,7 @@ def combine_all_jsons():
     output_files = {
         'train':    open(f"{COMBINED_JSON_PATH}/full_train.json", "w"),
         'val':      open(f"{COMBINED_JSON_PATH}/full_val.json", "w"),
-        'combined': open(f"{COMBINED_JSON_PATH}/full_combined.json", "w"),
+        # 'combined': open(f"{COMBINED_JSON_PATH}/full_combined.json", "w"),
     }
 
     for train_json, val_json in zip( train_jsons, val_jsons ):
