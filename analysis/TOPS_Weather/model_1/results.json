@@ -1,0 +1,80 @@
+{
+    "eight_shot": {
+        "labels_file": "eight_shot_true_labels.txt",
+        "preds_file": "eight_shot_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 96.4,
+                "exact_match": 66.7
+            },
+            "bleu_score": 25.820288638953315,
+            "jaccard_score": 77.24034495687957,
+            "cosine_similarity": 0.6700412448443944
+        }
+    },
+    "four_shot": {
+        "labels_file": "four_shot_true_labels.txt",
+        "preds_file": "four_shot_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 96.4,
+                "exact_match": 10.46
+            },
+            "bleu_score": 16.164642754132206,
+            "jaccard_score": 39.12010998625261,
+            "cosine_similarity": 0.1046119235095613
+        }
+    },
+    "full_resource": {
+        "labels_file": "full_resource_true_labels.txt",
+        "preds_file": "full_resource_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 0,
+                "exact_match": 0
+            },
+            "bleu_score": 0,
+            "jaccard_score": 0,
+            "cosine_similarity": 0
+        }
+    },
+    "one_shot": {
+        "labels_file": "one_shot_true_labels.txt",
+        "preds_file": "one_shot_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 95.65,
+                "exact_match": 2.36
+            },
+            "bleu_score": 14.814599117639569,
+            "jaccard_score": 33.72078490188835,
+            "cosine_similarity": 0.0307461567304087
+        }
+    },
+    "sixteen_shot": {
+        "labels_file": "sixteen_shot_true_labels.txt",
+        "preds_file": "sixteen_shot_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 93.36,
+                "exact_match": 92.61
+            },
+            "bleu_score": 30.380273089440752,
+            "jaccard_score": 95.05061867266576,
+            "cosine_similarity": 0.926509186351706
+        }
+    },
+    "two_shot": {
+        "labels_file": "two_shot_true_labels.txt",
+        "preds_file": "two_shot_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 96.4,
+                "exact_match": 85.79
+            },
+            "bleu_score": 29.136206037278807,
+            "jaccard_score": 90.26371703537039,
+            "cosine_similarity": 0.8620172478440195
+        }
+    }
+}
