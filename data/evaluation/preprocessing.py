@@ -10,7 +10,7 @@ def highlight(text):
 
 
 #Path settings
-CURR_PATH = ""
+CURR_PATH = os.path.dirname( os.path.abspath( __file__ ) )
 DATA_PATH = os.path.join( CURR_PATH, 'dataset' )
 
 #Where to save the data

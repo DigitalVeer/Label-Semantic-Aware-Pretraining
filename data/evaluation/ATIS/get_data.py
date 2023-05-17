@@ -30,8 +30,8 @@ def process( df ):
 combined = process( cdf )
 combined.to_csv(f"{DATA_PATH}/combined.csv")
 
-train = pd.read_json("train.json")
-test  = pd.read_json("test.json")
+train = pd.read_json( data_paths['train.json'] )
+test  = pd.read_json( data_paths['test.json'] )
 
 train = process( train )
 test  = process( test )
