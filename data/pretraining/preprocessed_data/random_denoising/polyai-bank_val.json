@@ -187,28 +187,28 @@
 {"inputs": "There is an extra charge on my app that I was not told about or I was<extra_id_0>", "targets": "<extra_id_0>aware of!"}
 {"inputs": "I am seeing an extra fee on my statement what is that<extra_id_0>", "targets": "<extra_id_0>for?"}
 {"inputs": "What is this \u20ac1 fee in my<extra_id_0>", "targets": "<extra_id_0>statement?"}
-{"inputs": "I am a new customer, and I happened to look at my app and there is a charge I<extra_id_0> Could you tell me why the extra charge is there<extra_id_1>", "targets": "<extra_id_0> am not familiar with.<extra_id_1>?"}
+{"inputs": "I am a new customer, and I happened to look at my app<extra_id_0> there is a charge I am not familiar with. Could you tell me why the<extra_id_1>", "targets": "<extra_id_0> and<extra_id_1>extra charge is there?"}
 {"inputs": "For some reason my account's been charged an extra<extra_id_0>", "targets": "<extra_id_0>dollar."}
 {"inputs": "There is a transaction for $1 and I don't know why it<extra_id_0>", "targets": "<extra_id_0>was charged."}
-{"inputs": "Can you help me with a weird charge? It<extra_id_0> pound charge that never goes away from the statement view on the app I'm using.<extra_id_1> s not described as anything but \"Pending\", and that status has never changed during the last<extra_id_2>", "targets": "<extra_id_0>'s a<extra_id_1> It'<extra_id_2>two days."}
+{"inputs": "Can you help me with a weird charge? It's <extra_id_0> pound charge that never<extra_id_1> the app I'm using. It's not described as anything but \"Pending\", and that status has never changed during the last two days<extra_id_2>", "targets": "<extra_id_0> a<extra_id_1> goes away from the statement view on<extra_id_2>."}
 {"inputs": "What is the purpose of the extra fee that is showing up on my<extra_id_0>", "targets": "<extra_id_0>statement?"}
 {"inputs": "$1 extra has been charged on my statement, why is<extra_id_0>", "targets": "<extra_id_0>that?"}
 {"inputs": "What is the extra \u20ac1 fee in my<extra_id_0>", "targets": "<extra_id_0>statement."}
 {"inputs": "It's been two weeks, why has the transaction for $1.00 not been<extra_id_0>", "targets": "<extra_id_0>reversed?"}
 {"inputs": "What is the \u20ac1 fee for<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "I'm quite confused as to what is going on. There is some odd extra pound charge on my statement in the app that's just listed as <extra_id_0> away since a couple days<extra_id_1>", "targets": "<extra_id_0> pending and doesn't go<extra_id_1>."}
+{"inputs": "I'm quite confused as to what is going on. There is some odd extra pound charge on my statement in the app that's just listed<extra_id_0> pending and doesn't go away<extra_id_1>", "targets": "<extra_id_0> as<extra_id_1>since a couple days."}
 {"inputs": "Can you please check why I am having this extra fee on my<extra_id_0>", "targets": "<extra_id_0>statement."}
 {"inputs": "My withdrawl is still pending.<extra_id_0>", "targets": "<extra_id_0>Why?"}
 {"inputs": "My card was denied at an ATM earlier today but the transaction is pending. Please cancel it as I did not<extra_id_0>", "targets": "<extra_id_0>receive my money."}
 {"inputs": "My transaction is still showing that is pending from my cash<extra_id_0>", "targets": "<extra_id_0>withdrawal."}
-{"inputs": "Hey I tried to get some money out earlier but the machine didn't work.<extra_id_0> saw the transaction still seems in progress! Can you please check what's going there, seems something is broken, I don't<extra_id_1> charged for money that I haven'<extra_id_2>", "targets": "<extra_id_0> Now just<extra_id_1> want to be<extra_id_2>t actually received!"}
+{"inputs": "Hey I tried to get some money out earlier but the machine didn't work. Now just saw the transaction still seems in progress! Can you please check what's going there, seems something is broken<extra_id_0> 't want to be charged for money that I<extra_id_1> actually<extra_id_2>", "targets": "<extra_id_0>, I don<extra_id_1> haven't<extra_id_2>received!"}
 {"inputs": "How long does the cash withdrawal take to pen<extra_id_0>", "targets": "<extra_id_0>d?"}
 {"inputs": "Why is it taking so long for my cash withdrawal to no longer show as<extra_id_0>", "targets": "<extra_id_0>pending?"}
 {"inputs": "I tried taking money from the ATM but no money came out, but the transaction is still pending? How<extra_id_0>", "targets": "<extra_id_0>is this possible?"}
-{"inputs": "I got some cash of an ATM earlier but this shows up as pending in the app. How can<extra_id_0> pending, I've got the cash already<extra_id_1>", "targets": "<extra_id_0> this be still <extra_id_1>?"}
+{"inputs": "I got some cash of an ATM earlier but this shows up as pending in the app. How can this be<extra_id_0> pending, I've got the<extra_id_1>", "targets": "<extra_id_0> still <extra_id_1>cash already?"}
 {"inputs": "Why is my withdrawal still pending<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Are you sure when the withdrawal will show<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "Hi! I was wondering if you can help me. I used the city centre ATM to get some cash, but the machine declined my card. My<extra_id_0> that transaction is still pending. I didn't receive the money<extra_id_1> please<extra_id_2>", "targets": "<extra_id_0> account shows<extra_id_1>, so<extra_id_2>cancel that transaction."}
+{"inputs": "Hi! I was wondering if you can help me. I used the city centre ATM to get some cash, but the machine<extra_id_0>. My account shows that transaction is still pending. I didn't receive the<extra_id_1> so please cancel<extra_id_2>", "targets": "<extra_id_0> declined my card<extra_id_1> money,<extra_id_2>that transaction."}
 {"inputs": "Why is a transaction showing as pending when I recieved cash from<extra_id_0>", "targets": "<extra_id_0>an ATM?"}
 {"inputs": "My cash in the ATM is still <extra_id_0>", "targets": "<extra_id_0>pending."}
 {"inputs": "my atm cash out is still <extra_id_0>", "targets": "<extra_id_0>pending."}
@@ -216,7 +216,7 @@
 {"inputs": "Is my pending cash withdrawal processed<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "how long til my cash out goes<extra_id_0>", "targets": "<extra_id_0>through?"}
 {"inputs": "Why is my ATM cash withdrawal showing up as a pending<extra_id_0>", "targets": "<extra_id_0>transaction?"}
-{"inputs": "Hi,I tried to get some money out but the machine was not working.<extra_id_0> transaction still seems in progress! Can you please<extra_id_1> on.I don't want to be charged for money that I did not<extra_id_2>", "targets": "<extra_id_0> The<extra_id_1> check what's going<extra_id_2>received."}
+{"inputs": "Hi,I tried to get some money out<extra_id_0> the machine was not working.The transaction still seems in progress! Can you please check what's going on.I don't want to be<extra_id_1> did not<extra_id_2>", "targets": "<extra_id_0> but<extra_id_1> charged for money that I<extra_id_2>received."}
 {"inputs": "Hey, my card was declined at an ATM in the city centre theatre.<extra_id_0> the transaction is pending, though. I didn't get the money, though, so what does<extra_id_1>", "targets": "<extra_id_0> My account says<extra_id_1>that mean?"}
 {"inputs": "Why do I have a pending cash<extra_id_0>", "targets": "<extra_id_0>withdrawal?"}
 {"inputs": "I have a pending cash withdrawal<extra_id_0>", "targets": "<extra_id_0>."}
@@ -229,15 +229,15 @@
 {"inputs": "Why does my account have a pending cash<extra_id_0>", "targets": "<extra_id_0>withdrawal?"}
 {"inputs": "I have a pending transaction in my app. How is it still pending if I pulled the cash out from<extra_id_0>", "targets": "<extra_id_0>the ATM earlier?"}
 {"inputs": "Cash withdrawal still pending<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "I received cash from the ATM<extra_id_0> shows up as pending in the app. I've got the cash already. How can this be still pending<extra_id_1>", "targets": "<extra_id_0> earlier, but this<extra_id_1>?"}
-{"inputs": "I tried to take money from my card,<extra_id_0> 't work. Later I saw that the transaction is still in progress. What's goign<extra_id_1>", "targets": "<extra_id_0> but it didn<extra_id_1>on?"}
+{"inputs": "I received cash from the ATM earlier, but this shows up as pending in the app. I've got the<extra_id_0>. How can this be still<extra_id_1>", "targets": "<extra_id_0> cash already<extra_id_1>pending?"}
+{"inputs": "I tried to take money from my card, but it didn't work. Later I saw that<extra_id_0> in progress. What's goign on<extra_id_1>", "targets": "<extra_id_0> the transaction is still<extra_id_1>?"}
 {"inputs": "Why does it say pending cash withdrawal on my<extra_id_0>", "targets": "<extra_id_0>statement?"}
 {"inputs": "How long with my cash withdrawal stay pending<extra_id_0>", "targets": "<extra_id_0>for?"}
 {"inputs": "Where's accounting for my cash withdrawal<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "My account was charged for a withdraw I tried to make that was<extra_id_0>", "targets": "<extra_id_0>decline."}
 {"inputs": "how long does it take to post atm with draw<extra_id_0>", "targets": "<extra_id_0>l."}
 {"inputs": "Why is my cash withdrawal from the ATM still not yet showing as confirmed in<extra_id_0>", "targets": "<extra_id_0>my account?"}
-{"inputs": "What's a pending transaction? My<extra_id_0> was declined at an ATM, but my account says it's still pending. Can I<extra_id_1>", "targets": "<extra_id_0> card<extra_id_1>cancel the payment?"}
+{"inputs": "What's a pending transaction? My card was declined at an ATM, but my account says it'<extra_id_0>. Can I cancel the payment<extra_id_1>", "targets": "<extra_id_0> s still pending<extra_id_1>?"}
 {"inputs": "If I request that my funds be held, what currencies do you<extra_id_0>", "targets": "<extra_id_0>use?"}
 {"inputs": "I want to know how many different currencies my money can be<extra_id_0>", "targets": "<extra_id_0>in."}
 {"inputs": "Do you support all fiat currencies<extra_id_0>", "targets": "<extra_id_0>?"}
@@ -438,7 +438,7 @@
 {"inputs": "Can I use this app to change dollars into<extra_id_0>", "targets": "<extra_id_0>euros?"}
 {"inputs": "Can I exchange currencies with my account<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "I would like to exchange currencies<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "My entire gym bag, including my wallet, was<extra_id_0> locker today. Everything in my wallet is gone - how do I block the card to make it can't be<extra_id_1>", "targets": "<extra_id_0> stolen out of my<extra_id_1>used?"}
+{"inputs": "My entire gym bag, including my wallet, was stolen out of my locker today. Everything in my<extra_id_0> is gone - how do I block the card to make it can<extra_id_1>", "targets": "<extra_id_0> wallet<extra_id_1>'t be used?"}
 {"inputs": "I can't find my card and think it may have been<extra_id_0>", "targets": "<extra_id_0>stolen."}
 {"inputs": "Someone stole my card. I need to report it stolen. I made a police report already, but how do I report<extra_id_0>", "targets": "<extra_id_0>it with you?"}
 {"inputs": "I cant find my card, it's<extra_id_0>", "targets": "<extra_id_0>gone."}
@@ -459,7 +459,7 @@
 {"inputs": "What should I do if I lost my<extra_id_0>", "targets": "<extra_id_0>card?"}
 {"inputs": "I need help with a lost card<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "I think my card was stolen<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "Someone stole my wallet earlier today, not sure exactly when, probably on Piccadilly circus. Can you<extra_id_0> were any attempts to use the card and obviously block<extra_id_1>", "targets": "<extra_id_0> check if there<extra_id_1>it?"}
+{"inputs": "Someone stole my wallet earlier today, not sure exactly when, probably on Piccadilly circus. Can you check if there were any attempts<extra_id_0> and obviously block<extra_id_1>", "targets": "<extra_id_0> to use the card<extra_id_1>it?"}
 {"inputs": "I think<extra_id_0> my card. I dont know how long it has been missing. Can you see if maybe someone else has been<extra_id_1>", "targets": "<extra_id_0> I lost<extra_id_1>using it?"}
 {"inputs": "How can I freeze a stolen card<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "What should I do if my card is<extra_id_0>", "targets": "<extra_id_0>missing?"}
@@ -470,7 +470,7 @@
 {"inputs": "Some idiot stole my card<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "How do I report my card lost or<extra_id_0>", "targets": "<extra_id_0>stolen?"}
 {"inputs": "My card is lost! What do I do<extra_id_0>", "targets": "<extra_id_0>now?"}
-{"inputs": "I'm in Spain and my stuff has been stolen. My card was with it and I need a new one shipped<extra_id_0> old<extra_id_1>", "targets": "<extra_id_0> and the<extra_id_1>one frozen."}
+{"inputs": "I'm in Spain and my stuff has been stolen. My card was with it and<extra_id_0> a new one shipped and the old one<extra_id_1>", "targets": "<extra_id_0> I need <extra_id_1>frozen."}
 {"inputs": "I believe my credit card was stolen<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "How do I report a stolen card<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Somebody has stolen my card, I need help<extra_id_0>", "targets": "<extra_id_0>please."}
@@ -535,7 +535,7 @@
 {"inputs": "What do I do if the bank machine won't accept my PIN<extra_id_0>", "targets": "<extra_id_0>attempts anymore?"}
 {"inputs": "Can you unlock my pin? I think I entered the wrong pin too<extra_id_0>", "targets": "<extra_id_0>many times."}
 {"inputs": "How do I deal with a blocked P<extra_id_0>", "targets": "<extra_id_0>IN?"}
-{"inputs": "I attempted to use my card while I was intoxicated, and I failed to input my PIN, and the machine kept my<extra_id_0> How soon can I<extra_id_1>", "targets": "<extra_id_0> card.<extra_id_1>have it back?"}
+{"inputs": "I attempted to use my card while I was intoxicated, and<extra_id_0> PIN, and the machine kept my card. How soon can I have it back<extra_id_1>", "targets": "<extra_id_0> I failed to input my<extra_id_1>?"}
 {"inputs": "Can I unblock my card using the<extra_id_0>", "targets": "<extra_id_0>app?"}
 {"inputs": "I'v exhausted all the of times I can try my P<extra_id_0>", "targets": "<extra_id_0>IN."}
 {"inputs": "How can I unlock my pin from too many <extra_id_0>", "targets": "<extra_id_0>tries?"}
@@ -561,10 +561,10 @@
 {"inputs": "Are contactless payments enabled on my new<extra_id_0>", "targets": "<extra_id_0>card?"}
 {"inputs": "My contanctless has stopped<extra_id_0>", "targets": "<extra_id_0>working."}
 {"inputs": "what is required documents for new card process<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "I don't know what's wrong, my contactless stopped working.<extra_id_0> ried it in a few different places today and it didn't work<extra_id_1>", "targets": "<extra_id_0> T<extra_id_1>in any of them."}
+{"inputs": "I<extra_id_0> 't know what's wrong, my contactless stopped working. Tried it in a few different places today and it didn't work<extra_id_1>", "targets": "<extra_id_0> don<extra_id_1>in any of them."}
 {"inputs": "How do I get the contactless feature to work for my<extra_id_0>", "targets": "<extra_id_0>card?"}
 {"inputs": "I tried to pay contactless at the bus today and it didn't work. Any<extra_id_0>", "targets": "<extra_id_0>ideas why?"}
-{"inputs": "I've been <extra_id_0> to pay contactless with my card for over a week now. Is there a way to<extra_id_1>", "targets": "<extra_id_0> unable<extra_id_1>fix this issue?"}
+{"inputs": "I've been unable to pay contactless<extra_id_0> card for over a week now. Is there a way to fix<extra_id_1>", "targets": "<extra_id_0> with my<extra_id_1>this issue?"}
 {"inputs": "Do you know why my contactless won't<extra_id_0>", "targets": "<extra_id_0>work?"}
 {"inputs": "My contactless payments have not been completed<extra_id_0>", "targets": "<extra_id_0>successfully."}
 {"inputs": "Do I need to replace my card if it didn't work when I tried to pay contactless at<extra_id_0>", "targets": "<extra_id_0>the shop today?"}
@@ -646,25 +646,25 @@
 {"inputs": "The top-up is pending<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Could you explain why my top-up has gone through<extra_id_0>", "targets": "<extra_id_0>yet?"}
 {"inputs": "I've already topped up, but I cannot see the funds being available.<extra_id_0>", "targets": "<extra_id_0>What happened?"}
-{"inputs": "What is going on? My top-up is still pending. I use your system all the<extra_id_0> it is just showing as <extra_id_1>", "targets": "<extra_id_0> time but now<extra_id_1>pending."}
+{"inputs": "What is going on? My top-up is still pending. I use your system all the time<extra_id_0> now it is just showing<extra_id_1>", "targets": "<extra_id_0> but<extra_id_1>as pending."}
 {"inputs": "I do not see a top-up<extra_id_0>", "targets": "<extra_id_0>processed."}
 {"inputs": "I topped up but it didn't<extra_id_0>", "targets": "<extra_id_0>complete."}
-{"inputs": "So, I am a new customer and attempted to top<extra_id_0> time today. It's already been pending for half an hour and doesn't seem to be working. I need to please get this<extra_id_1>", "targets": "<extra_id_0> up for the very first<extra_id_1>fixed."}
+{"inputs": "So, I am a new customer and attempted<extra_id_0> first time today. It's already been pending for half an hour and doesn't seem to be working. I need to please get this fixed<extra_id_1>", "targets": "<extra_id_0> to top up for the very<extra_id_1>."}
 {"inputs": "My top up is pending<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Can you look into my top up please. I made it over three hours ago and yet it's<extra_id_0>", "targets": "<extra_id_0>still pending."}
 {"inputs": "Can you please make my top up go through as soon as possible. I really need the money and it has been pending for<extra_id_0>", "targets": "<extra_id_0>an hour already."}
-{"inputs": "What's going on with the top-up? All it says is<extra_id_0> pending, pending! I use your service several times a week and have never had a problem before! What's<extra_id_1>", "targets": "<extra_id_0> pending,<extra_id_1>going on here?"}
+{"inputs": "What's going on with the top-up? All it says is pending, pending, pending! I use your service several times a week and have never had a<extra_id_0>! What'<extra_id_1>", "targets": "<extra_id_0> problem before<extra_id_1>s going on here?"}
 {"inputs": "why hasn't my top up gone through<extra_id_0>", "targets": "<extra_id_0>yet."}
 {"inputs": "top-up is slow to process<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "Is there something wrong with your website? I tried topping up my account and it's been close to two hours now and it's still at \"pending\" for some reason. I just<extra_id_0> this is the first<extra_id_1> so maybe I'm wrong, but shouldn't this be instant<extra_id_2>", "targets": "<extra_id_0> joined with you guys and<extra_id_1> attempt at this,<extra_id_2>?"}
+{"inputs": "Is there<extra_id_0> wrong with your<extra_id_1> topping up my account and it's been close to two hours now and it's still at \"pending\" for some reason. I just joined with you guys and this is the first attempt at this, so maybe I'm wrong, but shouldn'<extra_id_2>", "targets": "<extra_id_0> something<extra_id_1> website? I tried<extra_id_2>t this be instant?"}
 {"inputs": "I topped up by card a while ago and it's still pending, surely it should be<extra_id_0>", "targets": "<extra_id_0>done by now?"}
 {"inputs": "Why hasn't my top-up been<extra_id_0>", "targets": "<extra_id_0>completed?"}
 {"inputs": "top up did not complete<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "So I just put my top-up into the card and it hasn'<extra_id_0>", "targets": "<extra_id_0>t changed."}
 {"inputs": "Why is my top up still pending<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Your top-up function isn't working, it still says pending even though I know<extra_id_0>", "targets": "<extra_id_0>my card works."}
-{"inputs": "Hi I'm a new customer and tried topping up for the first time today, seems it's not<extra_id_0> the thing shows up as pending since half an hour already!<extra_id_1>", "targets": "<extra_id_0> working,<extra_id_1>Please fix it!"}
-{"inputs": "OMG! I'm trying to load my card and it wont top up! I desperately need the money either on my<extra_id_0> bank, where is it<extra_id_1>", "targets": "<extra_id_0> card or in my<extra_id_1>?"}
+{"inputs": "Hi I'm a new customer and tried topping<extra_id_0> today, seems it's not working, the thing shows up as pending since half an hour already! Please fix it<extra_id_1>", "targets": "<extra_id_0> up for the first time<extra_id_1>!"}
+{"inputs": "OMG! I'm trying to load my<extra_id_0> and it wont top up! I desperately need the money either on my card or in my bank,<extra_id_1>", "targets": "<extra_id_0> card<extra_id_1>where is it?"}
 {"inputs": "I'm attempting to top-up my account but it has been pending for<extra_id_0>", "targets": "<extra_id_0>an hour."}
 {"inputs": "Why is my top-up still outstanding<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "What does it mean when my top up is saying still <extra_id_0>", "targets": "<extra_id_0>pending?"}
@@ -672,18 +672,18 @@
 {"inputs": "It doesn't look like the top-up<extra_id_0>", "targets": "<extra_id_0>completed."}
 {"inputs": "Why does my top up say still pending when I used my card to<extra_id_0>", "targets": "<extra_id_0>do it."}
 {"inputs": "Where is the money I topped off<extra_id_0>", "targets": "<extra_id_0>with?"}
-{"inputs": "Hi. I'm a new customer to your system and I think something isn't working right - or maybe it is. Maybe you can<extra_id_0> I tried to top up today (<extra_id_1> first time ever) and it's been stuck at<extra_id_2> pending\" for over an hour now. Is it supposed to do this or<extra_id_3>", "targets": "<extra_id_0> confirm.<extra_id_1> my<extra_id_2> \"<extra_id_3>is there something wrong in the system?"}
+{"inputs": "Hi. I'm a new customer<extra_id_0> I think something isn't working right - or maybe it is. Maybe you can confirm. I tried to top up today (my first time<extra_id_1> and it's been stuck at \"<extra_id_2> over an hour now. Is it supposed to do this or is there something wrong in<extra_id_3>", "targets": "<extra_id_0> to your system and<extra_id_1> ever)<extra_id_2> pending\" for<extra_id_3>the system?"}
 {"inputs": "Why is my top-up still <extra_id_0>", "targets": "<extra_id_0>pending?"}
 {"inputs": "Topping up my card is not working because I believe the top up is<extra_id_0>", "targets": "<extra_id_0>pending."}
 {"inputs": "When will my top-up process<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "The top-up has a definite problem! I regularly use your service and<extra_id_0> a problem before, but now the top-up just shows pending. Please tell my why it continues to show pending<extra_id_1>", "targets": "<extra_id_0> haven't had <extra_id_1>."}
+{"inputs": "The top-up has a definite problem! I regularly use your service and haven't had a problem before, but now the top-up just shows<extra_id_0> Please tell my why it continues to<extra_id_1>", "targets": "<extra_id_0> pending.<extra_id_1>show pending."}
 {"inputs": "I tried topping up but my funds seem to be pending. I want to buy something right now, what<extra_id_0>", "targets": "<extra_id_0>do I do?"}
 {"inputs": "I made a transaction this morning and would like to revert<extra_id_0>", "targets": "<extra_id_0>it."}
 {"inputs": "Can i cancel a charge<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Can I cancel my transaction<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "I made a transaction but did it to the wrong<extra_id_0>", "targets": "<extra_id_0>account."}
 {"inputs": "Tell me how to cancel a transfer<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "I need<extra_id_0> cancel a transfer that I made. It is the wrong account number and the app won't let me stop the transaction. Please<extra_id_1>", "targets": "<extra_id_0> you to<extra_id_1>stop it!"}
+{"inputs": "I need you to cancel a transfer that I made. It is the wrong account number and the app<extra_id_0> let me stop the transaction. Please stop<extra_id_1>", "targets": "<extra_id_0> won't<extra_id_1>it!"}
 {"inputs": "I need to cancel my recent transfer immediately, I made a mistake there, please help quickly before<extra_id_0>", "targets": "<extra_id_0>it goes through."}
 {"inputs": "I would like to revert a transaction I did this<extra_id_0>", "targets": "<extra_id_0>morning."}
 {"inputs": "If I make a transaction can I cancel<extra_id_0>", "targets": "<extra_id_0>it?"}
@@ -692,7 +692,7 @@
 {"inputs": "I accidentally made a transaction to the wrong<extra_id_0>", "targets": "<extra_id_0>account."}
 {"inputs": "I want to cancel a transfer right away! Can you<extra_id_0>", "targets": "<extra_id_0>help?"}
 {"inputs": "Help me cancel my transaction<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "This is URGENT, I typed the wrong payment information<extra_id_0> payment I needed to make and have clicked send, I need to reverse the transaction<extra_id_1>", "targets": "<extra_id_0> for a<extra_id_1>immediately."}
+{"inputs": "This is URGENT, I typed the wrong payment information for a payment I needed to make and have clicked send, I<extra_id_0> transaction immediately<extra_id_1>", "targets": "<extra_id_0> need to reverse the<extra_id_1>."}
 {"inputs": "Can I cancel a transfer<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "I want to reverse my transaction from earlier<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Is there a way to revert my transaction from this<extra_id_0>", "targets": "<extra_id_0>morning?"}
@@ -758,7 +758,7 @@
 {"inputs": "Do you have any restrictions to my top-<extra_id_0>", "targets": "<extra_id_0>up?"}
 {"inputs": "As for limits are top ups included<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "What are the top-up limits<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "I don<extra_id_0> know if this is an issue with<extra_id_1>, but I just tried withdrawing 30 pounds from the ATM I'm at now and it only gave me 10. Is this a glitch or what exactly is going on<extra_id_2>", "targets": "<extra_id_0> 't<extra_id_1> the ATM or my account<extra_id_2>?"}
+{"inputs": "I don<extra_id_0> if this is an issue with the ATM or my account, but I just tried withdrawing 30 pounds from the ATM I<extra_id_1> m at now and it only gave me 10. Is this a glitch or what exactly is<extra_id_2>", "targets": "<extra_id_0> 't know <extra_id_1> '<extra_id_2>going on?"}
 {"inputs": "I didn't get all the cash I requested for at the<extra_id_0>", "targets": "<extra_id_0>ATM."}
 {"inputs": "How come the ATM gave me less cash than what I asked<extra_id_0>", "targets": "<extra_id_0>for?"}
 {"inputs": "Why did I not get my cash back after I withdre<extra_id_0>", "targets": "<extra_id_0>w?"}
@@ -767,28 +767,28 @@
 {"inputs": "I'm at an ATM and withdrew 30 pounds and was only given 10. What should<extra_id_0>", "targets": "<extra_id_0>I do?"}
 {"inputs": "The ATM gave me the wrong amount of cash today when I went to withdraw. The app says it<extra_id_0>", "targets": "<extra_id_0>was more."}
 {"inputs": "The amount of cash I received was different than what I<extra_id_0>", "targets": "<extra_id_0>requested."}
-{"inputs": "Hi. I just withdrew cash from an ATM and received the wrong amount. However, my app shows the correct amount I withdrew. How do<extra_id_0> the rest<extra_id_1>", "targets": "<extra_id_0> I get<extra_id_1>of the cash?"}
-{"inputs": "The wrong amount of cash<extra_id_0> of the ATM today when I went to withdraw. When I looked at the app, it was showing it was<extra_id_1>", "targets": "<extra_id_0> came out<extra_id_1>much more."}
+{"inputs": "Hi. I just withdrew cash from<extra_id_0> wrong amount. However, my app shows the correct amount I withdrew. How do I get the rest of the cash<extra_id_1>", "targets": "<extra_id_0> an ATM and received the<extra_id_1>?"}
+{"inputs": "The wrong amount of cash came out of the ATM today when I went to withdraw. When I looked at the app,<extra_id_0> it was much<extra_id_1>", "targets": "<extra_id_0> it was showing<extra_id_1>more."}
 {"inputs": "I did not get as much cash as I requested at the<extra_id_0>", "targets": "<extra_id_0>ATM."}
 {"inputs": "How can I request cash back? The ATM just gave me the wrong amount, the app shows the amount that I've been<extra_id_0>", "targets": "<extra_id_0>actually charged though..."}
 {"inputs": "Where is the money I pushed it's on my mobile app as being<extra_id_0>", "targets": "<extra_id_0>withdrawn."}
 {"inputs": "Why did I not get all the cash I asked<extra_id_0>", "targets": "<extra_id_0>for?"}
 {"inputs": "My cash withdrawal was partly declined<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Why did I only get $20 when I tried to get<extra_id_0>", "targets": "<extra_id_0>$100."}
-{"inputs": "I have withdrawn cash from ATM but i received the wrong amount. I want cash back as in<extra_id_0> its showing actual amount which i got. Please<extra_id_1>", "targets": "<extra_id_0> app<extra_id_1>help me in this."}
-{"inputs": "I went to withdraw some cash earlier today, but seems<extra_id_0> gave me the wrong amount of cash! The amount showing up in the app is a<extra_id_1>", "targets": "<extra_id_0> the ATM<extra_id_1>lot more."}
+{"inputs": "I have withdrawn cash from ATM but i received the wrong amount. I want cash back as in app its showing actual amount which i got<extra_id_0> me<extra_id_1>", "targets": "<extra_id_0>. Please help<extra_id_1>in this."}
+{"inputs": "I went to withdraw some cash earlier today, but seems the ATM gave me the wrong amount of cash<extra_id_0> up in the app is a lot more<extra_id_1>", "targets": "<extra_id_0>! The amount showing<extra_id_1>."}
 {"inputs": "I tried to get $100 but I just got<extra_id_0>", "targets": "<extra_id_0>$20."}
 {"inputs": "I have not received the amount of cash i was supposed<extra_id_0>", "targets": "<extra_id_0>to."}
 {"inputs": "I asked for $100 cash but only got<extra_id_0>", "targets": "<extra_id_0>$20?"}
 {"inputs": "Where is the money that I asked for? I asked for more than<extra_id_0>", "targets": "<extra_id_0>I got!"}
 {"inputs": "I withdrew money but the full amount wasn't disp<extra_id_0>", "targets": "<extra_id_0>ensed."}
 {"inputs": "Something went wrong with my withdrawal. The amount of money isn'<extra_id_0>", "targets": "<extra_id_0>t right."}
-{"inputs": "I have got out the wrong amount from an ATM. Please<extra_id_0> the process to get the cash back as in app its showing the amount i have been<extra_id_1>", "targets": "<extra_id_0> tell me<extra_id_1>actually received."}
+{"inputs": "I have got out the wrong amount from an ATM. Please tell me the process to get the cash back as in app its<extra_id_0> amount i have been<extra_id_1>", "targets": "<extra_id_0> showing the<extra_id_1>actually received."}
 {"inputs": "I asked for 100 but only got 20<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "I didn't receive the right amount of cash<extra_id_0>", "targets": "<extra_id_0>back."}
 {"inputs": "The ATM gave me less cash than I<extra_id_0>", "targets": "<extra_id_0>requested."}
 {"inputs": "I didn't get as much cash as I asked for from the ATM<extra_id_0>", "targets": "<extra_id_0>, why?"}
-{"inputs": "What do I do if the ATM didn't give me the correct amount I withdrew?<extra_id_0> pounds and the ATM gave me 10 pounds<extra_id_1>", "targets": "<extra_id_0> I pulled out 30<extra_id_1>."}
+{"inputs": "What do I<extra_id_0> ATM didn't give me the correct amount I withdrew? I pulled out 30 pounds and the ATM gave me 10 pounds<extra_id_1>", "targets": "<extra_id_0> do if the<extra_id_1>."}
 {"inputs": "I tried to take out cash but the amount isn't right, so what do<extra_id_0>", "targets": "<extra_id_0>I do?"}
 {"inputs": "I didn't receive all the cash I asked<extra_id_0>", "targets": "<extra_id_0>for."}
 {"inputs": "I just got $20 when I tried to get<extra_id_0>", "targets": "<extra_id_0>$100."}
@@ -806,7 +806,7 @@
 {"inputs": "I used my card for a purchase and was charged a<extra_id_0>", "targets": "<extra_id_0>fee."}
 {"inputs": "Why was I charged for card payment<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "There is an unauthorized fee<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "I would appreciate that someone let me know when there is an extra charge for payments. I was checking<extra_id_0> saying a charge on one of my payments that was additional that no one made me aware<extra_id_1>", "targets": "<extra_id_0> the app earlier and<extra_id_1>of before."}
+{"inputs": "I would appreciate that someone let me know when there is an extra charge for payments. I was<extra_id_0> a charge on one of my payments that was additional that no one made me aware of before<extra_id_1>", "targets": "<extra_id_0> checking the app earlier and saying<extra_id_1>."}
 {"inputs": "Why was I charged an extra fee when paying with my<extra_id_0>", "targets": "<extra_id_0>card?"}
 {"inputs": "Why did I have to pay extra because I paid with<extra_id_0>", "targets": "<extra_id_0>card?"}
 {"inputs": "Why are there fees for card usage<extra_id_0>", "targets": "<extra_id_0>?"}
@@ -819,7 +819,7 @@
 {"inputs": "What is the fee on my card payment<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Why would I be charged a fee for card<extra_id_0>", "targets": "<extra_id_0>payment?"}
 {"inputs": "Will I always be charged a fee for using my<extra_id_0>", "targets": "<extra_id_0>card?"}
-{"inputs": "Can I check somewhere if<extra_id_0> will be a fee on my payment or not? Seems you are charging in some cases, what's<extra_id_1>", "targets": "<extra_id_0> there<extra_id_1>the pattern there?"}
+{"inputs": "Can I check somewhere if there will be a fee on my payment or not? Seems you are charging in some cases<extra_id_0> s the pattern<extra_id_1>", "targets": "<extra_id_0>, what'<extra_id_1>there?"}
 {"inputs": "Paying in card resulted in a<extra_id_0>", "targets": "<extra_id_0>fee."}
 {"inputs": "I paid with card and I think there was a fee<extra_id_0>", "targets": "<extra_id_0>applied."}
 {"inputs": "So what items actually come with extra fees<extra_id_0>", "targets": "<extra_id_0>."}
@@ -827,7 +827,7 @@
 {"inputs": "Is there a fee when you pay with your<extra_id_0>", "targets": "<extra_id_0>card?"}
 {"inputs": "I have been charged with a fee for paying with my<extra_id_0>", "targets": "<extra_id_0>card."}
 {"inputs": "For the first time I got a fee on my account. How do I know when you charge<extra_id_0>", "targets": "<extra_id_0>these fees?"}
-{"inputs": "Someone needs to make me aware when there are extra charges for payments. I happened to be looking at the app earlier and<extra_id_0> a charge associated to a payment that was extra that no one made me aware<extra_id_1>", "targets": "<extra_id_0> noticed <extra_id_1>of before at all."}
+{"inputs": "Someone needs to make me aware when there are extra charges for payments. I happened to be looking at the app earlier and noticed<extra_id_0> a charge associated to a payment that was extra that no one made me<extra_id_1>", "targets": "<extra_id_0> <extra_id_1>aware of before at all."}
 {"inputs": "Is using my card free<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Why was I charged an extra fee when using a<extra_id_0>", "targets": "<extra_id_0>card?"}
 {"inputs": "What fees apply when using a card<extra_id_0>", "targets": "<extra_id_0>?"}
@@ -838,7 +838,7 @@
 {"inputs": "I was charged a fee for a card payment.<extra_id_0>", "targets": "<extra_id_0>Why?"}
 {"inputs": "Why was a charged a fee for using the<extra_id_0>", "targets": "<extra_id_0>card?"}
 {"inputs": "They charged me for paying with my card<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "I completed an in country transfer a<extra_id_0> ago and was sure to check the account information several times since the transaction was completed, but the funds are still not available. What<extra_id_1>", "targets": "<extra_id_0> few days<extra_id_1>is the problem?"}
+{"inputs": "I completed an in country transfer<extra_id_0> and was sure to check the account information several times since the transaction was completed, but the funds are still not available. What is the problem<extra_id_1>", "targets": "<extra_id_0> a few days ago<extra_id_1>?"}
 {"inputs": "My money transfer has not arrived<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "I am still waiting for a transaction to be<extra_id_0>", "targets": "<extra_id_0>completed."}
 {"inputs": "I made a money transaction but the recipient can't see<extra_id_0>", "targets": "<extra_id_0>it."}
@@ -854,13 +854,13 @@
 {"inputs": "I just finished sending money, but it's not logging on the<extra_id_0>", "targets": "<extra_id_0>recipient side."}
 {"inputs": "I completed a money transaction but the recipient hasn't received<extra_id_0>", "targets": "<extra_id_0>it."}
 {"inputs": "The receipient doesn't see my money<extra_id_0>", "targets": "<extra_id_0>transfer."}
-{"inputs": "I transferred the rent payment for my new place a couple<extra_id_0> ago but the landlord says it's not there yet, despite showing up as done on my side. I checked the account number I sent it to and it's definitely correct. Can you please verify<extra_id_1> transaction<extra_id_2>", "targets": "<extra_id_0> days<extra_id_1> if the<extra_id_2>really went through or not?"}
+{"inputs": "I transferred the rent payment for my new place a couple days ago but the<extra_id_0> there yet, despite showing up as done on my side. I checked the account number I sent it to and it'<extra_id_1> correct. Can you please verify if the transaction really went through or<extra_id_2>", "targets": "<extra_id_0> landlord says it's not<extra_id_1> s definitely<extra_id_2>not?"}
 {"inputs": "I need to find out why my transfer didn't get<extra_id_0>", "targets": "<extra_id_0>there."}
-{"inputs": "I've just moved address from<extra_id_0> a place in Durham to a place in Walton-On-The-Naze. I have a new landlord at my new house and they<extra_id_1> payment but I know I sent it on time, can you check they got<extra_id_2>", "targets": "<extra_id_0> <extra_id_1> haven't got my<extra_id_2>it please?"}
+{"inputs": "I've just moved address from a place in Durham to a place in Walton-On-The-N<extra_id_0> a new landlord at my new house and they haven't got my payment but I know I sent it on time<extra_id_1> can you check they<extra_id_2>", "targets": "<extra_id_0> aze. I have<extra_id_1>,<extra_id_2>got it please?"}
 {"inputs": "I sent money. They haven't received<extra_id_0>", "targets": "<extra_id_0>it."}
-{"inputs": "Hey, I need some help figuring out<extra_id_0> my transfer is not complete yet. My Landlord hasn't got the money yet.She should have<extra_id_1>", "targets": "<extra_id_0> way<extra_id_1>received it by now."}
-{"inputs": "The day before yesterday, I performed a transfer which was within this country. It still hasn't gone through. Can you<extra_id_0> number is definitely correct, as I've checked and double checked<extra_id_1>", "targets": "<extra_id_0> check on that? The account<extra_id_1>."}
-{"inputs": "I'm having a problem with a money transfer. I sent some money to a friend a couple of<extra_id_0> and they haven't received it yet. Why hasn't it <extra_id_1> to them? How long do transfers<extra_id_2>", "targets": "<extra_id_0> hours ago,<extra_id_1> gotten<extra_id_2>need to go through?"}
+{"inputs": "Hey, I need some help figuring out way my transfer is not complete yet. My Landlord hasn't got the<extra_id_0> should have received it by<extra_id_1>", "targets": "<extra_id_0> money yet.She<extra_id_1>now."}
+{"inputs": "The day before yesterday, I performed <extra_id_0> which was within this country. It still hasn't gone through. Can you check on that? The account number is definitely correct, as I've<extra_id_1>", "targets": "<extra_id_0> a transfer<extra_id_1>checked and double checked."}
+{"inputs": "I'm having a problem with <extra_id_0> some money to a friend a couple of hours ago, and they haven't<extra_id_1> yet. Why hasn't it gotten to them? How long do transfers need to go through<extra_id_2>", "targets": "<extra_id_0> a money transfer. I sent<extra_id_1> received it<extra_id_2>?"}
 {"inputs": "I transferred some money but the receiver can't pick it up for<extra_id_0>", "targets": "<extra_id_0>some reason."}
 {"inputs": "Where is the transaction I made to a<extra_id_0>", "targets": "<extra_id_0>friend?"}
 {"inputs": "My friend still hasn't gotten a transaction I<extra_id_0>", "targets": "<extra_id_0>made."}
@@ -873,7 +873,7 @@
 {"inputs": "The person I sent money to hasn't gotten it<extra_id_0>", "targets": "<extra_id_0>yet!"}
 {"inputs": "When will my funds transfer<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "How long does it take for transfers to finish? I sent funds to my pal, and she says that she has not<extra_id_0>", "targets": "<extra_id_0>gotten anything."}
-{"inputs": "How long do<extra_id_0>? I sent some money to a friend, she needs it urgently, but seems it's still not there yet after a couple hours<extra_id_1>", "targets": "<extra_id_0> transfers need to come through<extra_id_1>."}
+{"inputs": "How long do transfers need to come through? I sent some money to a friend, she needs it urgently,<extra_id_0> s still not there yet after a couple<extra_id_1>", "targets": "<extra_id_0> but seems it'<extra_id_1>hours."}
 {"inputs": "How long until my friend receives my<extra_id_0>", "targets": "<extra_id_0>transaction?"}
 {"inputs": "Why hasn't my recipient received their<extra_id_0>", "targets": "<extra_id_0>money?"}
 {"inputs": "I am still awaiting the completion of the<extra_id_0>", "targets": "<extra_id_0>transaction."}
@@ -902,7 +902,7 @@
 {"inputs": "Which forms of currency are accepted<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Are US credit cards accepted<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "I want to add money but don't know what currencies you accept, can you<extra_id_0>", "targets": "<extra_id_0>tell me?"}
-{"inputs": "why wouldn't you support american express? its a card i like and use often and i don't<extra_id_0> a different one<extra_id_1>", "targets": "<extra_id_0> want to get <extra_id_1>."}
+{"inputs": "why wouldn't you support american express? its a card i like and use often and i<extra_id_0> want to get a different<extra_id_1>", "targets": "<extra_id_0> don't<extra_id_1>one."}
 {"inputs": "Tell me which cards and what currency is<extra_id_0>", "targets": "<extra_id_0>supported."}
 {"inputs": "Do you support all cards and currencies<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Which credit or debit cards can I use to top<extra_id_0>", "targets": "<extra_id_0>up?"}
@@ -1002,10 +1002,10 @@
 {"inputs": "How do I fix a reverted top<extra_id_0>", "targets": "<extra_id_0>up?"}
 {"inputs": "Is it possible to tell if my top up has re<extra_id_0>", "targets": "<extra_id_0>verted?"}
 {"inputs": "My top-up showed as complete, but it's no longer there! What's going<extra_id_0>", "targets": "<extra_id_0>on here?"}
-{"inputs": "Hi, i don't know what's going on i've just paid<extra_id_0> twice by accident can you help me get a refund please<extra_id_1>", "targets": "<extra_id_0> for my top up<extra_id_1>."}
+{"inputs": "Hi, i don't know what's going on i've just paid for my top up twice by accident can<extra_id_0> help me get <extra_id_1>", "targets": "<extra_id_0> you<extra_id_1>a refund please."}
 {"inputs": "It seems my top up is re<extra_id_0>", "targets": "<extra_id_0>verted?"}
 {"inputs": "The app wouldn't accept my top<extra_id_0>", "targets": "<extra_id_0>up."}
-{"inputs": "I topped<extra_id_0> and even though it was confirmed at first, the money isn't there anymore! why did this happen, and where did my money<extra_id_1>", "targets": "<extra_id_0> up my account<extra_id_1>go?"}
+{"inputs": "I topped up my account and even though it was confirmed at first, the money is<extra_id_0> 't there anymore! why did this happen, and where did<extra_id_1>", "targets": "<extra_id_0> n<extra_id_1>my money go?"}
 {"inputs": "I believe my money did not go through with my top up, was there a problem on<extra_id_0>", "targets": "<extra_id_0>your end?"}
 {"inputs": "My top-up was reverted, why did this<extra_id_0>", "targets": "<extra_id_0>happen?"}
 {"inputs": "I put money into my account for the minimum balance but the application didn'<extra_id_0>", "targets": "<extra_id_0>t accept."}
@@ -1015,7 +1015,7 @@
 {"inputs": "There appears to have been a reversion in my top<extra_id_0>", "targets": "<extra_id_0>up."}
 {"inputs": "The application reverted my top-<extra_id_0>", "targets": "<extra_id_0>up."}
 {"inputs": "I think my top-up was cancelled<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "I believed crypto top up with something you offered. This does not seem<extra_id_0> be working. The money has been removed from my account though so what'<extra_id_1>", "targets": "<extra_id_0> to<extra_id_1>s going on?"}
+{"inputs": "I believed crypto top up with something you offered. This does not seem to be working. The money<extra_id_0> from my account though so what's going<extra_id_1>", "targets": "<extra_id_0> has been removed<extra_id_1>on?"}
 {"inputs": "I topped up but the app reverted<extra_id_0>", "targets": "<extra_id_0>it."}
 {"inputs": "I went to top up and it is no longer there. Was it<extra_id_0>", "targets": "<extra_id_0>sent back?"}
 {"inputs": "What happened to my top-up<extra_id_0>", "targets": "<extra_id_0>?"}
@@ -1038,11 +1038,11 @@
 {"inputs": "My top-up has been cancelled<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "On my last transaction it seem that my top-up was not<extra_id_0>", "targets": "<extra_id_0>successful."}
 {"inputs": "I'd like to know why my top-up was canceled<extra_id_0>", "targets": "<extra_id_0>please."}
-{"inputs": "I tried making an update to my balance using cheque just<extra_id_0> it doesn't appear to have worked. Should this not be a faster process? I need you to please check over my account because<extra_id_1>", "targets": "<extra_id_0> yesterday but<extra_id_1>something has went wrong."}
+{"inputs": "I tried making an update to my balance using cheque just yesterday but it doesn't appear to have worked. Should this<extra_id_0> a faster process? I need you to please check over my account because something<extra_id_1>", "targets": "<extra_id_0> not be <extra_id_1>has went wrong."}
 {"inputs": "How come I don't see my deposit in my account<extra_id_0>", "targets": "<extra_id_0>yet?"}
 {"inputs": "Is there a reason why my account isn't updating because I used a check to<extra_id_0>", "targets": "<extra_id_0>balance my account?"}
 {"inputs": "I don't know why the deposit I made a week ago still hasn't showed up, I really need<extra_id_0>", "targets": "<extra_id_0>the money now."}
-{"inputs": "I made a cash deposit almost a week ago but it's still not there!! please sort this out<extra_id_0> I need the<extra_id_1>", "targets": "<extra_id_0> asap<extra_id_1>money."}
+{"inputs": "I made a cash deposit almost a week ago<extra_id_0> s still not there!! please sort this out asap I need the<extra_id_1>", "targets": "<extra_id_0> but it'<extra_id_1>money."}
 {"inputs": "Where is my cash deposit<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "How can I get the cash deposit to show up on my<extra_id_0>", "targets": "<extra_id_0>account?"}
 {"inputs": "When will I see the cash I deposited this morning as<extra_id_0>", "targets": "<extra_id_0>available?"}
@@ -1073,7 +1073,7 @@
 {"inputs": "I sent a cheque a few days ago and nothing has happened to my account yet. Can you please check on<extra_id_0>", "targets": "<extra_id_0>this for me?"}
 {"inputs": "Has the check I deposited cleared to I can get the<extra_id_0>", "targets": "<extra_id_0>cash?"}
 {"inputs": "How long does it take to process cheque<extra_id_0>", "targets": "<extra_id_0>deposits?"}
-{"inputs": "How come<extra_id_0> is not showing up. This can't be right. There must be some mistake. Where did my cash go. You better not have lost it as I need this money<extra_id_1>", "targets": "<extra_id_0> my cash deposit<extra_id_1>asap."}
+{"inputs": "How come my cash deposit is not showing up. This can't be right. There must be some mistake. Where did my cash go. You better not have lost it as<extra_id_0> money<extra_id_1>", "targets": "<extra_id_0> I need this<extra_id_1>asap."}
 {"inputs": "I deposited cash this morning and I am still<extra_id_0>", "targets": "<extra_id_0>waiting."}
 {"inputs": "Balance hasn't been updated following a cheque or cash<extra_id_0>", "targets": "<extra_id_0>deposit."}
 {"inputs": "I tired to deposit some cash into my account but it's not<extra_id_0>", "targets": "<extra_id_0>there."}
@@ -1088,9 +1088,9 @@
 {"inputs": "I found an unauthorized card payment<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "there is a transaction on my account that i didnt<extra_id_0>", "targets": "<extra_id_0>make."}
 {"inputs": "I don't recall making that payment<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "There are some payments with my card that I don't know where they are coming from. Just checked today and it's been<extra_id_0> a couple<extra_id_1> well! What to I do? Can I revert this retrospectively? My card needs to<extra_id_2>", "targets": "<extra_id_0> since<extra_id_1> days as<extra_id_2>be frozen immediately as well!"}
+{"inputs": "There are some payments with my card that I don't know where they are coming from.<extra_id_0> it's been since a couple days as well! What to I do? Can I re<extra_id_1> ly? My card needs to be frozen immediately as<extra_id_2>", "targets": "<extra_id_0> Just checked today and<extra_id_1> vert this retrospective<extra_id_2>well!"}
 {"inputs": "Has someone accessed my card there are payments I did not make that are showing up on<extra_id_0>", "targets": "<extra_id_0>the app."}
-{"inputs": "There are some strange<extra_id_0> card that I didn't make from a few days ago. Is my card stolen and if so should I cancel it? Will I get re<extra_id_1>", "targets": "<extra_id_0> charges on my<extra_id_1>funded the charges?"}
+{"inputs": "There are some strange charges on my card that I didn't make from a few days ago.<extra_id_0> if so should I cancel it? Will I get refunded the charges<extra_id_1>", "targets": "<extra_id_0> Is my card stolen and<extra_id_1>?"}
 {"inputs": "Why would there be a payment on my account I don't<extra_id_0>", "targets": "<extra_id_0>recognize?"}
 {"inputs": "I have a payment I didn't<extra_id_0>", "targets": "<extra_id_0>do."}
 {"inputs": "There is a payment that is not<extra_id_0>", "targets": "<extra_id_0>mine."}
@@ -1100,10 +1100,10 @@
 {"inputs": "Payment i did not do<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Please put a freeze on my card, I am worried there has been some payments on it and I don't<extra_id_0>", "targets": "<extra_id_0>know what for."}
 {"inputs": "I think my statement has a fraudulent<extra_id_0>", "targets": "<extra_id_0>charge."}
-{"inputs": "I'm concerned about a payment that has recently been made on my card.<extra_id_0> recognize the name that the transaction went to, can you help<extra_id_1>", "targets": "<extra_id_0> I do not<extra_id_1>me?"}
-{"inputs": "What should I do to get transactions<extra_id_0> of my account if I didn't make them? My card must have been compromised and I need to freeze it<extra_id_1>", "targets": "<extra_id_0> off<extra_id_1>asap!"}
+{"inputs": "I'm concerned about a payment that<extra_id_0> made on my card. I do not recognize the name that the transaction went to, can you help<extra_id_1>", "targets": "<extra_id_0> has recently been<extra_id_1>me?"}
+{"inputs": "What should I do to get transactions<extra_id_0> account if I didn't make them? My card must have been compromised and I need to freeze it asa<extra_id_1>", "targets": "<extra_id_0> off of my<extra_id_1>p!"}
 {"inputs": "I have a payment listed in error<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "What can I do about some payments on my card I didn't make.<extra_id_0> put a freeze on my card till we can<extra_id_1>", "targets": "<extra_id_0> Please<extra_id_1>figure this out."}
+{"inputs": "What can I do about some payments on my card I didn't make. Please put a<extra_id_0> my card till we can figure<extra_id_1>", "targets": "<extra_id_0> freeze on<extra_id_1>this out."}
 {"inputs": "I'm not familiar with a card<extra_id_0>", "targets": "<extra_id_0>payment."}
 {"inputs": "I have an unauthorized transaction on my<extra_id_0>", "targets": "<extra_id_0>statement."}
 {"inputs": "There is a payment in the App that is not<extra_id_0>", "targets": "<extra_id_0>mine."}
@@ -1111,7 +1111,7 @@
 {"inputs": "I see a charge on my account that I don't recall making. I feel like my account may<extra_id_0>", "targets": "<extra_id_0>have been compromised."}
 {"inputs": "I know I didn't make this payment showing up on my card, I don't remember this<extra_id_0>", "targets": "<extra_id_0>person at all."}
 {"inputs": "Somebody used my card to make a<extra_id_0>", "targets": "<extra_id_0>purchase."}
-{"inputs": "There's a recent charge<extra_id_0> that I know I didn't make because I've never seen the name before. Can we investigate<extra_id_1>", "targets": "<extra_id_0> on my card<extra_id_1>this?"}
+{"inputs": "There<extra_id_0> a recent charge on my card that I know I didn't make because I've never seen the name before. Can we<extra_id_1>", "targets": "<extra_id_0>'s<extra_id_1>investigate this?"}
 {"inputs": "Some of my card payments look different than where I purchased products from. Why<extra_id_0>", "targets": "<extra_id_0>is that?"}
 {"inputs": "There is a strange payment on my statement. What should I<extra_id_0>", "targets": "<extra_id_0>do?"}
 {"inputs": "I think there has been a purchase made that wasn't by<extra_id_0>", "targets": "<extra_id_0>me."}
@@ -1408,7 +1408,7 @@
 {"inputs": "Can you freeze my card because someone used it while I was out of town. I did not make<extra_id_0>", "targets": "<extra_id_0>these purchases."}
 {"inputs": "Someone is using my account to do online shopping! Please freeze it as<extra_id_0>", "targets": "<extra_id_0>ap."}
 {"inputs": "Someone else may be using my card. There are transactions I don'<extra_id_0>", "targets": "<extra_id_0>t recognize."}
-{"inputs": "What do<extra_id_0> stop unauthorized transactions on my card? I was never in the place from which the transactions on my bill were made and I never made them.<extra_id_1>", "targets": "<extra_id_0> I do to<extra_id_1>Please help!"}
+{"inputs": "What do I do to stop unauthorized transactions on<extra_id_0> card? I was never in the place from which the transactions on my bill were made and I never made<extra_id_1>", "targets": "<extra_id_0> my<extra_id_1>them. Please help!"}
 {"inputs": "What do I do if I think my card was improperly<extra_id_0>", "targets": "<extra_id_0>used?"}
 {"inputs": "How can I stop fraud on my account right<extra_id_0>", "targets": "<extra_id_0>now?"}
 {"inputs": "I think my identity has been stolen, can you check on unauthorized<extra_id_0>", "targets": "<extra_id_0>charges?"}
@@ -1418,7 +1418,7 @@
 {"inputs": "My card is being used online to make a bunch of purchases! Someone else is using it fraudulently. Can you help<extra_id_0>", "targets": "<extra_id_0>me freeze it?"}
 {"inputs": "Someone has my card number, freeze my<extra_id_0>", "targets": "<extra_id_0>account."}
 {"inputs": "I see random purchases to my account, was it h<extra_id_0>", "targets": "<extra_id_0>acked?"}
-{"inputs": "It seems someone used my card!<extra_id_0> are a few transactions from a small town in the middle of nowhere that I definitely have not made! Please prevent them<extra_id_1>", "targets": "<extra_id_0> There<extra_id_1>from using it immediately!"}
+{"inputs": "It seems someone used my card! There are a few transactions from a small town in the middle of nowhere that I definitely have not<extra_id_0> prevent them from using<extra_id_1>", "targets": "<extra_id_0> made! Please<extra_id_1>it immediately!"}
 {"inputs": "How do I freeze my card using the<extra_id_0>", "targets": "<extra_id_0>app?"}
 {"inputs": "My card has been compromised<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "What should I do if I think that someone else may be using<extra_id_0>", "targets": "<extra_id_0>my card."}
@@ -1483,21 +1483,21 @@
 {"inputs": "I have a strange direct debit in my<extra_id_0>", "targets": "<extra_id_0>statement."}
 {"inputs": "I don't understand where this debit came from and want it<extra_id_0>", "targets": "<extra_id_0>removed."}
 {"inputs": "what is this charge on my account<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "im so mad right now. theres several charges that I think<extra_id_0> on my card. the companys on the website wouldn't refund me my money, they told me to contact my bank. DO something<extra_id_1>", "targets": "<extra_id_0> my x boyfriend made<extra_id_1>please."}
+{"inputs": "im so mad right now. theres several charges that I think<extra_id_0> made on my card. the companys on the website wouldn't refund me my money, they told me to contact my bank. DO<extra_id_1>", "targets": "<extra_id_0> my x boyfriend<extra_id_1>something please."}
 {"inputs": "someone stole my money<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "There's a Direct Debit payment in my account that I didn'<extra_id_0>", "targets": "<extra_id_0>t make."}
 {"inputs": "There's a debit on my account that I didn't<extra_id_0>", "targets": "<extra_id_0>do."}
 {"inputs": "I may have a fraud charge on my debit<extra_id_0>", "targets": "<extra_id_0>statement."}
 {"inputs": "Why is there a direct debit payment on my app that is not<extra_id_0>", "targets": "<extra_id_0>from me?"}
 {"inputs": "Weird charges are appearing in my debit<extra_id_0>", "targets": "<extra_id_0>account."}
-{"inputs": "Even though it's late, I wanted to see about disputing a charge. I was just<extra_id_0> through my transactions over the past couple of months and noticed a pretty large amount that was not completed by me. Is<extra_id_1> I<extra_id_2>", "targets": "<extra_id_0> looking<extra_id_1> this possibly something<extra_id_2>can still do."}
-{"inputs": "There was a<extra_id_0> from two weeks ago from a business that I don't know. I'm fairly certain it wasn't me who made it, but is it an option<extra_id_1>", "targets": "<extra_id_0> transaction<extra_id_1>to trace it to confirm?"}
+{"inputs": "Even though it's late, I wanted to<extra_id_0> disputing a charge. I was just looking through<extra_id_1> over the past couple of months and noticed a pretty large amount that was not completed by me. Is this possibly something I<extra_id_2>", "targets": "<extra_id_0> see about<extra_id_1> my transactions<extra_id_2>can still do."}
+{"inputs": "There was a transaction from two weeks ago from a business that I don't know. I'm fairly<extra_id_0> it wasn't me who made it, but is it an option<extra_id_1>", "targets": "<extra_id_0> certain<extra_id_1>to trace it to confirm?"}
 {"inputs": "What is this direct debit I am seeing<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "There is a Direct Debit that I don't<extra_id_0>", "targets": "<extra_id_0>recognize."}
 {"inputs": "Unknown direct deposit<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "There is a suspicious direct debit payment<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "There is a transaction from my account that I don't recognize can you trace back the information so I can make sure<extra_id_0>'s something I<extra_id_1>", "targets": "<extra_id_0> it<extra_id_1>did or not?"}
-{"inputs": "A couple weeks ago some money was deducted from my account by some seller that I don't remember. I'm pretty sure I didn't do that, but is it possible<extra_id_0> is just to make<extra_id_1>", "targets": "<extra_id_0> to trace back who that<extra_id_1>sure?"}
+{"inputs": "There is a transaction from my account<extra_id_0> I don't recognize can you trace back the information so I can make sure it's something I<extra_id_1>", "targets": "<extra_id_0> that<extra_id_1>did or not?"}
+{"inputs": "A couple weeks ago some money was deducted from my account by some seller that I don't remember.<extra_id_0>'m pretty sure I didn't do that, but is it possible to trace back who that<extra_id_1>", "targets": "<extra_id_0> I<extra_id_1>is just to make sure?"}
 {"inputs": "I found a charge for a direct debit that was not made<extra_id_0>", "targets": "<extra_id_0>by me."}
 {"inputs": "I am seeing a weird payment showing up that I know I did not make, how can I<extra_id_0>", "targets": "<extra_id_0>get it cancelled?"}
 {"inputs": "This Direct Debit payment may not be<extra_id_0>", "targets": "<extra_id_0>right."}
@@ -1508,7 +1508,7 @@
 {"inputs": "I have a direct debit charge that I do not<extra_id_0>", "targets": "<extra_id_0>recognize."}
 {"inputs": "I didn't make this direct debit<extra_id_0>", "targets": "<extra_id_0>transaction."}
 {"inputs": "There's a direct debit on my account that I didn'<extra_id_0>", "targets": "<extra_id_0>t authorize."}
-{"inputs": "I understand that this is extremely late. After going over my transactions for the last couple of months I noticed a large<extra_id_0> I'm sure I did not make. Is there anyway I<extra_id_1>", "targets": "<extra_id_0> charge that<extra_id_1>can still dispute this?"}
+{"inputs": "I understand that this is extremely late. After going over my transactions for the last couple of months I noticed a large charge that<extra_id_0> sure I did not make. Is there anyway I can<extra_id_1>", "targets": "<extra_id_0> I'm<extra_id_1>still dispute this?"}
 {"inputs": "I don't recognize a debit payment that was made and would like to find out about<extra_id_0>", "targets": "<extra_id_0>the payment."}
 {"inputs": "I am concerned about the security in my account and would like to make <extra_id_0>", "targets": "<extra_id_0>a dispute."}
 {"inputs": "Why is there a direct debit I didn't make showing in<extra_id_0>", "targets": "<extra_id_0>the app?"}
@@ -1560,16 +1560,16 @@
 {"inputs": "What is the code I need to get into the<extra_id_0>", "targets": "<extra_id_0>app?"}
 {"inputs": "Can you tell me why you won't let me get my own money out of the money machine? I know I used the<extra_id_0>", "targets": "<extra_id_0>right PIN."}
 {"inputs": "My withdrawal was cancelled<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "This is very frustrating. I can't get my card to work on any ATM I try and I've tried 3<extra_id_0>. What's going on? Can you please fix this<extra_id_1>", "targets": "<extra_id_0> of them so far<extra_id_1>issue immediately?"}
+{"inputs": "This is very frustrating. I can't get my card to work on any ATM I try and I've tried 3 of them so far.<extra_id_0> on? Can you please fix this<extra_id_1>", "targets": "<extra_id_0> What's going<extra_id_1>issue immediately?"}
 {"inputs": "The ATM did not allow me to withdraw<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Why was my ATM transaction cancelled<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "The ATM<extra_id_0>. I tried at a couple different ATMs. Can you tell me if there's a problem with my account<extra_id_1>", "targets": "<extra_id_0> keeps declining my card<extra_id_1>?"}
+{"inputs": "The ATM keeps declining<extra_id_0> I tried at a couple different ATMs. Can you tell me if there's a problem with my<extra_id_1>", "targets": "<extra_id_0> my card.<extra_id_1>account?"}
 {"inputs": "I was at the ATM trying to made a withdraw and I was<extra_id_0>", "targets": "<extra_id_0>declined."}
 {"inputs": "The ATM didn't let me get any<extra_id_0>", "targets": "<extra_id_0>cash."}
 {"inputs": "I want to know why I have been unable to withdrawn<extra_id_0>", "targets": "<extra_id_0>funds."}
 {"inputs": "I need your help to check my account, please! My card keeps being declined at the ATM, and I've already tried<extra_id_0>", "targets": "<extra_id_0>two different ones!"}
 {"inputs": "Hi, My card withdrawal was declined this morning. It was working fine till yesterday. Please check and<extra_id_0>", "targets": "<extra_id_0>inform me."}
-{"inputs": "Hi, I was<extra_id_0> but it was declining by ATM. I have cross checked with two different ATMs but i was facing the same issue. Could you please check my account<extra_id_1>", "targets": "<extra_id_0> trying to use my card<extra_id_1>."}
+{"inputs": "Hi, I was trying to use my card but it was declining by ATM<extra_id_0> cross checked with two different ATMs but i was facing the same issue. Could you please check<extra_id_1>", "targets": "<extra_id_0>. I have<extra_id_1>my account."}
 {"inputs": "I tried to make a cash withdrawal and it was declined. Why did<extra_id_0>", "targets": "<extra_id_0>this happen?"}
 {"inputs": "I can't get money out of the<extra_id_0>", "targets": "<extra_id_0>ATM."}
 {"inputs": "The ATM is declining my card. I tried at two different ATMs. Can you tell me if there's anything wrong<extra_id_0>", "targets": "<extra_id_0>with my account?"}
@@ -1592,7 +1592,7 @@
 {"inputs": "The ATM isn't giving out any<extra_id_0>", "targets": "<extra_id_0>money."}
 {"inputs": "Why was I declined getting cash<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "I couldn't get cash at the at<extra_id_0>", "targets": "<extra_id_0>m."}
-{"inputs": "Oh my goodness, my card has been declined twice at ATM! I tried two different ATM<extra_id_0> my card! Can you tell me what's going on with my account<extra_id_1>", "targets": "<extra_id_0>, but each one declined<extra_id_1>?"}
+{"inputs": "Oh my goodness, my card has been declined<extra_id_0> tried two different ATM, but each one declined my card! Can you tell me what's going on with my account<extra_id_1>", "targets": "<extra_id_0> twice at ATM! I<extra_id_1>?"}
 {"inputs": "Why could I not choose cash at the<extra_id_0>", "targets": "<extra_id_0>ATM?"}
 {"inputs": "My cash withdrawl was declined why<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Is there a reason that the ATM declined my<extra_id_0>", "targets": "<extra_id_0>transaction?"}
@@ -1624,7 +1624,7 @@
 {"inputs": "what does pending mean<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "How long will this card payment stay <extra_id_0>", "targets": "<extra_id_0>pending?"}
 {"inputs": "My payment still hasn't processed<extra_id_0>", "targets": "<extra_id_0>!"}
-{"inputs": "I was double charged, and the second charge is showing as \"pending\". How long will it be before I get my<extra_id_0> back once the second charge has been<extra_id_1>", "targets": "<extra_id_0> money<extra_id_1>refunded?"}
+{"inputs": "I was double charged, and the second charge is showing as \"pending\". How long will it<extra_id_0> get my money back once the second charge has been re<extra_id_1>", "targets": "<extra_id_0> be before I<extra_id_1>funded?"}
 {"inputs": "I have waited 15 days, but my payment still hasn'<extra_id_0>", "targets": "<extra_id_0>t cleared."}
 {"inputs": "Why would I have a pending<extra_id_0>", "targets": "<extra_id_0>payment?"}
 {"inputs": "Explain what the pending payment means<extra_id_0>", "targets": "<extra_id_0>?"}
@@ -1633,10 +1633,10 @@
 {"inputs": "How long does it take for a payment to go thru? I made one a few days ago and it has not<extra_id_0>", "targets": "<extra_id_0>been cleared yet."}
 {"inputs": "I bought some things this morning but the payment shows that it is <extra_id_0>", "targets": "<extra_id_0>pending."}
 {"inputs": "How long does it take to authorise a<extra_id_0>", "targets": "<extra_id_0>payment?"}
-{"inputs": "I had a payment that I made and it's been some amount of time and<extra_id_0> when it's suppose to go though<extra_id_1>", "targets": "<extra_id_0> would like to know<extra_id_1>."}
+{"inputs": "I had a payment that I made and it's been some amount of time and would like to know when it'<extra_id_0> to<extra_id_1>", "targets": "<extra_id_0> s suppose<extra_id_1>go though."}
 {"inputs": "What does a pending transaction mean<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "I have paid by my card but payment is still its coming as pending. I think there is some<extra_id_0> and let me know when the status will<extra_id_1>", "targets": "<extra_id_0> issue please check<extra_id_1>complete."}
-{"inputs": "I<extra_id_0> pending payment in my account that I paid a while back ago and it still hasnt gone through. Why would it show pending for<extra_id_1>", "targets": "<extra_id_0> have a<extra_id_1>so long?"}
+{"inputs": "I have paid by my card but payment is still its coming as pending<extra_id_0> I think there is some issue please check and let me know when the<extra_id_1>", "targets": "<extra_id_0>.<extra_id_1>status will complete."}
+{"inputs": "I<extra_id_0> pending payment in my account that I paid a while back ago and it still hasnt gone through. Why would it show pending for so<extra_id_1>", "targets": "<extra_id_0> have a <extra_id_1>long?"}
 {"inputs": "I have a pending payment from stuff I bought this<extra_id_0>", "targets": "<extra_id_0>morning."}
 {"inputs": "My phone was stolen<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "My phone was stolen yesterday. What should I<extra_id_0>", "targets": "<extra_id_0>do?"}
@@ -1678,22 +1678,22 @@
 {"inputs": "How do I use the app if I don't have my phone<extra_id_0>", "targets": "<extra_id_0>with me?"}
 {"inputs": "I got mugged yesterday and can't use the<extra_id_0>", "targets": "<extra_id_0>app."}
 {"inputs": "My things were stolen yesterday and I can't use any apps or anything, so I am going to<extra_id_0>", "targets": "<extra_id_0>need some help."}
-{"inputs": "Hello- It is urgent I get a refund on this product. The<extra_id_0> been helpful, what can I do now to get this resolved<extra_id_1>", "targets": "<extra_id_0> merchant has not<extra_id_1>ASAP?"}
+{"inputs": "Hello- It is urgent I get a refund on this product<extra_id_0> has not been helpful, what can I do now to get this resolved<extra_id_1>", "targets": "<extra_id_0>. The merchant<extra_id_1>ASAP?"}
 {"inputs": "Can I receive a refund for my<extra_id_0>", "targets": "<extra_id_0>item?"}
 {"inputs": "Get an item refund<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Would I be able to get a refund for something I<extra_id_0>", "targets": "<extra_id_0>bought?"}
 {"inputs": "I need to do a refund<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "I need a refund on an item I have not received. Am I<extra_id_0> to simply cancel the payment? I don't know how to<extra_id_1>", "targets": "<extra_id_0> able<extra_id_1>do this."}
+{"inputs": "I need a refund on an item I have not received. Am I<extra_id_0> able to simply cancel the payment? I don't know how<extra_id_1>", "targets": "<extra_id_0> <extra_id_1>to do this."}
 {"inputs": "I would like a refund for something I<extra_id_0>", "targets": "<extra_id_0>bought."}
 {"inputs": "I want to return an item<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Can I have a refund<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "I wasn't charged the correct amount for an item I purchased, how can I<extra_id_0>", "targets": "<extra_id_0>fix this?"}
-{"inputs": "Hi there! I need to cancel an order I recently made and start processing a refund. Can you please help me<extra_id_0> up the refund as soon as possible? It's very<extra_id_1>", "targets": "<extra_id_0> with this and set<extra_id_1>urgent."}
+{"inputs": "Hi there!<extra_id_0> an order I recently made and start processing a refund. Can you please help me with this and set up the refund as soon as possible? It's very<extra_id_1>", "targets": "<extra_id_0> I need to cancel<extra_id_1>urgent."}
 {"inputs": "Please stop my purchase<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "I want a refund because my package has been taking too long to arrive. How do I go<extra_id_0>", "targets": "<extra_id_0>about doing that?"}
 {"inputs": "How do I apply for a refund<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Can I have an item refunded<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "I ordered something ages ago online but it's simply not arriving. I've got enough! Give me back my money<extra_id_0> not paying these people<extra_id_1>", "targets": "<extra_id_0>, I'm<extra_id_1>."}
+{"inputs": "I ordered something ages ago online but it's simply not arriving. I've got enough! Give me back my money,<extra_id_0> m not paying<extra_id_1>", "targets": "<extra_id_0> I'<extra_id_1>these people."}
 {"inputs": "What do I need to do to get a<extra_id_0>", "targets": "<extra_id_0>refund?"}
 {"inputs": "I need a refund<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "I am unhappy with my purchase, how do I cancel the<extra_id_0>", "targets": "<extra_id_0>order?"}
@@ -1704,13 +1704,13 @@
 {"inputs": "I would appreciate it if I could get an item re<extra_id_0>", "targets": "<extra_id_0>funded."}
 {"inputs": "How do I claim a refund<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "I don't want the item, I bought it on accident, can I get <extra_id_0>", "targets": "<extra_id_0>a refund?"}
-{"inputs": "Hello I changed my<extra_id_0> a refund on one of things I bought recently. Can you please cancel the transaction and get my money back. Please it's urgent<extra_id_1>", "targets": "<extra_id_0> mind and really need <extra_id_1>."}
+{"inputs": "Hello I changed my mind and really need a refund on<extra_id_0> of things I bought recently. Can you please cancel the transaction and get my money back. Please<extra_id_1>", "targets": "<extra_id_0> one<extra_id_1>it's urgent."}
 {"inputs": "I would like a refund on one of your products that has been sold<extra_id_0>", "targets": "<extra_id_0>to me."}
 {"inputs": "I am not Happy with this product can i get a<extra_id_0>", "targets": "<extra_id_0>refund?"}
 {"inputs": "I want this amount reversed out of my<extra_id_0>", "targets": "<extra_id_0>account."}
 {"inputs": "Hello! I recently made a purchase and I'm needing to cancel my order and process a refund as<extra_id_0>", "targets": "<extra_id_0>soon as possible."}
 {"inputs": "I want to reverse a purchase. Can I cancel<extra_id_0>", "targets": "<extra_id_0>it?"}
-{"inputs": "I am chatting about an<extra_id_0> a long while back. I never got it to this day and am deeply upset by this! I want all of my money back! I just can not accept paying for<extra_id_1>", "targets": "<extra_id_0> order from<extra_id_1>something I never got."}
+{"inputs": "I am chatting about an order from a long while back. I never got it to this day and am deeply upset<extra_id_0> want all of my money back! I just can not accept paying for something I<extra_id_1>", "targets": "<extra_id_0> by this! I<extra_id_1>never got."}
 {"inputs": "I bought this item and was charged the wrong amount can I get <extra_id_0>", "targets": "<extra_id_0>a refund?"}
 {"inputs": "I would like to cancel a payment. I purchased something several days ago and i still have<extra_id_0>", "targets": "<extra_id_0>not received it."}
 {"inputs": "What's the refund process<extra_id_0>", "targets": "<extra_id_0>?"}
@@ -1719,11 +1719,11 @@
 {"inputs": "I want to get an item re<extra_id_0>", "targets": "<extra_id_0>funded."}
 {"inputs": "I need to cancel a purchase I<extra_id_0>", "targets": "<extra_id_0>made."}
 {"inputs": "I tried to make a transfer and it was declined.<extra_id_0>", "targets": "<extra_id_0>Why?"}
-{"inputs": "Good morning. I tried to make a purchase with my credit card last night and again this morning. Both<extra_id_0> was declined. Can<extra_id_1>", "targets": "<extra_id_0> times it<extra_id_1>you investigate?"}
+{"inputs": "Good morning. I tried to make a purchase with my credit card last night and again this morning.<extra_id_0> it was declined. Can<extra_id_1>", "targets": "<extra_id_0> Both times<extra_id_1>you investigate?"}
 {"inputs": "I am getting continuous failure for all my transfers. I have cross checked each recipient detail again and again and<extra_id_0>", "targets": "<extra_id_0>everything is correct."}
 {"inputs": "why was my transfer declined<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "What would make a decline message show up during a<extra_id_0>", "targets": "<extra_id_0>transfer?"}
-{"inputs": "Why do you keep declining my transfers?it was always been working really well so far but when I tried to buy something just now the<extra_id_0>. I tried couple of times already but same thing<extra_id_1>", "targets": "<extra_id_0> card got declined <extra_id_1>is happening."}
+{"inputs": "Why do you keep declining my transfers?<extra_id_0> really well so far but when I tried to buy something just now the card got declined. I tried couple of times already but same thing is<extra_id_1>", "targets": "<extra_id_0> it was always been working<extra_id_1>happening."}
 {"inputs": "How can I fix my card, it got declined<extra_id_0>", "targets": "<extra_id_0>twice."}
 {"inputs": "Why did a transfer get declined<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "My transfers are being declined. IT has always worked for me but now it's declining my card. I've<extra_id_0>", "targets": "<extra_id_0>tried several times."}
@@ -1733,7 +1733,7 @@
 {"inputs": "Why did I get a transfer declined<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Why did my my transfer get declined<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "How do I contact customer support about a<extra_id_0>", "targets": "<extra_id_0>transfer?"}
-{"inputs": "You keep declining my transfers? It's always been working really well so far, but when I tried to buy something just now the card got declined.<extra_id_0> couple times already<extra_id_1>", "targets": "<extra_id_0> I tried<extra_id_1>but same thing."}
+{"inputs": "You keep declining my transfers? It's always been working really well so far, but when I tried to buy something just now the card got<extra_id_0>. I tried couple times<extra_id_1>", "targets": "<extra_id_0> declined<extra_id_1>already but same thing."}
 {"inputs": "Why was I unable to do a<extra_id_0>", "targets": "<extra_id_0>transfer?"}
 {"inputs": "Trouble transferring transaction contact for help<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Why could my transfer have been declined<extra_id_0>", "targets": "<extra_id_0>?"}
@@ -1756,23 +1756,23 @@
 {"inputs": "I tried to buy something online yesterday but it wouldn't stop saying declined. Tried again today but same thing happened. What<extra_id_0>", "targets": "<extra_id_0>'s Broken?"}
 {"inputs": "My card is being declined online. Could you tell me what might be broken or wrong with<extra_id_0>", "targets": "<extra_id_0>the account?"}
 {"inputs": "Are there any restrictions causing my transfer to be<extra_id_0>", "targets": "<extra_id_0>declined?"}
-{"inputs": "I was attempting to purchase a golf club off eBay<extra_id_0>, but my credit card was declined. I tried multiple times, and again this morning. Can you check<extra_id_1>", "targets": "<extra_id_0> yesterday<extra_id_1>into my card please?"}
+{"inputs": "I was attempting to purchase<extra_id_0> eBay yesterday, but my credit card was declined. I tried multiple times, and again this morning. Can you check into my card please<extra_id_1>", "targets": "<extra_id_0> a golf club off<extra_id_1>?"}
 {"inputs": "I think my transfer was declined, but<extra_id_0>", "targets": "<extra_id_0>why?"}
 {"inputs": "The refund isn't showing up on my<extra_id_0>", "targets": "<extra_id_0>account."}
 {"inputs": "My refund is missing from my statement<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "I requested a refund, and never received it. What can I<extra_id_0>", "targets": "<extra_id_0>do?"}
 {"inputs": "I was supposed to get a purchase refunded but I don't see the money in<extra_id_0>", "targets": "<extra_id_0>my account."}
 {"inputs": "There's a refund missing from my<extra_id_0>", "targets": "<extra_id_0>statement."}
-{"inputs": "I need help. I asked for a refund<extra_id_0> merchant a while ago, but I have not gotten my money back. I keep checking my account, but nothing is showing up. What should<extra_id_1>", "targets": "<extra_id_0> from a<extra_id_1>I do now?"}
+{"inputs": "I need help. I asked for<extra_id_0> refund from a merchant a while ago, but I have not gotten my money back. I keep checking my account, but nothing is showing up. What<extra_id_1>", "targets": "<extra_id_0> a<extra_id_1>should I do now?"}
 {"inputs": "I am awaiting my refund<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "How long does it take for a<extra_id_0>", "targets": "<extra_id_0>refund?"}
-{"inputs": "Help! I keep checking my account, but my refund is not showing<extra_id_0> that a seller refund my money a while back, but there is no money showing in my account. What can you<extra_id_1>", "targets": "<extra_id_0>. I requested<extra_id_1>do for me?"}
+{"inputs": "Help! I keep checking my account, but my refund is not showing. I requested that a seller refund my money a while back, but<extra_id_0> is no money showing in my account. What<extra_id_1>", "targets": "<extra_id_0> there<extra_id_1>can you do for me?"}
 {"inputs": "Can you tell me why my refund is not showing in my<extra_id_0>", "targets": "<extra_id_0>statement?"}
 {"inputs": "I asked for a refund last week but nothing has happened yet, can you help<extra_id_0>", "targets": "<extra_id_0>me please?"}
 {"inputs": "Why is my refund missing from my statement<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Still waiting on a refund<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "I requested a refund and it is<extra_id_0>", "targets": "<extra_id_0>missing."}
-{"inputs": "Hi, As suggested by you, i have asked the seller to initiate the refund, it has been a week and i haven<extra_id_0> t received my<extra_id_1>", "targets": "<extra_id_0> '<extra_id_1>money. Please advise."}
+{"inputs": "Hi, As suggested by you, i have asked the seller to initiate the refund,<extra_id_0> has been a week and i haven't received my<extra_id_1>", "targets": "<extra_id_0> it<extra_id_1>money. Please advise."}
 {"inputs": "I bought something and returned it and the money from the return isn't in<extra_id_0>", "targets": "<extra_id_0>my account."}
 {"inputs": "Do you have any idea on when I will receive my refund? I got my statement and it was<extra_id_0>", "targets": "<extra_id_0>not there."}
 {"inputs": "Why isn't a recent refund on my<extra_id_0>", "targets": "<extra_id_0>statement?"}
@@ -1788,18 +1788,18 @@
 {"inputs": "My refund doesn't seem to be showing on my<extra_id_0>", "targets": "<extra_id_0>statement."}
 {"inputs": "I am not seeing a refund in my<extra_id_0>", "targets": "<extra_id_0>statement."}
 {"inputs": "Why can't I see a recent refund in my<extra_id_0>", "targets": "<extra_id_0>statement?"}
-{"inputs": "I did what you told me earlier and contacted the seller for a refund directly, but nothing is happening! It's been<extra_id_0> I still haven't got anything. Please just give me back<extra_id_1>", "targets": "<extra_id_0> a week and<extra_id_1>my money."}
+{"inputs": "I did<extra_id_0> contacted the seller for a refund directly, but nothing is happening! It's been a week and I still haven't got anything. Please just give me back my money<extra_id_1>", "targets": "<extra_id_0> what you told me earlier and<extra_id_1>."}
 {"inputs": "Where is my refund? I have been checking my account all<extra_id_0>", "targets": "<extra_id_0>day."}
-{"inputs": "It's<extra_id_0> a week and I have<extra_id_1> to do and still nothing. I have contacted the seller and have not gotten a response. Please understand my frustration and put the money back in my account<extra_id_2>", "targets": "<extra_id_0> been<extra_id_1> done everything that I was asked<extra_id_2>."}
+{"inputs": "It's been a week and I have done<extra_id_0> asked to do and still nothing. I have contacted the seller<extra_id_1> not gotten a response. Please understand my frustration and put the money back in my<extra_id_2>", "targets": "<extra_id_0> everything that I was<extra_id_1> and have<extra_id_2>account."}
 {"inputs": "My refund is missing<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Why doesn't a return show up im my account from a purchase<extra_id_0>", "targets": "<extra_id_0>I made?"}
-{"inputs": "I keep checking my bank statements but I don't see a refund that I've requested from a<extra_id_0> ensure that I receive the refund from the<extra_id_1>", "targets": "<extra_id_0> seller. Can you<extra_id_1>seller?"}
-{"inputs": "I am<extra_id_0> a week now for the seller to get back to me and there has been no response, could you please help me further with getting my money back. Thank you<extra_id_1>", "targets": "<extra_id_0> waiting patiently for <extra_id_1>."}
-{"inputs": "I would like some help getting a refund back<extra_id_0> It still isn't showing up on my statement and I requested this a long time ago. I'm not sure why it's not returned yet. Can you assist<extra_id_1> this money back<extra_id_2>", "targets": "<extra_id_0> from a seller.<extra_id_1> me in getting<extra_id_2>?"}
+{"inputs": "I keep checking my bank statements but I don't see a refund that I've requested from <extra_id_0> Can you ensure that I receive the refund from<extra_id_1>", "targets": "<extra_id_0> a seller.<extra_id_1>the seller?"}
+{"inputs": "I am waiting patiently for a week now for the seller to get back to me and there has been no response, could<extra_id_0> please help me further with getting my money<extra_id_1>", "targets": "<extra_id_0> you<extra_id_1>back. Thank you."}
+{"inputs": "I would like some help getting a refund back from a seller.<extra_id_0>n't<extra_id_1> statement and I requested this a long time ago. I'm not sure why it's not returned yet. Can you assist me in getting this money<extra_id_2>", "targets": "<extra_id_0> It still is<extra_id_1> showing up on my<extra_id_2>back?"}
 {"inputs": "How long will it take to get my<extra_id_0>", "targets": "<extra_id_0>refund."}
 {"inputs": "I should have received a refund however it is not showing on my<extra_id_0>", "targets": "<extra_id_0>statement."}
 {"inputs": "My credit card was declined<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "The new card that was just sent to me<extra_id_0> multiple times yesterday when I tried to use it at a restaurant to pay for my dinner. I am really disappointed and embarrassed that my card<extra_id_1> tried to use it to pay for my friend's<extra_id_2>", "targets": "<extra_id_0> was declined<extra_id_1> was denied when I<extra_id_2>birthday dinner."}
+{"inputs": "The new card that was just sent to me was declined multiple times yesterday when I tried to use it at a restaurant to pay for my dinner.<extra_id_0> that my card was denied when I tried to use it to pay for my friend<extra_id_1> birthday dinner<extra_id_2>", "targets": "<extra_id_0> I am really disappointed and embarrassed<extra_id_1>'s<extra_id_2>."}
 {"inputs": "Why was my card payment declined<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "I was trying to purchase something at the store today and my card has been declined. Why has<extra_id_0>", "targets": "<extra_id_0>this happened?"}
 {"inputs": "My payment has been declined, I thought this issue was<extra_id_0>", "targets": "<extra_id_0>fixed!"}
@@ -1807,7 +1807,7 @@
 {"inputs": "Why did it decline my payment<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "My card declined<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Can you look at my account ans see why my card was<extra_id_0>", "targets": "<extra_id_0>declined."}
-{"inputs": "I was out today looking forward to pay with my new card, turns out<extra_id_0> kept getting declined. This is really sad, what's going<extra_id_1>", "targets": "<extra_id_0> the payment just<extra_id_1>on?"}
+{"inputs": "I was out today looking forward to pay with my<extra_id_0> turns out the payment just kept getting declined. This is really sad, what's going<extra_id_1>", "targets": "<extra_id_0> new card,<extra_id_1>on?"}
 {"inputs": "Why was a transaction on my card<extra_id_0>", "targets": "<extra_id_0>declined?"}
 {"inputs": "My new card keeps getting declined. I was very excited to use it for the first time today. Why is<extra_id_0>", "targets": "<extra_id_0>this doing this?"}
 {"inputs": "My latest payment was declined, I was told everything was back to working order.<extra_id_0>", "targets": "<extra_id_0>What happened?"}
@@ -1845,13 +1845,13 @@
 {"inputs": "I am waiting for a pending money transfer to<extra_id_0>", "targets": "<extra_id_0>process."}
 {"inputs": "i transfered however its still <extra_id_0>", "targets": "<extra_id_0>pending."}
 {"inputs": "I have a transfer that's pending and wanted to know how long it is going to<extra_id_0>", "targets": "<extra_id_0>take to process?"}
-{"inputs": "So the transfer finally worked but now it's been pending for quite a long time. How long do you expect me<extra_id_0> It's quite urgent<extra_id_1>", "targets": "<extra_id_0> to wait for it?<extra_id_1>."}
+{"inputs": "So the transfer finally worked but<extra_id_0> been pending for quite a long time. How long do you expect me to wait for it? It's quite<extra_id_1>", "targets": "<extra_id_0> now it's<extra_id_1>urgent."}
 {"inputs": "I had made a transfer but its still <extra_id_0>", "targets": "<extra_id_0>pending."}
-{"inputs": "I submitted my transfer but it has been pending for quite<extra_id_0> I was wondering what takes so long? why hasn't it completed<extra_id_1>", "targets": "<extra_id_0> a while and<extra_id_1>."}
+{"inputs": "I submitted my transfer but it has been pending for quite a while and I was wondering what takes so long<extra_id_0>n't it<extra_id_1>", "targets": "<extra_id_0>? why has<extra_id_1>completed."}
 {"inputs": "How can I speed up a transfer? Mine is <extra_id_0>", "targets": "<extra_id_0>pending."}
 {"inputs": "How long can an EU transfer take<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "My transfer is still coming up as <extra_id_0>", "targets": "<extra_id_0>pending."}
-{"inputs": "I'm<extra_id_0> to another country. It's just pending and not sending. My account details are correct. Please help me<extra_id_1>", "targets": "<extra_id_0> trying to transfer money<extra_id_1>."}
+{"inputs": "I'm trying to transfer money to another country. It's just pending<extra_id_0> My account details are correct. Please help me<extra_id_1>", "targets": "<extra_id_0> and not sending.<extra_id_1>."}
 {"inputs": "My transfer is still pending and I know the account numbers are correct.<extra_id_0>", "targets": "<extra_id_0>Please help."}
 {"inputs": "I transferred money yesterday, but it still isn't<extra_id_0>", "targets": "<extra_id_0>available?"}
 {"inputs": "How long does a transfer stay <extra_id_0>", "targets": "<extra_id_0>pending?"}
@@ -1859,7 +1859,7 @@
 {"inputs": "Why hasn't my transfer gone through<extra_id_0>", "targets": "<extra_id_0>yet?"}
 {"inputs": "When will the transfer go through<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Please explain why the transfers shows up as <extra_id_0>", "targets": "<extra_id_0>pending?"}
-{"inputs": "I double checked that I have the correct account details, they're right for sure. Transfer is still pending since forever<extra_id_0> done now<extra_id_1>", "targets": "<extra_id_0>. What should be<extra_id_1>?"}
+{"inputs": "I double checked that I have the correct account details, they're right for sure. Transfer<extra_id_0> pending since forever. What should be<extra_id_1>", "targets": "<extra_id_0> is still<extra_id_1>done now?"}
 {"inputs": "When will my transfer go through<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "What is the cause that the transfer shows as <extra_id_0>", "targets": "<extra_id_0>pending?"}
 {"inputs": "When will the transfer be completed<extra_id_0>", "targets": "<extra_id_0>?"}
@@ -1871,7 +1871,7 @@
 {"inputs": "Why does my transfer say \"pending\"<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "How long can I expect a transfer to pend<extra_id_0>", "targets": "<extra_id_0>for?"}
 {"inputs": "For how long will my transfer be <extra_id_0>", "targets": "<extra_id_0>pending?"}
-{"inputs": "Transferring money in 2018 to another country shouldn't take this long. My transfer has been pending for<extra_id_0> verified my account details are correct<extra_id_1>", "targets": "<extra_id_0> too long. I<extra_id_1>."}
+{"inputs": "Transferring money in 2018 to another country shouldn't take this long. My transfer has been<extra_id_0> pending for too long. I verified my account<extra_id_1>", "targets": "<extra_id_0> <extra_id_1>details are correct."}
 {"inputs": "Why is a money transfer not showing<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "The transfer is coming up as pending the payment is due today. Will I be charged <extra_id_0>", "targets": "<extra_id_0>a fee?"}
 {"inputs": "I am still waiting for a money transfer to<extra_id_0>", "targets": "<extra_id_0>show."}
@@ -1956,10 +1956,10 @@
 {"inputs": "The ATM at Metro bank on High St. Kensington didn't return my card. What should I do now that the<extra_id_0>", "targets": "<extra_id_0>bank is closed?"}
 {"inputs": "The ATM won't give back my<extra_id_0>", "targets": "<extra_id_0>card."}
 {"inputs": "I was at an ATM and it swallowed my<extra_id_0>", "targets": "<extra_id_0>card."}
-{"inputs": "WTF??? I tried to withdraw some money at a Metro bank on High St. Kensington and without any notice it disappeared in the machine. The bank<extra_id_0> already closed so I couldn't do anything. How<extra_id_1>", "targets": "<extra_id_0> was<extra_id_1>do I get it back?"}
+{"inputs": "WTF??? I tried to<extra_id_0> some money at a Metro bank on High St. Kensington and without any notice it disappeared in the machine. The bank was already closed so I couldn't do anything. How<extra_id_1>", "targets": "<extra_id_0> withdraw<extra_id_1>do I get it back?"}
 {"inputs": "What happens if my card is stuck in the<extra_id_0>", "targets": "<extra_id_0>ATM?"}
 {"inputs": "I got double charged for a payment so how do I fix<extra_id_0>", "targets": "<extra_id_0>that?"}
-{"inputs": "I've just come back from an eating holiday<extra_id_0> have SO many pending and duplicated transactions on my account. I think there is something wrong, can you look in to it please<extra_id_1>", "targets": "<extra_id_0> in the USA and Canada and<extra_id_1>?"}
+{"inputs": "I've just come back from an eating holiday in the USA and Canada and have SO many<extra_id_0> and duplicated transactions on my account. I think there is something wrong, can you look<extra_id_1>", "targets": "<extra_id_0> pending<extra_id_1>in to it please?"}
 {"inputs": "Why am I being charged twice fro a<extra_id_0>", "targets": "<extra_id_0>restaurant?"}
 {"inputs": "I would like to know why I was charged twice for my<extra_id_0>", "targets": "<extra_id_0>purchase."}
 {"inputs": "I didn't buy this twice<extra_id_0>", "targets": "<extra_id_0>."}
@@ -1967,12 +1967,12 @@
 {"inputs": "Why is there more then one charge on my card I only paid for one not twice how can I<extra_id_0>", "targets": "<extra_id_0>fix this?"}
 {"inputs": "I have a duplicate payment showing up on the app. How do I stop myself being charged for<extra_id_0>", "targets": "<extra_id_0>the thing twice?"}
 {"inputs": "Why would I be charged more than once for the same<extra_id_0>", "targets": "<extra_id_0>transaction?"}
-{"inputs": "I was wondering<extra_id_0> have two charges for the same item happen more than once in a 7 day period. Is there anyway I could get this corrected as<extra_id_1>", "targets": "<extra_id_0> how I could<extra_id_1>ap."}
+{"inputs": "I was wondering how I could have two charges for the same item happen more than once<extra_id_0> a 7 day period. Is there anyway I could get this<extra_id_1>", "targets": "<extra_id_0> in<extra_id_1>corrected asap."}
 {"inputs": "Can you please check if I was charged<extra_id_0>", "targets": "<extra_id_0>twice?"}
 {"inputs": "I have been charged twice<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "It appears that I am being double charged for some items that I have purchased this past week. Please<extra_id_0>", "targets": "<extra_id_0>review and correct."}
-{"inputs": "It looks like this week<extra_id_0> a couple things. Is there any way that you can look into this for me and return the double charged items back to my card<extra_id_1>", "targets": "<extra_id_0> I was double charged for<extra_id_1>?"}
-{"inputs": "I noticed after looking over my transactions that I have been<extra_id_0> restaurant visit this week. Is it possible that one of these can be removed so I get the money back for the one that is not<extra_id_1>", "targets": "<extra_id_0> charged twice from an earlier<extra_id_1>accurate?"}
+{"inputs": "It looks like this week I was double charged for a couple things. Is there any way that you can look into this for me<extra_id_0> charged items back to my<extra_id_1>", "targets": "<extra_id_0> and return the double<extra_id_1>card?"}
+{"inputs": "I noticed after looking over my transactions that I have been charged twice from an earlier restaurant visit this week. Is it possible that one of these<extra_id_0> I get the money back for the one that is<extra_id_1>", "targets": "<extra_id_0> can be removed so<extra_id_1>not accurate?"}
 {"inputs": "I think something may have happened that caused a charge to show up<extra_id_0>", "targets": "<extra_id_0>twice."}
 {"inputs": "Why is there a transaction that shows multiple<extra_id_0>", "targets": "<extra_id_0>times?"}
 {"inputs": "I see what looks like duplicate charges on<extra_id_0>", "targets": "<extra_id_0>account."}
@@ -1980,7 +1980,7 @@
 {"inputs": "I had a duplicate card and got charged twice. How do I<extra_id_0>", "targets": "<extra_id_0>resolve this?"}
 {"inputs": "Hello. I checked my transactions and saw I was double charged on my card for a restaurant visit. I would like to get<extra_id_0>", "targets": "<extra_id_0>my money back."}
 {"inputs": "Why am I being charged twice<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "Transactions on my card look really weird. I've been charged twice for a couple<extra_id_0>! Please check this and return the double charged<extra_id_1>", "targets": "<extra_id_0> things this week<extra_id_1>ones."}
+{"inputs": "Transactions on my card look really weird. I've been charged twice for a couple things this week! Please<extra_id_0> this and return the<extra_id_1>", "targets": "<extra_id_0> check<extra_id_1>double charged ones."}
 {"inputs": "Please check payments on my card. There is a duplicate and I only bought<extra_id_0>", "targets": "<extra_id_0>it once."}
 {"inputs": "More than one time this week, I have been charged more than once for the same transaction. Please correct the issue and refund<extra_id_0>", "targets": "<extra_id_0>the duplicate charges."}
 {"inputs": "A transaction is repeated several times on my<extra_id_0>", "targets": "<extra_id_0>account."}
@@ -1991,9 +1991,9 @@
 {"inputs": "I see that I have been charged multiple times for the same<extra_id_0>", "targets": "<extra_id_0>transaction."}
 {"inputs": "I was double charged<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "I have multiple charges on the same transaction<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "Looks like my card payment was duplicated. I went to pay at the store earlier, got declined once,second time it works. App still<extra_id_0> pending for one of the payments. Can you<extra_id_1> of them as it's wrong and clearly<extra_id_2>", "targets": "<extra_id_0> stays <extra_id_1> please remove one<extra_id_2>was declined?"}
+{"inputs": "Looks like my card payment was duplicated. I<extra_id_0> to pay at the store earlier, got declined once,second time it works. App still stays pending for one of the payments. Can you<extra_id_1> one of them as it's wrong<extra_id_2>", "targets": "<extra_id_0> went<extra_id_1> please remove<extra_id_2>and clearly was declined?"}
 {"inputs": "I have a transaction that shows several<extra_id_0>", "targets": "<extra_id_0>times."}
-{"inputs": "I recently got charged twice from a restaurant that I was at this<extra_id_0> like for one of those payments to be removed from my account<extra_id_1>", "targets": "<extra_id_0> week and I would<extra_id_1>."}
+{"inputs": "I recently got charged twice from a restaurant that I was at this week<extra_id_0> I would like for one of those payments to be removed<extra_id_1>", "targets": "<extra_id_0> and<extra_id_1>from my account."}
 {"inputs": "There is more than one of the same transaction on my<extra_id_0>", "targets": "<extra_id_0>account."}
 {"inputs": "I have a duplicate payment showing<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "I made a payment that got charged twice instead of<extra_id_0>", "targets": "<extra_id_0>once."}
@@ -2085,11 +2085,11 @@
 {"inputs": "Why was my payment cancelled<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "I made a payment but the app reverted the<extra_id_0>", "targets": "<extra_id_0>payment."}
 {"inputs": "My payment was reverted by the<extra_id_0>", "targets": "<extra_id_0>app."}
-{"inputs": "Hello, My money went through for my purchase but now I got contacted from the seller noting that they didn't receive it. Then<extra_id_0> my account and I'm not sure why this occurred.<extra_id_1> you can resolve this issue please<extra_id_2>", "targets": "<extra_id_0> the money was returned to<extra_id_1> So if<extra_id_2>."}
+{"inputs": "Hello, My money went through for my purchase but<extra_id_0> I got contacted from the seller noting that they didn't receive it. Then the money was returned to my account and I'm<extra_id_1> if you can resolve this issue please<extra_id_2>", "targets": "<extra_id_0> now<extra_id_1> not sure why this occurred. So<extra_id_2>."}
 {"inputs": "Please explain to me the circumstances in which my card payment would be <extra_id_0>", "targets": "<extra_id_0>reverted?"}
 {"inputs": "Why has my card payment been cancelled<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "What do I do if it says my card payment has been<extra_id_0>", "targets": "<extra_id_0>cancelled?"}
-{"inputs": "I'm not sure why my account has been refunded a payment for an item I've<extra_id_0> ago. Can you please tell me what is going on<extra_id_1>", "targets": "<extra_id_0> already received about 2 weeks<extra_id_1>?"}
+{"inputs": "I'm not sure why my account has been refunded a payment for an item I've already received<extra_id_0> Can you please tell me what is going on<extra_id_1>", "targets": "<extra_id_0> about 2 weeks ago.<extra_id_1>?"}
 {"inputs": "My card is being declined for a purchase. I bought items before and the card worked. Do you know what<extra_id_0>", "targets": "<extra_id_0>the problem is?"}
 {"inputs": "Can you tell my why my card payment has been re<extra_id_0>", "targets": "<extra_id_0>verted."}
 {"inputs": "why did the app refuse to make an approved<extra_id_0>", "targets": "<extra_id_0>payment."}
@@ -2098,9 +2098,9 @@
 {"inputs": "Why was my payment reversed<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "I have a payment listed as cancelled<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "I think my card payment had been return<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "I was contacted by a seller with a message that they never received my money. I am 100% sure<extra_id_0> my account so I definitely need this sorted out<extra_id_1>", "targets": "<extra_id_0> it was taken from<extra_id_1>soon."}
+{"inputs": "I was contacted by a seller with a message that they never received my money. I am 100% sure it was taken from my account so I definitely<extra_id_0> sorted<extra_id_1>", "targets": "<extra_id_0> need this <extra_id_1>out soon."}
 {"inputs": "what happens to the funds if a merchant refuses the<extra_id_0>", "targets": "<extra_id_0>payment."}
-{"inputs": "I am attempting to make a purchase online<extra_id_0> is not working. I know there are funds available, is this an issue on the banks end<extra_id_1>", "targets": "<extra_id_0>, but my card<extra_id_1>?"}
+{"inputs": "I am attempting to make a purchase online,<extra_id_0> my card is not working. I know there are funds available, is this an issue on<extra_id_1>", "targets": "<extra_id_0> but<extra_id_1>the banks end?"}
 {"inputs": "Why was my card payment cancelled<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Why has my card payment been re<extra_id_0>", "targets": "<extra_id_0>verted?"}
 {"inputs": "There must be an issue, why has my card been<extra_id_0>", "targets": "<extra_id_0>cancelled?"}
@@ -2108,7 +2108,7 @@
 {"inputs": "My account shows the card payment cancelled<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "I'm not sure why my card payment was cancelled, can you find<extra_id_0>", "targets": "<extra_id_0>out why?"}
 {"inputs": "What is the reason that my card payment was<extra_id_0>", "targets": "<extra_id_0>cancelled?"}
-{"inputs": "Hi, I would like to file a claim for an inquiry. I am a frequent customer of the company in question and have never had any issue with my<extra_id_0>, or otherwise. However, the price deducted for an item I purchased a couple of weeks ago<extra_id_1> my checking account. Was there an<extra_id_2> payment? The item has already been delivered to<extra_id_3>", "targets": "<extra_id_0> purchases, payments<extra_id_1> has been returned to<extra_id_2> issue with my<extra_id_3>me."}
+{"inputs": "Hi, I would like to file a claim for an inquiry. I am a frequent customer of the company in question and have never had any issue with my purchases, payments, or otherwise<extra_id_0> deducted for an item I purchased a couple of<extra_id_1> has<extra_id_2> checking account. Was there an issue with my payment? The item has already been delivered to me<extra_id_3>", "targets": "<extra_id_0>. However, the price<extra_id_1> weeks ago<extra_id_2> been returned to my<extra_id_3>."}
 {"inputs": "Why was my card payment reverted<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Why does the app revert a<extra_id_0>", "targets": "<extra_id_0>payment?"}
 {"inputs": "I did a payment but the app reverted<extra_id_0>", "targets": "<extra_id_0>it."}
@@ -2167,14 +2167,14 @@
 {"inputs": "How do I do a successful transfer to an<extra_id_0>", "targets": "<extra_id_0>account?"}
 {"inputs": "Why did I get a message saying that my transfer is not possible? I have done this before no problem<extra_id_0>", "targets": "<extra_id_0>. Please fix."}
 {"inputs": "Hey I want to buy some crypto but the app doesn't allow me to! What's the issue, I really want<extra_id_0>", "targets": "<extra_id_0>to exchange this."}
-{"inputs": "I tried to transfer money but it said it<extra_id_0>? I've done this before and it worked why isn't it working now<extra_id_1>", "targets": "<extra_id_0> wasn't possible<extra_id_1>?"}
+{"inputs": "I tried to transfer money but it<extra_id_0> it wasn't possible? I've done this before and it worked why isn't<extra_id_1>", "targets": "<extra_id_0> said<extra_id_1>it working now?"}
 {"inputs": "Why can't I transfer to a<extra_id_0>", "targets": "<extra_id_0>beneficiary?"}
 {"inputs": "I am having problems transferring to a<extra_id_0>", "targets": "<extra_id_0>beneficiary."}
 {"inputs": "What's the deal with no cryptocurrency on your<extra_id_0>", "targets": "<extra_id_0>app?"}
 {"inputs": "Why isn't my transfer not going through? I keep getting an<extra_id_0>", "targets": "<extra_id_0>error message."}
 {"inputs": "What are the rules for transferring to a<extra_id_0>", "targets": "<extra_id_0>beneficiary?"}
 {"inputs": "Can I transfer money to a beneficier<extra_id_0>", "targets": "<extra_id_0>y?"}
-{"inputs": "I have tried transferring money numerous times. All I keep getting<extra_id_0> an error message. Can you tell me what is going on and how this<extra_id_1>", "targets": "<extra_id_0> is<extra_id_1>van be fixed?"}
+{"inputs": "I have tried transferring money numerous times. All I keep getting is an<extra_id_0> message. Can you tell me what is going on and how this<extra_id_1>", "targets": "<extra_id_0> error<extra_id_1>van be fixed?"}
 {"inputs": "I have a cryptocurrency exchange that won't go through. Please help me<extra_id_0>", "targets": "<extra_id_0>process it."}
 {"inputs": "Why wasn't I able to transfer to another<extra_id_0>", "targets": "<extra_id_0>account?"}
 {"inputs": "The money would not transfer to a<extra_id_0>", "targets": "<extra_id_0>beneficiary."}
@@ -2184,7 +2184,7 @@
 {"inputs": "Why did I receive an error message saying that my transfer was not<extra_id_0>", "targets": "<extra_id_0>possible?"}
 {"inputs": "Explain why I can't do a transfer to a<extra_id_0>", "targets": "<extra_id_0>beneficiary."}
 {"inputs": "My transfer to beneficiary didn't go<extra_id_0>", "targets": "<extra_id_0>through."}
-{"inputs": "Why isn't my transfer going through? I get a message saying it's not<extra_id_0> I've had no issues in<extra_id_1>", "targets": "<extra_id_0> possible.<extra_id_1>the past."}
+{"inputs": "Why isn<extra_id_0> transfer going through? I get a message saying it's not possible. I've had no issues in the<extra_id_1>", "targets": "<extra_id_0> 't my<extra_id_1>past."}
 {"inputs": "I couldn't make a transfer to a<extra_id_0>", "targets": "<extra_id_0>beneficiary!"}
 {"inputs": "My beneficiary has been denied, is this<extra_id_0>", "targets": "<extra_id_0>normal?"}
 {"inputs": "I am trying to exchange crypto and it's not working. Tell me how to<extra_id_0>", "targets": "<extra_id_0>fix this."}
@@ -2211,8 +2211,8 @@
 {"inputs": "I got 2 transfer fees and I thought transfers were<extra_id_0>", "targets": "<extra_id_0>free."}
 {"inputs": "Why am I being charged a fee for transferring<extra_id_0>", "targets": "<extra_id_0>money?"}
 {"inputs": "Do charge fees for transfers<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "I recently got a new place<extra_id_0> m staying abroad and have been using this account to manage payments, but suddenly I am seeing fees increase. Where are these additional fees<extra_id_1>", "targets": "<extra_id_0> while I'<extra_id_1>coming from?"}
-{"inputs": "Hi, Please help me, as i have transferred<extra_id_0> amount but receiver did not get the same amount<extra_id_1> a bit less. Due to this again i need to transfer the difference. I have transferred money but beneficiary's account is credited with less amount. Now i have transfer the difference of<extra_id_2> I think there is some issue, could you please<extra_id_3>", "targets": "<extra_id_0> some<extra_id_1>. He received <extra_id_2> the amount.<extra_id_3>look into this."}
+{"inputs": "I recently got a new place while I'm staying abroad and have been<extra_id_0> to manage payments, but suddenly I am seeing fees increase. Where are these additional fees<extra_id_1>", "targets": "<extra_id_0> using this account<extra_id_1>coming from?"}
+{"inputs": "Hi, Please help me, as i have transferred some amount but<extra_id_0> the same amount. He received <extra_id_1> this again i need to transfer the difference. I have transferred money but beneficiary's account is<extra_id_2> credited with less amount. Now i have transfer the difference of the amount. I think there is some issue, could you please look into this<extra_id_3>", "targets": "<extra_id_0> receiver did not get<extra_id_1> a bit less. Due to<extra_id_2> <extra_id_3>."}
 {"inputs": "Why did I get charged for something I bought online? Even though it was international, I thought it<extra_id_0>", "targets": "<extra_id_0>would be covered."}
 {"inputs": "Why were there additional charges when transferring<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "I was charged more when I transferred<extra_id_0>", "targets": "<extra_id_0>!"}
@@ -2224,18 +2224,18 @@
 {"inputs": "I sent out money, but was charged extra for transferring.<extra_id_0>", "targets": "<extra_id_0>Why?"}
 {"inputs": "Why am I seeing a transfer fee<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "There was an extra charge when I made a<extra_id_0>", "targets": "<extra_id_0>transfer."}
-{"inputs": "I need someone to alert me as to what's going on. I had transferred an amount but the receiver is saying that the amount is somewhat less than what I sent over. I now<extra_id_0> to make up the<extra_id_1>", "targets": "<extra_id_0> have to make another transfer<extra_id_1>difference."}
+{"inputs": "I need someone to alert me as to what's going on. I had transferred an amount but the receiver is saying that the amount is somewhat less than what I sent over. I now have to make<extra_id_0> difference<extra_id_1>", "targets": "<extra_id_0> another transfer to make up the<extra_id_1>."}
 {"inputs": "I was charge a fee for my transfer,<extra_id_0>", "targets": "<extra_id_0>why?"}
 {"inputs": "Why was there a fee for my<extra_id_0>", "targets": "<extra_id_0>transfer?"}
 {"inputs": "Why was my transfer charged fees<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Is there supposed to be a fee for the transfer I<extra_id_0>", "targets": "<extra_id_0>made?"}
-{"inputs": "In the past month<extra_id_0> to manage payments for my new holiday villa. Now all of a sudden your fees have increased exorbitantly! Don't you have a rewards programme for frequent<extra_id_1>", "targets": "<extra_id_0> I often used this account<extra_id_1>users?"}
+{"inputs": "In the past month I often used this account to manage payments for my new holiday villa. Now all of a sudden your<extra_id_0> exorbitantly! Don't you have a rewards programme<extra_id_1>", "targets": "<extra_id_0> fees have increased<extra_id_1>for frequent users?"}
 {"inputs": "Why was I charged a fee for a<extra_id_0>", "targets": "<extra_id_0>transfer?"}
 {"inputs": "What extra charges are there<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "I know that I am <extra_id_0> to make transfers for free. That was something that I valued. After I bought something online from abroad I noticed that I got charged a fee? What is this<extra_id_1>", "targets": "<extra_id_0> able<extra_id_1>and can it be removed?"}
+{"inputs": "I know that I am able to make transfers for free.<extra_id_0> was something that I valued. After I bought something online from abroad I noticed that I got charged a fee? What is this<extra_id_1>", "targets": "<extra_id_0> That<extra_id_1>and can it be removed?"}
 {"inputs": "I transferred money and was charged and want to know<extra_id_0>", "targets": "<extra_id_0>why."}
 {"inputs": "I was charged for something I didn't<extra_id_0>", "targets": "<extra_id_0>expect."}
-{"inputs": "I purchased some makeup through a site in<extra_id_0> and I was under the impression that when I make transfers there is no fee. Why am I seeing this fee now? I am not happy<extra_id_1>", "targets": "<extra_id_0> China,<extra_id_1>about this at all."}
+{"inputs": "I purchased some makeup through a site in China<extra_id_0> the impression that when I make transfers there is no fee. Why am I seeing this fee now? I am not happy about this at<extra_id_1>", "targets": "<extra_id_0>, and I was under<extra_id_1>all."}
 {"inputs": "I got charged and extra fee when I transferred money so why was I<extra_id_0>", "targets": "<extra_id_0>charged?"}
 {"inputs": "Can you explain the transfer fee to me<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Will salary be received through this<extra_id_0>", "targets": "<extra_id_0>?"}
@@ -2279,13 +2279,13 @@
 {"inputs": "Can I get paid in another currency<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Can I get my paycheck through here<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "dont understand why transfer failed<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "Please help me make a transfer. I keep receiving an error and I'<extra_id_0> make the initial mortgage payment for a flat I'm buying. What is the<extra_id_1>", "targets": "<extra_id_0> m trying to<extra_id_1>deal here?"}
+{"inputs": "Please help me make a transfer. I keep receiving an error and I'm trying to make the initial mortgage payment for a flat I'm buying<extra_id_0> is<extra_id_1>", "targets": "<extra_id_0>. What<extra_id_1>the deal here?"}
 {"inputs": "My transfer didn't work<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Fix your system. I can't make transfers, I've tried like 5<extra_id_0>", "targets": "<extra_id_0>times already."}
 {"inputs": "Tell me why my transfer failed<extra_id_0>", "targets": "<extra_id_0>!"}
 {"inputs": "My transfer did not go through<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Why was I not able to complete a<extra_id_0>", "targets": "<extra_id_0>transfer?"}
-{"inputs": "Can you help me figure out what's happening? I'm trying to transfer money to a friend but it<extra_id_0>. I'm not sure what i'm<extra_id_1>", "targets": "<extra_id_0> keeps getting returned<extra_id_1>doing wrong."}
+{"inputs": "Can you help me<extra_id_0>'s happening? I'm trying to transfer money to a friend but it keeps getting returned. I'm not sure what i'm<extra_id_1>", "targets": "<extra_id_0> figure out what<extra_id_1>doing wrong."}
 {"inputs": "Why did my transfer not go through<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "My transfer didn't go through<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "I could not get my transfer to happen correctly and was wondering<extra_id_0>", "targets": "<extra_id_0>why?"}
@@ -2296,7 +2296,7 @@
 {"inputs": "Why hasn't my transfer been<extra_id_0>", "targets": "<extra_id_0>made?"}
 {"inputs": "My transfer will not go through<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "My transfer keeps failing and I just want to transfer the money can you please make<extra_id_0>", "targets": "<extra_id_0>it work?"}
-{"inputs": "The transfer<extra_id_0> I tried to transfer some money to friends this morning but it keeps getting rejected for some reason, Would you please check the issue <extra_id_1>", "targets": "<extra_id_0> keeps failing,<extra_id_1>?"}
+{"inputs": "The transfer keeps failing, I tried to transfer<extra_id_0> this morning but it keeps getting rejected for some reason, Would you please check the issue <extra_id_1>", "targets": "<extra_id_0> some money to friends<extra_id_1>?"}
 {"inputs": "Why would a transfer fail<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "What are your policies for card transfers<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Is the system down? I've been trying to do a transfer and<extra_id_0>", "targets": "<extra_id_0>have failed?"}
@@ -2304,7 +2304,7 @@
 {"inputs": "Why couldn't I complete a<extra_id_0>", "targets": "<extra_id_0>transfer?"}
 {"inputs": "My transfer appeared not to work<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "What is stopping my money from transferring<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "Hi, I'm buying<extra_id_0> a flat and I'm trying to get my mortgage to go though. Every time I check I simply get an error message. I<extra_id_1> you can help me get this money transferred over<extra_id_2>", "targets": "<extra_id_0> <extra_id_1> s there any way<extra_id_2>. Thanks!"}
+{"inputs": "Hi, I'm buying a flat and I'm trying to get my mortgage to<extra_id_0> I check I simply get an error message. Is<extra_id_1> way you can help me get this money transferred over. Thanks<extra_id_2>", "targets": "<extra_id_0> go though. Every time<extra_id_1> there any<extra_id_2>!"}
 {"inputs": "My attempted transfer failed<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "I can not seem to make a successful transfer, can you tell me what I'm<extra_id_0>", "targets": "<extra_id_0>doing wrong?"}
 {"inputs": "Please help me as i am continuously facing the issue in transferring money to my friends, as all my transactions<extra_id_0>", "targets": "<extra_id_0>are getting failed."}
@@ -2315,7 +2315,7 @@
 {"inputs": "Says my transfer can't be<extra_id_0>", "targets": "<extra_id_0>completed?"}
 {"inputs": "can you tell me why my transfer failed<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Why didn't my transfer go through<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "I've attempted to do a very standard transfer and have tried 5 times at this<extra_id_0>. Can you tell me what the issue is? Is<extra_id_1>", "targets": "<extra_id_0> point<extra_id_1>the system down?"}
+{"inputs": "I've attempted to do a very standard transfer and have tried 5 times at this point. Can you tell me what<extra_id_0>? Is the system<extra_id_1>", "targets": "<extra_id_0> the issue is<extra_id_1>down?"}
 {"inputs": "Can you provide a reason as to why my transfer did not<extra_id_0>", "targets": "<extra_id_0>work?"}
 {"inputs": "I tried to transfer money and it did not<extra_id_0>", "targets": "<extra_id_0>work."}
 {"inputs": "Can I do a bank transfer to put additional money in my account because I am out<extra_id_0>", "targets": "<extra_id_0>of money?"}
@@ -2343,7 +2343,7 @@
 {"inputs": "I would like to use the bank transfer feature, but I can't find it. Can you please give<extra_id_0>", "targets": "<extra_id_0>me the details?"}
 {"inputs": "How can I perform a dual money transferring from one account to<extra_id_0>", "targets": "<extra_id_0>another?"}
 {"inputs": "CAN YOU EXPLAIN HOW TO TRANSFER MONEY INTO MY ACCO<extra_id_0>", "targets": "<extra_id_0>UNT FOR ME?"}
-{"inputs": "I need to bank account transfer from<extra_id_0> one, what is the easiest way that can be done, and what information do i need<extra_id_1>", "targets": "<extra_id_0> another account into this<extra_id_1>?"}
+{"inputs": "I need to bank account transfer from another account into<extra_id_0> is the easiest way that can be done, and what information do i need<extra_id_1>", "targets": "<extra_id_0> this one, what<extra_id_1>?"}
 {"inputs": "How do I transfer money to my account<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "How do I send my account money through<extra_id_0>", "targets": "<extra_id_0>transfer?"}
 {"inputs": "How do I do an international transfer<extra_id_0>", "targets": "<extra_id_0>?"}
@@ -2560,10 +2560,10 @@
 {"inputs": "virtual card is not working for me<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "I did not get the right amount of money when I used a different country'<extra_id_0>", "targets": "<extra_id_0>s currency."}
 {"inputs": "I took out money from a transaction machine and it exchanged the wrong dollar value amount from<extra_id_0>", "targets": "<extra_id_0>another currency!"}
-{"inputs": "I made a withdraw from the ATM this past holiday and it seems like a was charged too much. If I would have<extra_id_0> these charges I wouldn't have made<extra_id_1>", "targets": "<extra_id_0> known about<extra_id_1>a withdraw."}
+{"inputs": "I made<extra_id_0> the ATM this past holiday and it seems like a was charged too much. If I would have known about these charges I wouldn't have made a<extra_id_1>", "targets": "<extra_id_0> a withdraw from<extra_id_1>withdraw."}
 {"inputs": "Can you look to make sure the exchange rate is<extra_id_0>", "targets": "<extra_id_0>correct."}
 {"inputs": "Exchange rate for my cash withdrawal is wrong<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "Hello. I'm on holiday and didn't bring any cash with me. I need to withdrawal my home currency from one of your machines<extra_id_0> you have any that will do this and is<extra_id_1>", "targets": "<extra_id_0>. Do<extra_id_1>there a charge?"}
+{"inputs": "Hello. I'm on holiday and didn't bring any cash<extra_id_0> I need to withdrawal my home currency from one of your machines. Do you have any that will do this and is there<extra_id_1>", "targets": "<extra_id_0> with me.<extra_id_1>a charge?"}
 {"inputs": "Why was the exchange rate wrong when I got<extra_id_0>", "targets": "<extra_id_0>cash."}
 {"inputs": "I attempted to get money using a foreign currency at an ATM but the rate was<extra_id_0>", "targets": "<extra_id_0>highly inaccurate!"}
 {"inputs": "Why is the exchange rate wrong for my international<extra_id_0>", "targets": "<extra_id_0>withdrawal?"}
@@ -2573,8 +2573,8 @@
 {"inputs": "Why is the exchange rate so exorbitant? This should have been a much higher amount of cash for<extra_id_0>", "targets": "<extra_id_0>that to apply."}
 {"inputs": "Why was the exchange rate different when I withdrew my<extra_id_0>", "targets": "<extra_id_0>cash?"}
 {"inputs": "When I got cash, my exchange rate was<extra_id_0>", "targets": "<extra_id_0>wrong."}
-{"inputs": "Will there<extra_id_0> I make a withdrawal from a local ATM of British pounds? I need some cash to feel comfortable on the journey home<extra_id_1>", "targets": "<extra_id_0> be additional costs of<extra_id_1>."}
-{"inputs": "It seems<extra_id_0> charged when I used an ATM while on vacation. If I knew about your fees in advance I sure would have gone somewhere<extra_id_1>", "targets": "<extra_id_0> I was over<extra_id_1>else."}
+{"inputs": "Will there be additional costs of I make a withdrawal from<extra_id_0> of British pounds? I need some cash to feel comfortable on the journey home<extra_id_1>", "targets": "<extra_id_0> a local ATM<extra_id_1>."}
+{"inputs": "It seems I was overcharged when I used an ATM while on vacation. If I knew about your fees in advance I sure<extra_id_0> gone<extra_id_1>", "targets": "<extra_id_0> would have<extra_id_1>somewhere else."}
 {"inputs": "I checked the exchange rate when I withdrew cash. But the actual rate that you applied<extra_id_0>", "targets": "<extra_id_0>was different."}
 {"inputs": "In receiving cash, the wrong exchange rate was used for my<extra_id_0>", "targets": "<extra_id_0>transaction."}
 {"inputs": "Can I make a withdraw if I am out of country from with out any fees at<extra_id_0>", "targets": "<extra_id_0>an ATM?"}
@@ -2585,7 +2585,7 @@
 {"inputs": "The conversion rate on the ATM that I used with foreign currency was<extra_id_0>", "targets": "<extra_id_0>wrong."}
 {"inputs": "why is the exchange rate for a Foreign ATM<extra_id_0>", "targets": "<extra_id_0>different."}
 {"inputs": "My cash withdrawal charged me the wrong exchange<extra_id_0>", "targets": "<extra_id_0>rate."}
-{"inputs": "I withdrew some cash out of the ATM over the holiday. It seems that I was charged some outrageous fees<extra_id_0> done that had I been aware of these outrageous charges<extra_id_1>", "targets": "<extra_id_0>. I would not have<extra_id_1>!"}
+{"inputs": "I withdrew some<extra_id_0> of the ATM over the holiday. It seems that I was charged some outrageous fees. I would not have done that had I been aware of<extra_id_1>", "targets": "<extra_id_0> cash out<extra_id_1>these outrageous charges!"}
 {"inputs": "The exchange rate for my withdrawal isn't correct and doesn't match the actual<extra_id_0>", "targets": "<extra_id_0>exchange rate."}
 {"inputs": "Can you explain your exchange rate policy? I don't think I received the correct amount of cash in<extra_id_0>", "targets": "<extra_id_0>my ATM transaction."}
 {"inputs": "My ecchange rate was wrong for a cash<extra_id_0>", "targets": "<extra_id_0>transaction."}
@@ -2595,9 +2595,9 @@
 {"inputs": "I took out cash abroad and the exchange rate isn't<extra_id_0>", "targets": "<extra_id_0>correct."}
 {"inputs": "I used an ATM in a foreign currency but the rate applied is<extra_id_0>", "targets": "<extra_id_0>wrong!"}
 {"inputs": "how do you determine your exchange rates because one of yours was off when i<extra_id_0>", "targets": "<extra_id_0>got cash."}
-{"inputs": "I used the ATM machine to get money out for Holiday shopping and saw the outrageous charges.<extra_id_0> is that? I would not have used the ATM if<extra_id_1>", "targets": "<extra_id_0> Why<extra_id_1>I had known!"}
+{"inputs": "I used the ATM machine to get money out for Holiday shopping and saw<extra_id_0>. Why is that? I would not have used the ATM if I had<extra_id_1>", "targets": "<extra_id_0> the outrageous charges<extra_id_1>known!"}
 {"inputs": "The cash withdrawal exchange rate is not correct<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "Is there a local ATM that will provide British pounds, I have no money for my homeward journey and do not<extra_id_0> comfortable waiting until I arrive in Britain. Will a<extra_id_1>", "targets": "<extra_id_0> feel<extra_id_1>withdrawal involve extra charges?"}
+{"inputs": "I<extra_id_0> a local ATM that will provide British pounds, I have no money for my homeward journey and do not feel comfortable waiting until I arrive in Britain. Will a withdrawal involve<extra_id_1>", "targets": "<extra_id_0> s there <extra_id_1>extra charges?"}
 {"inputs": "can i get a description of how to use a disposable<extra_id_0>", "targets": "<extra_id_0>virtual card."}
 {"inputs": "Can I create a disposable virtual card<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "What can you tell me about getting a virtual disposable<extra_id_0>", "targets": "<extra_id_0>card?"}
@@ -2639,9 +2639,9 @@
 {"inputs": "What are disposable cards<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "what's the process for getting a disposable virtual<extra_id_0>", "targets": "<extra_id_0>card?"}
 {"inputs": "The app denied my topped up<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "Heyy I tried to top up with my card today but it failed! I just got the couple days before but it has<extra_id_0>. What's going on, can you double<extra_id_1>", "targets": "<extra_id_0> worked last time<extra_id_1>check please?"}
+{"inputs": "Heyy I tried to top up with my card today but it failed! I just got the couple days before but it has worked last time. What's going<extra_id_0> you double<extra_id_1>", "targets": "<extra_id_0> on, can<extra_id_1>check please?"}
 {"inputs": "I have a top up that didn't go through.<extra_id_0>", "targets": "<extra_id_0>Why?"}
-{"inputs": "So, I tried topping up<extra_id_0> card for the today. Unfortunately, it failed. A couple of days back I used it and it works fine. Can you double check and tell me what<extra_id_1>", "targets": "<extra_id_0> my<extra_id_1>'s going on?"}
+{"inputs": "So, I tried topping up my card for the today. Unfortunately, it failed.<extra_id_0> back I used it and it works fine. Can you double check and tell me what's going<extra_id_1>", "targets": "<extra_id_0> A couple of days<extra_id_1>on?"}
 {"inputs": "Why did the app deny my top<extra_id_0>", "targets": "<extra_id_0>up?"}
 {"inputs": "please tell me why my top-up<extra_id_0>", "targets": "<extra_id_0>failed."}
 {"inputs": "My top-up isn't<extra_id_0>", "targets": "<extra_id_0>working."}
@@ -2678,19 +2678,19 @@
 {"inputs": "I'm pretty sure my top up failed. How do I fix<extra_id_0>", "targets": "<extra_id_0>this?"}
 {"inputs": "why isnt top up working<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Can you tell me why my top up didn't<extra_id_0>", "targets": "<extra_id_0>work?"}
-{"inputs": "I made a transfer a few hours<extra_id_0> a UK banking account. I do not yet see the transfer. Please check on this for<extra_id_1>", "targets": "<extra_id_0> ago from <extra_id_1>me."}
+{"inputs": "I made a transfer a few hours ago from a UK banking account. I do not yet see the<extra_id_0> check on this for<extra_id_1>", "targets": "<extra_id_0> transfer. Please<extra_id_1>me."}
 {"inputs": "the balance on my account didnt change when i transferred<extra_id_0>", "targets": "<extra_id_0>money."}
 {"inputs": "How long will it take for my transferred money to show<extra_id_0>", "targets": "<extra_id_0>up?"}
 {"inputs": "Why didn't my balance change after I transferred some<extra_id_0>", "targets": "<extra_id_0>money?"}
 {"inputs": "When will my balance update after a<extra_id_0>", "targets": "<extra_id_0>transfer?"}
 {"inputs": "How long does it take for an international transfer into my<extra_id_0>", "targets": "<extra_id_0>account?"}
-{"inputs": "The amount of time that transfers usually take from a UK account is what?I just completed<extra_id_0> and it is not showing up at all. I'm wondering at this point if everything<extra_id_1>", "targets": "<extra_id_0> a transfer<extra_id_1>is actually okay."}
+{"inputs": "The amount of time that transfers usually take from <extra_id_0> is what?I just completed a transfer and it is not showing up at all. I'm wondering at this point if everything<extra_id_1>", "targets": "<extra_id_0> a UK account<extra_id_1>is actually okay."}
 {"inputs": "When will my transfer be available in my<extra_id_0>", "targets": "<extra_id_0>account."}
 {"inputs": "I didn't get the money I<extra_id_0>", "targets": "<extra_id_0>transferred."}
 {"inputs": "I just completed a bank transfer and the balance didn't<extra_id_0>", "targets": "<extra_id_0>update."}
 {"inputs": "I transferred some money but I think it has gotten lost<extra_id_0>", "targets": "<extra_id_0>somewhere."}
 {"inputs": "How long does a UK transfer take<extra_id_0>", "targets": "<extra_id_0>?"}
-{"inputs": "Hello I made a bank transfer couple hours ago from my UK account but it doesn't<extra_id_0> yet. Can you please check if everything is alright<extra_id_1>", "targets": "<extra_id_0> show up<extra_id_1>with it?"}
+{"inputs": "Hello I made a bank transfer couple hours ago from my UK<extra_id_0> but it doesn't show up yet. Can you please check if everything is al<extra_id_1>", "targets": "<extra_id_0> account<extra_id_1>right with it?"}
 {"inputs": "I made a transfer and am still<extra_id_0>", "targets": "<extra_id_0>waiting."}
 {"inputs": "I made an out of country transfer and it hasn't went<extra_id_0>", "targets": "<extra_id_0>through yet."}
 {"inputs": "After the transfer, the balance did not<extra_id_0>", "targets": "<extra_id_0>update."}
@@ -2708,13 +2708,13 @@
 {"inputs": "I did a transfer to my account but it doesn't show<extra_id_0>", "targets": "<extra_id_0>up."}
 {"inputs": "How long until my transfer will be available to<extra_id_0>", "targets": "<extra_id_0>me."}
 {"inputs": "Why doesn't it show that I did a balance<extra_id_0>", "targets": "<extra_id_0>transfer?"}
-{"inputs": "I made a bank transfer<extra_id_0> couple of hours ago from my UK account. It hasn't appeared, can you check to make sure it<extra_id_1>", "targets": "<extra_id_0> a<extra_id_1>went through?"}
+{"inputs": "I made<extra_id_0> transfer a couple of hours ago from my UK account. It hasn't appeared, can you check to make sure it went<extra_id_1>", "targets": "<extra_id_0> a bank<extra_id_1>through?"}
 {"inputs": "My transfer is pending<extra_id_0>", "targets": "<extra_id_0>."}
-{"inputs": "Hey, I try to make <extra_id_0> from my UK account a few hours ago, but it haven't show up yet. Please check my account to make sure everything alright<extra_id_1>", "targets": "<extra_id_0> a bank transfer<extra_id_1>with it?"}
+{"inputs": "Hey, I<extra_id_0> a bank transfer from my UK account a few hours ago, but it haven't show up yet. Please check my account to make sure everything alright<extra_id_1>", "targets": "<extra_id_0> try to make<extra_id_1>with it?"}
 {"inputs": "Where is my transfer from [country]<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "I made a bank transfer and my account balance did not show<extra_id_0>", "targets": "<extra_id_0>it."}
 {"inputs": "Where is my money? I transfered it and it isn't in<extra_id_0>", "targets": "<extra_id_0>my account."}
-{"inputs": "I need to know the time frame that is typical for a transfer from a UK account. I just made a transfer and it doesn't appear. I<extra_id_0> sure everything<extra_id_1>", "targets": "<extra_id_0> want to make<extra_id_1>is okay."}
+{"inputs": "I need to know the time frame that is typical for a<extra_id_0> a UK account. I just made a transfer and it doesn't appear. I want to make sure everything<extra_id_1>", "targets": "<extra_id_0> transfer from <extra_id_1>is okay."}
 {"inputs": "Why doesn't my balance reflect my<extra_id_0>", "targets": "<extra_id_0>transfer."}
 {"inputs": "My account balance has not gone up even though I just transferred money into<extra_id_0>", "targets": "<extra_id_0>it."}
 {"inputs": "When will I see my new balance after making my bank<extra_id_0>", "targets": "<extra_id_0>transfer?"}
@@ -2743,7 +2743,7 @@
 {"inputs": "There is an unauthorized cash withdrawal from my account for 500\u00a3. I definitely didn't make this withdrawal. I<extra_id_0>", "targets": "<extra_id_0>need your help."}
 {"inputs": "The app is showing an ATM withdrawl that I didn't<extra_id_0>", "targets": "<extra_id_0>make."}
 {"inputs": "There is a odd withdrawal on my<extra_id_0>", "targets": "<extra_id_0>account."}
-{"inputs": "I need to cancel my card that got stolen a little while ago. Someone has already taken some money out and I don'<extra_id_0> them to take anymore. Can you<extra_id_1>", "targets": "<extra_id_0> t want<extra_id_1>please do that?"}
+{"inputs": "I need to cancel my card that got stolen a little while ago. Someone has already taken some money out and I don't want them to<extra_id_0> anymore. Can<extra_id_1>", "targets": "<extra_id_0> take<extra_id_1>you please do that?"}
 {"inputs": "How do I cancel my card? There are charges on my account that I didn'<extra_id_0>", "targets": "<extra_id_0>t make."}
 {"inputs": "There is an error, the app says I made an ATM withdrawal and I didn<extra_id_0>", "targets": "<extra_id_0>'t."}
 {"inputs": "Can anyone help me, I lost my wallet and they've started withdrawing from<extra_id_0>", "targets": "<extra_id_0>my account."}
@@ -2752,9 +2752,9 @@
 {"inputs": "Help! My wallet was stolen and someone is taking money out. I need this money! What can<extra_id_0>", "targets": "<extra_id_0>I do?"}
 {"inputs": "There is a cash withdrawal transaction that I am unsure<extra_id_0>", "targets": "<extra_id_0>of."}
 {"inputs": "I didn't take out money from an ATM but my app statement shows that I did. How can<extra_id_0>", "targets": "<extra_id_0>I fix this?"}
-{"inputs": "Someone has stolen my card. Even though I have my card with me, someone just made <extra_id_0> withdrawal. Please help as soon as possible<extra_id_1>", "targets": "<extra_id_0> a 500\u00a3 cash<extra_id_1>."}
+{"inputs": "Someone has stolen my card. Even though I have my<extra_id_0> with me, someone just made a 500\u00a3 cash withdrawal. Please help as<extra_id_1>", "targets": "<extra_id_0> card<extra_id_1>soon as possible."}
 {"inputs": "Cash I didn't get shows in my<extra_id_0>", "targets": "<extra_id_0>app."}
-{"inputs": "There is a problem with my card. Somebody has removed money from my account in a town I haven't been to<extra_id_0> freeze my account<extra_id_1>", "targets": "<extra_id_0>. Can you please<extra_id_1>immediately?"}
+{"inputs": "There is a problem with my card. Somebody has removed money from my account in a town I haven<extra_id_0> Can you please freeze my account immediately<extra_id_1>", "targets": "<extra_id_0> 't been to.<extra_id_1>?"}
 {"inputs": "There is an ATM withdrawl in the app I don't<extra_id_0>", "targets": "<extra_id_0>recognize."}
 {"inputs": "A cash withdrawal is showing up that I didn't<extra_id_0>", "targets": "<extra_id_0>do."}
 {"inputs": "The app made a mistake and said I made a cash<extra_id_0>", "targets": "<extra_id_0>withdrawal."}
@@ -2882,20 +2882,20 @@
 {"inputs": "How come I was charged extra when I withdrew<extra_id_0>", "targets": "<extra_id_0>cash?"}
 {"inputs": "Why am I being charged when I withdraw<extra_id_0>", "targets": "<extra_id_0>cash?"}
 {"inputs": "What is this charge on my account for a cash withdraw<extra_id_0>", "targets": "<extra_id_0>l?"}
-{"inputs": "Why are<extra_id_0> on cash withdrawals? I went to withdraw some money earlier today after shopping. There's a fee that wasn't<extra_id_1>", "targets": "<extra_id_0> fees charged<extra_id_1>there before."}
+{"inputs": "Why are fees charged<extra_id_0> cash withdrawals? I went to withdraw some money earlier today after shopping. There's a fee that wasn'<extra_id_1>", "targets": "<extra_id_0> on<extra_id_1>t there before."}
 {"inputs": "How come you charge for cash withdrawals? I withdrew cash after buying groceries today, and there seems to be <extra_id_0>", "targets": "<extra_id_0>a new fee."}
-{"inputs": "It looks like I was charged <extra_id_0> fee for going to my ATM. Why is that because I haven't been charged previously for<extra_id_1>", "targets": "<extra_id_0> a withdrawal<extra_id_1>doing so?"}
-{"inputs": "Do ATM cash withdrawals carry<extra_id_0> a charge now? They've been free in the past, but all of a sudden I have to pay to make<extra_id_1>", "targets": "<extra_id_0> <extra_id_1>ATM withdrawals?"}
+{"inputs": "It looks like I was<extra_id_0> fee for going to my ATM. Why is that because I haven't been charged previously for doing so<extra_id_1>", "targets": "<extra_id_0> charged a withdrawal<extra_id_1>?"}
+{"inputs": "Do ATM cash withdrawals carry a charge now? They've been free in the past, but all of a sudden I have<extra_id_0> to make ATM<extra_id_1>", "targets": "<extra_id_0> to pay<extra_id_1>withdrawals?"}
 {"inputs": "Why is there an extra charge for money that was <extra_id_0>", "targets": "<extra_id_0>withdrawn?"}
 {"inputs": "Why was I charged a fee for withdrawing<extra_id_0>", "targets": "<extra_id_0>cash?"}
 {"inputs": "Why did I get a fee<extra_id_0>", "targets": "<extra_id_0>?"}
 {"inputs": "Why did my cash get charged a fee that should not be<extra_id_0>", "targets": "<extra_id_0>there."}
 {"inputs": "Why did I have to pay a fee when I got<extra_id_0>", "targets": "<extra_id_0>cash?"}
-{"inputs": "Hi, I am calling about a recent transaction that has happened on my account. I recently went to<extra_id_0> tried to make a withdrawal on my<extra_id_1> I just happened to check my transaction slip and noticed a fee for my withdrawal. How can I resolve this, I didn't<extra_id_2> charged for this type of<extra_id_3>", "targets": "<extra_id_0> the ATM, and<extra_id_1> account.<extra_id_2> know fees were<extra_id_3>action."}
+{"inputs": "Hi, I am calling about a recent transaction that has<extra_id_0> on my account. I recently went to the ATM, and tried to make a withdrawal on my account. I just happened to check my transaction slip and noticed a fee for my withdrawal. How can I resolve this<extra_id_1> 't<extra_id_2> for this type<extra_id_3>", "targets": "<extra_id_0> happened<extra_id_1>, I didn<extra_id_2> know fees were charged<extra_id_3>of action."}
 {"inputs": "A fee was charged for my recent withdrawal<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "I got a fee for an ATM<extra_id_0>", "targets": "<extra_id_0>withdrawal."}
 {"inputs": "What is the reason for this fee I got after a simple cash<extra_id_0>", "targets": "<extra_id_0>withdrawal?"}
-{"inputs": "Did you start charging for cash withdrawals? I thought it was free so far but noticed suddendly there<extra_id_0> a fee. How much do I<extra_id_1>", "targets": "<extra_id_0> is<extra_id_1>need to pay?"}
+{"inputs": "Did you start charging for cash withdrawals? I thought it was free so far but noticed suddendly there is a fee. How much<extra_id_0> to<extra_id_1>", "targets": "<extra_id_0> do I need<extra_id_1>pay?"}
 {"inputs": "Is there a fee for withdrawing<extra_id_0>", "targets": "<extra_id_0>cash?"}
 {"inputs": "I've notice I was charged for withdrawing cash, can you<extra_id_0>", "targets": "<extra_id_0>explain why?"}
 {"inputs": "Why was my account charged for using an<extra_id_0>", "targets": "<extra_id_0>ATM?"}
@@ -2903,7 +2903,7 @@
 {"inputs": "An ATM fee was attached to my recent<extra_id_0>", "targets": "<extra_id_0>withdrawal."}
 {"inputs": "I thought cash withdrawals didn't have a<extra_id_0>", "targets": "<extra_id_0>fee."}
 {"inputs": "Why did I get charged a fee when I tried to obtain<extra_id_0>", "targets": "<extra_id_0>cash?"}
-{"inputs": "While I was checking out in the grocery store, I realized I needed cash so I requested some. However,<extra_id_0> a fee for this transaction. Why did I get charged a<extra_id_1>", "targets": "<extra_id_0> I noticed there was<extra_id_1>fee?"}
+{"inputs": "While I was checking out in the grocery store, I realized I needed cash so I requested some. However, I noticed there was a fee for this transaction. Why did<extra_id_0> get<extra_id_1>", "targets": "<extra_id_0> I<extra_id_1>charged a fee?"}
 {"inputs": "Using an ATM caused me to incur an additional fee.<extra_id_0>", "targets": "<extra_id_0>Why?"}
 {"inputs": "I was charged extra for a withdrawal<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Is there a limit on how much I can withdraw from my account without<extra_id_0>", "targets": "<extra_id_0>being charged?"}
@@ -2913,7 +2913,7 @@
 {"inputs": "I was charged for a cash withdrawal<extra_id_0>", "targets": "<extra_id_0>."}
 {"inputs": "Why did you charge me for a cash<extra_id_0>", "targets": "<extra_id_0>withdrawal?"}
 {"inputs": "I took cash and got charged a<extra_id_0>", "targets": "<extra_id_0>fee."}
-{"inputs": "Was charged an ATM fee despite it being a small withdrawal on the 1st day of the month. I thought<extra_id_0> per month<extra_id_1>", "targets": "<extra_id_0> I was allowed 200<extra_id_1>?"}
+{"inputs": "Was<extra_id_0> despite it being a small withdrawal on the 1st day of the month. I thought I was allowed 200 per month<extra_id_1>", "targets": "<extra_id_0> charged an ATM fee<extra_id_1>?"}
 {"inputs": "I had a wrong fee charged at this<extra_id_0>", "targets": "<extra_id_0>ATM."}
 {"inputs": "When I got cash, I'm pretty sure there was a glitch that overcharge<extra_id_0>", "targets": "<extra_id_0>d me."}
 {"inputs": "My account got charged for taking out cash, why did this<extra_id_0>", "targets": "<extra_id_0>happen?"}
@@ -2944,7 +2944,7 @@
 {"inputs": "Do you have to order a new card before your current card expir<extra_id_0>", "targets": "<extra_id_0>es?"}
 {"inputs": "Since my card is about to expire, I need a new<extra_id_0>", "targets": "<extra_id_0>one."}
 {"inputs": "My card is very close to expiring. When can I order a new one and how do<extra_id_0>", "targets": "<extra_id_0>I do so?"}
-{"inputs": "I need to order a new card<extra_id_0> to expire and I need to know how much it will cost and how long until I receive it<extra_id_1>", "targets": "<extra_id_0>, mine is about<extra_id_1>."}
+{"inputs": "I need to order a new card, mine is about to expire and I need to<extra_id_0> will cost and how long until I receive it<extra_id_1>", "targets": "<extra_id_0> know how much it<extra_id_1>."}
 {"inputs": "How do I order a new card before It expire<extra_id_0>", "targets": "<extra_id_0>s?"}
 {"inputs": "Can I receive a new card while I am in<extra_id_0>", "targets": "<extra_id_0>China?"}
 {"inputs": "Next month my card will expire, do I need to order a<extra_id_0>", "targets": "<extra_id_0>new one?"}
