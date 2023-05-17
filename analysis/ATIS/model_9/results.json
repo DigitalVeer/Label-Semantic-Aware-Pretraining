@@ -1,98 +1,80 @@
-[
-    {
-        "result": "eight_shot",
-        "metrics": {
-            "label": "eight_shot_true_labels.txt",
-            "pred": "eight_shot_predicted_labels.txt",
-            "results": {
-                "accuracy": {
-                    "first_word": 0.0,
-                    "exact_match": 0.0
-                },
-                "bleu_score": 0.0,
-                "jaccard_score": 0.0,
-                "cosine_similarity": 0.0
-            }
+{
+    "eight_shot": {
+        "labels_file": "eight_shot_true_labels.txt",
+        "preds_file": "eight_shot_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 0.0,
+                "exact_match": 0.0
+            },
+            "bleu_score": 0.0,
+            "jaccard_score": 0.0,
+            "cosine_similarity": 0.0
         }
     },
-    {
-        "result": "four_shot",
-        "metrics": {
-            "label": "four_shot_true_labels.txt",
-            "pred": "four_shot_predicted_labels.txt",
-            "results": {
-                "accuracy": {
-                    "first_word": 0.0,
-                    "exact_match": 0.0
-                },
-                "bleu_score": 0.0,
-                "jaccard_score": 0.0,
-                "cosine_similarity": 0.0
-            }
+    "four_shot": {
+        "labels_file": "four_shot_true_labels.txt",
+        "preds_file": "four_shot_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 0.0,
+                "exact_match": 0.0
+            },
+            "bleu_score": 0.0,
+            "jaccard_score": 0.0,
+            "cosine_similarity": 0.0
         }
     },
-    {
-        "result": "full_resource",
-        "metrics": {
-            "label": "full_resource_true_labels.txt",
-            "pred": "full_resource_predicted_labels.txt",
-            "results": {
-                "accuracy": {
-                    "first_word": 0.0,
-                    "exact_match": 0.0
-                },
-                "bleu_score": 0.0,
-                "jaccard_score": 0.0,
-                "cosine_similarity": 0.0
-            }
+    "full_resource": {
+        "labels_file": "full_resource_true_labels.txt",
+        "preds_file": "full_resource_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 0.0,
+                "exact_match": 0.0
+            },
+            "bleu_score": 0.0,
+            "jaccard_score": 0.0,
+            "cosine_similarity": 0.0
         }
     },
-    {
-        "result": "one_shot",
-        "metrics": {
-            "label": "one_shot_true_labels.txt",
-            "pred": "one_shot_predicted_labels.txt",
-            "results": {
-                "accuracy": {
-                    "first_word": 0.0,
-                    "exact_match": 0.0
-                },
-                "bleu_score": 0.0,
-                "jaccard_score": 0.0,
-                "cosine_similarity": 0.0
-            }
+    "one_shot": {
+        "labels_file": "one_shot_true_labels.txt",
+        "preds_file": "one_shot_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 0.0,
+                "exact_match": 0.0
+            },
+            "bleu_score": 0.0,
+            "jaccard_score": 0.0,
+            "cosine_similarity": 0.0
         }
     },
-    {
-        "result": "sixteen_shot",
-        "metrics": {
-            "label": "sixteen_shot_true_labels.txt",
-            "pred": "sixteen_shot_predicted_labels.txt",
-            "results": {
-                "accuracy": {
-                    "first_word": 0.0,
-                    "exact_match": 0.0
-                },
-                "bleu_score": 0.0,
-                "jaccard_score": 0.0,
-                "cosine_similarity": 0.0
-            }
+    "sixteen_shot": {
+        "labels_file": "sixteen_shot_true_labels.txt",
+        "preds_file": "sixteen_shot_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 0.0,
+                "exact_match": 0.0
+            },
+            "bleu_score": 0.0,
+            "jaccard_score": 0.0,
+            "cosine_similarity": 0.0
         }
     },
-    {
-        "result": "two_shot",
-        "metrics": {
-            "label": "two_shot_true_labels.txt",
-            "pred": "two_shot_predicted_labels.txt",
-            "results": {
-                "accuracy": {
-                    "first_word": 0.0,
-                    "exact_match": 0.0
-                },
-                "bleu_score": 0.0,
-                "jaccard_score": 0.0,
-                "cosine_similarity": 0.0
-            }
+    "two_shot": {
+        "labels_file": "two_shot_true_labels.txt",
+        "preds_file": "two_shot_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 0.0,
+                "exact_match": 0.0
+            },
+            "bleu_score": 0.0,
+            "jaccard_score": 0.0,
+            "cosine_similarity": 0.0
         }
     }
-]
+}

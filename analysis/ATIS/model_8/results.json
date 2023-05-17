@@ -1,98 +1,80 @@
-[
-    {
-        "result": "eight_shot",
-        "metrics": {
-            "label": "eight_shot_true_labels.txt",
-            "pred": "eight_shot_predicted_labels.txt",
-            "results": {
-                "accuracy": {
-                    "first_word": 87.02,
-                    "exact_match": 86.35
-                },
-                "bleu_score": 16.199504622411478,
-                "jaccard_score": 86.57718120805367,
-                "cosine_similarity": 0.9149888143176734
-            }
+{
+    "eight_shot": {
+        "labels_file": "eight_shot_true_labels.txt",
+        "preds_file": "eight_shot_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 87.02,
+                "exact_match": 86.35
+            },
+            "bleu_score": 16.199504622411478,
+            "jaccard_score": 86.57718120805367,
+            "cosine_similarity": 0.9149888143176734
         }
     },
-    {
-        "result": "four_shot",
-        "metrics": {
-            "label": "four_shot_true_labels.txt",
-            "pred": "four_shot_predicted_labels.txt",
-            "results": {
-                "accuracy": {
-                    "first_word": 36.91,
-                    "exact_match": 34.23
-                },
-                "bleu_score": 6.8332547438507865,
-                "jaccard_score": 34.91797166293811,
-                "cosine_similarity": 0.8299776286353467
-            }
+    "four_shot": {
+        "labels_file": "four_shot_true_labels.txt",
+        "preds_file": "four_shot_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 36.91,
+                "exact_match": 34.23
+            },
+            "bleu_score": 6.8332547438507865,
+            "jaccard_score": 34.91797166293811,
+            "cosine_similarity": 0.8299776286353467
         }
     },
-    {
-        "result": "full_resource",
-        "metrics": {
-            "label": "full_resource_true_labels.txt",
-            "pred": "full_resource_predicted_labels.txt",
-            "results": {
-                "accuracy": {
-                    "first_word": 98.21,
-                    "exact_match": 97.99
-                },
-                "bleu_score": 18.32513828594843,
-                "jaccard_score": 98.06114839671886,
-                "cosine_similarity": 0.9910514541387024
-            }
+    "full_resource": {
+        "labels_file": "full_resource_true_labels.txt",
+        "preds_file": "full_resource_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 98.21,
+                "exact_match": 97.99
+            },
+            "bleu_score": 18.32513828594843,
+            "jaccard_score": 98.06114839671886,
+            "cosine_similarity": 0.9910514541387024
         }
     },
-    {
-        "result": "one_shot",
-        "metrics": {
-            "label": "one_shot_true_labels.txt",
-            "pred": "one_shot_predicted_labels.txt",
-            "results": {
-                "accuracy": {
-                    "first_word": 9.84,
-                    "exact_match": 8.28
-                },
-                "bleu_score": 3.730688958947999,
-                "jaccard_score": 15.585384041759879,
-                "cosine_similarity": 0.2953020134228188
-            }
+    "one_shot": {
+        "labels_file": "one_shot_true_labels.txt",
+        "preds_file": "one_shot_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 9.84,
+                "exact_match": 8.28
+            },
+            "bleu_score": 3.730688958947999,
+            "jaccard_score": 15.585384041759879,
+            "cosine_similarity": 0.2953020134228188
         }
     },
-    {
-        "result": "sixteen_shot",
-        "metrics": {
-            "label": "sixteen_shot_true_labels.txt",
-            "pred": "sixteen_shot_predicted_labels.txt",
-            "results": {
-                "accuracy": {
-                    "first_word": 85.01,
-                    "exact_match": 84.56
-                },
-                "bleu_score": 15.909715191510493,
-                "jaccard_score": 84.71290082028337,
-                "cosine_similarity": 0.9507829977628636
-            }
+    "sixteen_shot": {
+        "labels_file": "sixteen_shot_true_labels.txt",
+        "preds_file": "sixteen_shot_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 85.01,
+                "exact_match": 84.56
+            },
+            "bleu_score": 15.909715191510493,
+            "jaccard_score": 84.71290082028337,
+            "cosine_similarity": 0.9507829977628636
         }
     },
-    {
-        "result": "two_shot",
-        "metrics": {
-            "label": "two_shot_true_labels.txt",
-            "pred": "two_shot_predicted_labels.txt",
-            "results": {
-                "accuracy": {
-                    "first_word": 63.31,
-                    "exact_match": 63.09
-                },
-                "bleu_score": 11.96049799967444,
-                "jaccard_score": 63.60924683072333,
-                "cosine_similarity": 0.8076062639821029
-            }
+    "two_shot": {
+        "labels_file": "two_shot_true_labels.txt",
+        "preds_file": "two_shot_predicted_labels.txt",
+        "results": {
+            "accuracy": {
+                "first_word": 63.31,
+                "exact_match": 63.09
+            },
+            "bleu_score": 11.96049799967444,
+            "jaccard_score": 63.60924683072333,
+            "cosine_similarity": 0.8076062639821029
         }
     }
-]
+}
