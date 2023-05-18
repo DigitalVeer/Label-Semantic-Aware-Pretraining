@@ -113,6 +113,8 @@ def few_shot(model_name_or_path, train_set_path, test_set_path, val_set_path, ou
                       compute_metrics = compute_basic_metrics
                       )
         trainer.train()
+            # save model
+        trainer.save_model()
 
         ## Evaluation on Test set.
         predictions, labels, metrics = trainer.predict(tokenized_datasets["test"])
