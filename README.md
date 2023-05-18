@@ -31,6 +31,23 @@ Use pip to install the dependencies from the requirements.txt file.
 pip install -r requirements.txt
 ```
 
+# How to Run
+
+To generate data from scratch:
+```
+sh scripts/generate_data.sh
+```
+
+To pretrain models (requires configuration based on environment):
+```
+sh scripts/pretrain.sh
+```
+
+To fine-tune models:
+```
+sh scripts/fine-tune.sh
+```
+
 # Data
 We utilized the below datasets for different parts of our process. 
 
