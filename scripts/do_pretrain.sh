@@ -1,6 +1,6 @@
 source ../.venv/Scripts/activate
 
-python ../models/pretraining.py \
+python ../models/pretrain.py \
     --model_name_or_path 't5-small' \
     --train_file ../data/pretraining/preprocessed_data/label_denoising/full_train.json \
     --val_file ../data/pretraining/preprocessed_data/label_denoising/full_val.json \
