@@ -91,7 +91,7 @@ data
 ```
 
 # Authors
-- [VEER](https://github.com/DigitalVeer)
-- [PHANI](https://github.com/PVSPHANINDRA)
-- [LOKESH](https://github.com/lokesh9920)
-- [SANJANA]()
+- [Veer Singh](https://github.com/DigitalVeer)
+- [Phanindra PVS](https://github.com/PVSPHANINDRA)
+- [Lokesh Tangella](https://github.com/lokesh9920)
+- [Sanjana Radhakrishna]()
