@@ -1,12 +1,13 @@
-import torch 
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, Trainer, Seq2SeqTrainer, TrainingArguments, DataCollatorForSeq2Seq, AutoModelForSequenceClassification, Seq2SeqTrainingArguments
-import numpy as np
-from datasets import load_dataset, Dataset
-import pandas as pd
+import torch, os, json, argparse
+
 from sys import argv as args
-import os
 from pathlib import Path
-import json
+
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, Seq2SeqTrainer, DataCollatorForSeq2Seq, Seq2SeqTrainingArguments
+from datasets import load_dataset, Dataset
+
+import numpy as np
+import pandas as pd
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
@@ -60,7 +61,8 @@ def few_shot(model_name_or_path, train_set_path, test_set_path, val_set_path, ou
         dummy = train_df.groupby('intent').apply(get_random_sample)
         curr = dummy.reset_index(drop = True)
         if i != 0:
-            curr = prev.append(curr, ignore_index = True)
+            #curr = prev.concat(curr, ignore_index = True)
+            curr = pd.concat([prev, curr], ignore_index=True)
         
         prev = curr
         
@@ -102,7 +104,7 @@ def few_shot(model_name_or_path, train_set_path, test_set_path, val_set_path, ou
                                 save_total_limit=3,
                                 num_train_epochs=10,
                                 predict_with_generate=True,
-                                fp16=True,
+                                fp16= ( "cuda" in device ),
                                 logging_strategy = 'epoch')
         trainer = Seq2SeqTrainer(model = model, 
                       args = training_args, 
@@ -144,30 +146,25 @@ def few_shot(model_name_or_path, train_set_path, test_set_path, val_set_path, ou
 
         print('Metrics are saved at:', Path(file_name_metrics).absolute())
 
+
+
 if __name__ == "__main__":
-    if len(args) < 7: 
-        raise Exception("Please provide valid argument")
+    parser = argparse.ArgumentParser(description="Training script")
+    
+    parser.add_argument("--model_name_or_path", type=str, help="Name or path of the model")
+    parser.add_argument("--train_set_path", type=str, help="Path to the training set")
+    parser.add_argument("--test_set_path", type=str, help="Path to the test set")
+    parser.add_argument("--val_set_path", type=str, help="Path to the validation set")
+    parser.add_argument("--output_dir", type=str, help="Directory to output trained model")
+    parser.add_argument("--analysis_dir", type=str, help="Directory for analysis")
 
+    args = parser.parse_args()
+    
+    print("model_name_or_path", args.model_name_or_path)
+    print("train_set_path", args.train_set_path)
+    print("val_set_path", args.val_set_path)
+    print("test_set_path", args.test_set_path)
+    print("output_dir", args.output_dir)
+    print("analysis_dir", args.analysis_dir)
 
-    model_name_or_path = args[1]
-    train_set_path = args[2]
-    test_set_path = args[3]
-    val_set_path = args[4]
-    output_dir = args[5]
-    analysis_dir = args[6]
-
-    # model_name_or_path = '../output/without_intent/gold_silver_model_2'
-    # train_set_path = '../data/evaluation/SNIPS/processedData/train.csv'
-    # test_set_path = '../data/evaluation/SNIPS/processedData/test.csv'
-    # val_set_path = '../data/evaluation/SNIPS/processedData/val.csv'
-    # output_dir = '../output/fine-tune_models/SNIPS_model_1_results'
-
-
-    print("model_name_or_path", model_name_or_path)
-    print("train_set_path", train_set_path)
-    print("val_set_path", val_set_path)
-    print("test_set_path", test_set_path)
-    print("output_dir", output_dir)
-    print("analysis_dir", analysis_dir)
-
-    few_shot(model_name_or_path, train_set_path, test_set_path, val_set_path, output_dir, analysis_dir)
+    few_shot(args.model_name_or_path, args.train_set_path, args.test_set_path, args.val_set_path, args.output_dir, args.analysis_dir)
