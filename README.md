@@ -1,9 +1,11 @@
 # Label Semantic Aware Pretraining
-In this project, we explore the effectiveness of LSAP on few-shot intent classification tasks. *in progress*
-# Setup Project with Poetry
+In this research project, we evaluate we explore the effectiveness of LSAP on few-shot intent classification tasks. Our principal aim is to implement the LSAP technique on a series of T5-small models and evaluate their performance across diverse few-shot settings, comparing it to baseline models. The original Label Semantic Aware Pre-training paper can be found [here](https://arxiv.org/pdf/2204.07128.pdf).
+
+## Poetry Setup
+
 [Poetry](https://python-poetry.org/) is a more powerful version of pip w/ easier virtual environment management. I recommend using it but you can also just use Pip (see below). I've simplified the Poetry installation process here and should take less than 5 minutes to have the project running.
 
-1. Install Poetry (Run in Powershell).
+1. Install Poetry (Powershell).
 ```bash
 (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
 ```
@@ -24,9 +26,9 @@ To deactivate the virtual environment, run:
 ```
 exit
 ```
-# (Alternative) Setup Project with Pip
+## Pip Setup
 
-Use pip to install the dependencies from the requirements.txt file.  
+Assuming you have pip installed and configured on your system alreayd, you can use pip to install the dependencies from the requirements.txt file.  
 ```
 pip install -r requirements.txt
 ```
@@ -60,8 +62,9 @@ We utilized the below datasets for different parts of our process.
 - [WikiHow](https://github.com/zharry29/wikihow-intent)
 
 ### Evaluation:
-- [SNIPS](https://paperswithcode.com/dataset/snips)
+- [SNIPS](https://github.com/sonos/nlu-benchmark/tree/master/2017-06-custom-intent-engines)
 - [ATIS](https://github.com/yvchen/JointSLU/tree/master/data)
+- [TOPv2](https://fb.me/TOPv2Dataset)
 
 To generate the pretraining data, run:
 ```
