@@ -35,17 +35,21 @@ pip install -r requirements.txt
 
 To generate data from scratch:
 ```
-sh scripts/generate_data.sh
+cd scripts
+sh generate_data.sh
 ```
 
 To pretrain models (requires configuration based on environment):
 ```
-sh scripts/pretrain.sh
+cd scripts
+sh pretrain.sh
 ```
+The training arguments can be changed inside the pretrain.sh to replicate different models attempted in our paper.
 
 To fine-tune models:
 ```
-sh scripts/fine-tune.sh
+cd scripts
+sh fine-tune.sh
 ```
 
 # Data
@@ -70,17 +74,24 @@ The data that is used throughout our project is all stored under the data folder
 ```
 data
 ├───pretraining
-│   ├───dataset (storage for final datasets)
+│   ├───dataset (storage for raw data)
+│   │───preprocessed_data (stores tokenized data)
 │   ├───polyai-bank
-│   │   └───get_data.ipynb
+│   │   └───get_data.py (data generator in each dataset)
 │   ├────wikihow
-│   │   └───get_data.ipynb
-│   └───create_dataset.ipynb (merges pretraining datasets into one)
+│   │   └───get_data.py 
+│   preprocessing.py (tokenizes raw dataset & stores them in preprocessed_data)
 ├───evaluation
+│   ├───atis
+│   ├───snips
+│   ├───tops_reminder
+│   ├───tops_weather
+│   │───dataset (storage for raw data)
+│   preprocessing.py (stores datasets into dataset folder)
 ```
 
 # Authors
-- [VEER]()
-- [PHANI]()
-- [LOKESH]()
+- [VEER](https://github.com/DigitalVeer)
+- [PHANI](https://github.com/PVSPHANINDRA)
+- [LOKESH](https://github.com/lokesh9920)
 - [SANJANA]()
