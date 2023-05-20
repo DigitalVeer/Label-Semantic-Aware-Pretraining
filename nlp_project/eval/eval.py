@@ -4,9 +4,10 @@ from dataclasses import dataclass
 from typing import Any, Dict
 from sentence_transformers import SentenceTransformer, util
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
+import utils.util as helper
 
 # Models to use for cosine similarity plots
-PLOT_MODELS = (3, 8)
+PLOT_MODELS = (1, 3, 8)
 
 # Filenames for the predicted and true labels
 GOLD_LABEL_FILE = "sixteen_shot_true_labels.txt"
@@ -122,7 +123,7 @@ class CosineSimilarity:
         print(f"gold: {gold_intent}\npred: {pred_intent}\nmatch: {cosine_sim}%\n")
 
 @dataclass
-class EvaluationMetricsDemo:
+class MetricHandler:
     pred_file: str
     gold_file: str
     embed_handler: CosineSimilarity 
@@ -400,7 +401,7 @@ def get_cleaned_intents(gold: list, pred: list) -> list:
     return ["ε" if intent not in intent_set else intent for intent in pred]
 
 
-def evaluate_pred(dir_path: str, label: str, pred: str) -> dict:
+def create_metric_class(dir_path: str, label: str, pred: str) -> MetricHandler:
     """
     Evaluate the predicted intents against the gold intents and return the metrics.
 
@@ -413,13 +414,11 @@ def evaluate_pred(dir_path: str, label: str, pred: str) -> dict:
         A dictionary containing the evaluation metrics.
     """
     # Note: similarity_checker needs to be initialized outside of this function.
-    metrics = EvaluationMetricsDemo(
+    return MetricHandler(
         embed_handler=similarity_checker,
         gold_file=f"{dir_path}/{label}",
         pred_file=f"{dir_path}/{pred}"
     )
-    return metrics.evaluate()
-
 
 def get_results(path: str) -> dict:
     """
@@ -443,10 +442,10 @@ def get_results(path: str) -> dict:
 
         if len(label_lines) != len(pred_lines):
             print(f"{label} and {pred} are not the same length.")
-            metrics = evaluate_pred(path, label, pred)
+            metrics = create_metric_class(path, label, pred)
             results = metrics.get_metrics(0, 0, 0, 0, 0)
         else:
-            metrics = evaluate_pred(path, label, pred)
+            metrics = create_metric_class(path, label, pred)
             results = metrics.evaluate()
 
         # Update results
@@ -595,22 +594,27 @@ def create_heatmap(gold_intents: str, pred_intents: str, sim_mat: list) -> go.Fi
 similarity_checker = CosineSimilarity(api_token="")
 
 # Get the folders containing evaluation data
-eval_folders = os.listdir(DATA_PATH)
+eval_folders = helper.get_folders( DATA_PATH )
 
 # Iterate over evaluation folders
 for eval_folder in eval_folders:
-    models = os.listdir(f"{DATA_PATH}/{eval_folder}")
+    models = helper.get_folders( path = f"{DATA_PATH}/{eval_folder}" )
     for model in models:
+
+        #Get model path
         print(f"Processing {model} in {eval_folder}")
+        MODEL_PATH = f"{DATA_PATH}/{eval_folder}/{model}"
 
         # Get and write results
-        results = get_results(f"{DATA_PATH}/{eval_folder}/{model}")
-        write_results(f"{DATA_PATH}/{eval_folder}/{model}", results)
+        write_results( 
+            path    = MODEL_PATH,
+            results =  get_results( MODEL_PATH ) 
+        )
 
         # Create cosine similarity heatmap for certain models
-        if any(num in eval_folder for num in PLOT_MODELS):
-            gold_path = f"{DATA_PATH}/{eval_folder}/{model}/{GOLD_LABEL_FILE}"
-            pred_path = f"{DATA_PATH}/{eval_folder}/{model}/{PREDICTED_LABEL_FILE}"
+        if any( str(num) in model for num in PLOT_MODELS ):
+            gold_path = f"{MODEL_PATH}/{GOLD_LABEL_FILE}"
+            pred_path = f"{MODEL_PATH}/{PREDICTED_LABEL_FILE}"
 
             # Calculate similarity matrix and create heatmap
             cosine_sims = get_sim_matrix(gold_path, pred_path)
