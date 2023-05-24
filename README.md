@@ -1,9 +1,15 @@
+<div align="center">
+
 # Label Semantic Aware Pretraining
+  
+  
 In this research project, we evaluate we explore the effectiveness of LSAP on few-shot intent classification tasks. Our principal aim is to implement the LSAP technique on a series of T5-small models and evaluate their performance across diverse few-shot settings, comparing it to baseline models. The original Label Semantic Aware Pre-training paper can be found [here](https://arxiv.org/pdf/2204.07128.pdf).
 
-## Poetry Setup
+ # Setup
+  
+</div>
 
-[Poetry](https://python-poetry.org/) is a more powerful version of pip w/ easier virtual environment management. I recommend using it but you can also just use Pip (see below). I've simplified the Poetry installation process here and should take less than 5 minutes to have the project running.
+This project is managed using [Poetry](https://python-poetry.org/), an alternative to pip with virtual environment management.
 
 1. Install Poetry (Powershell).
 ```bash
@@ -26,14 +32,18 @@ To deactivate the virtual environment, run:
 ```
 exit
 ```
-## Pip Setup
+## Pip Setup (Altnerative)
 
-Assuming you have pip installed and configured on your system alreayd, you can use pip to install the dependencies from the requirements.txt file.  
+Assuming you have pip installed and configured on your system, you can use pip to install the dependencies.  
 ```
 pip install -r requirements.txt
 ```
 
-# How to Run
+<div align="center">
+
+# How To Run
+  
+</div>
 
 To generate data from scratch:
 ```
@@ -54,37 +64,40 @@ cd scripts
 sh fine-tune.sh
 ```
 
+<div align="center">
+
 # Data
-We utilized the below datasets for different parts of our process.
 
-## Pretraining
-For the pretraining phase, we used the following datasets:
+</div>
 
-### PolyAI Bank
-The [PolyAI Bank](https://huggingface.co/datasets/PolyAI/banking77) dataset, available from the Hugging Face library, is utilized for pretraining. It consists of a large collection of banking-related utterances, covering various customer intents such as balance inquiries, transaction requests, and account management.
+Our project relies on a variety of datasets, each playing a key role in different stages, and we provide a concise overview of their significance.
 
-### WikiHow
-The [WikiHow](https://github.com/zharry29/wikihow-intent) dataset is another source used for pretraining. It is a publicly available dataset extracted from the WikiHow website, containing a vast collection of articles covering a wide range of topics. The dataset includes both the longest step in a WikiHow article, and pairs it to the article title as it's intent (with "How To" removed).
+### Pretraining
 
-## Evaluation
-For evaluation purposes, we used the following datasets:
+1. **PolyAI Bank:** The [PolyAI Bank](https://huggingface.co/datasets/PolyAI/banking77) dataset contains banking-related utterances. This dataset serves a large amount of customer intents and is available via the Hugging Face library.
 
-### SNIPS
-The [SNIPS](https://github.com/sonos/nlu-benchmark/tree/master/2017-06-custom-intent-engines) dataset serves as one of the evaluation datasets in our project. It is a benchmark dataset commonly used for intent classification tasks. The dataset consists of user queries from various domains, such as weather, music, and navigation.
+2. **WikiHow:** The [WikiHow](https://github.com/zharry29/wikihow-intent) dataset is sourced from the WikiHow website. It pairs the longest step in a WikiHow article with the article title (sans "How To") as its intent. 
 
-### ATIS
-The [ATIS](https://github.com/yvchen/JointSLU/tree/master/data) (Airline Travel Information System) dataset is another evaluation dataset employed in our project. It focuses on the airline travel domain and contains a collection of user queries related to flight reservations, schedules, and other travel-related inquiries.
+### Evaluation
 
-### TOPv2
-The [TOPv2](https://fb.me/TOPv2Dataset) dataset is an additional evaluation dataset used in our project. It is a large-scale dataset developed by Facebook AI, comprising user queries related to various domains, including reminders, weather, and more. In particular, we use TOPv2Weather and TOPv2Reminder.
+1. **SNIPS:** We use the [SNIPS](https://github.com/sonos/nlu-benchmark/tree/master/2017-06-custom-intent-engines) dataset as it is a popular benchmark in intent classification tasks.
+
+2. **ATIS:**  [ATIS](https://github.com/yvchen/JointSLU/tree/master/data) (Airline Travel Information System) houses user queries concerning flight reservations, schedules, and other travel-related subjects. Similar to the authors, we use this to evaluate intent classification.
+
+3. **TOPv2:** Finally, the [TOPv2](https://fb.me/TOPv2Dataset) dataset developed by Facebook AI encompasses user queries across various domains, including reminders and weather. We use a focus on TOPv2Weather and TOPv2Reminder for this project, as the original authors.
 
 
-To generate the pretraining data, run:
-```
+### Generation
+To generate the pretraining data, run the following script:
+```bash
 sh data/pretraining/preprocess_data.sh
 ```
 
+<div align="center">
+
 # Data Layout
+
+</div>
 
 The data that is used throughout our project is all stored under the data folder. The data is stored in the following format:
 ```
@@ -105,9 +118,13 @@ data
 │   │───dataset (storage for raw data)
 │   preprocessing.py (stores datasets into dataset folder)
 ```
+<div align="center">
 
-# Authors
-- [Veer Singh](https://github.com/DigitalVeer)
-- [Phanindra PVS](https://github.com/PVSPHANINDRA)
-- [Lokesh Tangella](https://github.com/lokesh9920)
-- [Sanjana Radhakrishna]()
+# :busts_in_silhouette: Authors
+
+</div>
+
+- [**Veer Singh**](https://github.com/DigitalVeer)
+- [**Phanindra PVS**](https://github.com/PVSPHANINDRA)
+- [**Lokesh Tangella**](https://github.com/lokesh9920)
+- [**Sanjana Radhakrishna**]()
