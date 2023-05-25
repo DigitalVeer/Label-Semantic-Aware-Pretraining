@@ -3,7 +3,7 @@
 # Label Semantic Aware Pretraining
   
   
-In this research project, we evaluate we explore the effectiveness of LSAP on few-shot intent classification tasks. Our principal aim is to implement the LSAP technique on a series of T5-small models and evaluate their performance across diverse few-shot settings, comparing it to baseline models. The original Label Semantic Aware Pre-training paper can be found [here](https://arxiv.org/pdf/2204.07128.pdf).
+In this research project, we explore the effectiveness of LSAP on few-shot intent classification tasks. Our aim is to implement the LSAP technique on a series of T5-small models and evaluate their performance across diverse few-shot settings. The original Label Semantic Aware Pre-training paper can be found [here](https://arxiv.org/pdf/2204.07128.pdf).
 
  # Setup
   
