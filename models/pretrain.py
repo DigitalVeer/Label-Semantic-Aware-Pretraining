@@ -131,7 +131,7 @@ def preTrain(model_name_or_path, train_file, val_file, output_dir, is_random_wei
         per_device_eval_batch_size= 2,
         gradient_accumulation_steps= 4,
         learning_rate= 5e-3,
-        evaluation_strategy= 'epoch',
+        eval_strategy= 'epoch',
         num_train_epochs= 5,
         save_total_limit= 2,
         save_strategy= 'epoch',
@@ -162,7 +162,6 @@ def preTrain(model_name_or_path, train_file, val_file, output_dir, is_random_wei
         model = AutoModelForSeq2SeqLM.from_pretrained(
         model_name_or_path,
         config = config,
-        from_tf=bool('.ckpt' in model_name_or_path)
     )
 
     # Tokenize input and target
@@ -172,9 +171,9 @@ def preTrain(model_name_or_path, train_file, val_file, output_dir, is_random_wei
         targets = [ex for ex in examples['targets']]
         model_inputs = tokenizer(inputs, max_length= data_args['max_source_length'], padding = False, truncation=True)
 
-        # Setup the tokenizer for targets
-        with tokenizer.as_target_tokenizer():
-            labels = tokenizer(targets, max_length = data_args['max_target_length'], padding = False, truncation=True)
+        # Tokenize the targets. `as_target_tokenizer()` was removed in recent
+        # Transformers; the supported API is the `text_target` argument.
+        labels = tokenizer(text_target=targets, max_length = data_args['max_target_length'], padding = False, truncation=True)
 
         model_inputs['labels'] = labels['input_ids']
         return model_inputs
@@ -210,7 +209,7 @@ def preTrain(model_name_or_path, train_file, val_file, output_dir, is_random_wei
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=eval_dataset,
-        tokenizer=tokenizer,
+        processing_class=tokenizer,
         data_collator=data_collator,
     )
 

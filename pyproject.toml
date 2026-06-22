@@ -1,32 +1,35 @@
-[tool.poetry]
+[project]
 name = "nlp-project"
 version = "0.1.0"
-description = ""
-authors = ["Peter <digitalizedveer@gmail.com>"]
+description = "Label Semantic Aware Pre-training for few-shot intent classification."
+authors = [{ name = "Veer Singh", email = "digitalizedveer@gmail.com" }]
 readme = "README.md"
-packages = [{include = "nlp_project"}]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "transformers>=4.46,<5.0",
+    "datasets>=3.0,<4.0",
+    "accelerate>=0.34",
+    "torch>=2.2,<3.0",
+    "sentencepiece>=0.2.0",
+    "numpy>=1.26,<3.0",
+    "pandas>=2.2,<3.0",
+    "scikit-learn>=1.5,<2.0",
+    "nltk>=3.9,<4.0",
+    "sentence-transformers>=3.0,<6.0",
+    "matplotlib>=3.9,<4.0",
+    "seaborn>=0.13,<0.15",
+    "plotly>=5.24,<6.0",
+    "kaleido==0.2.1",
+    "gdown>=5.2,<6.0",
+    "ipykernel>=6.29,<7.0",
+]
 
-[tool.poetry.dependencies]
-python = "^3.10"
-transformers = "^4.28.1"
-datasets = "^2.12.0"
-numpy = "^1.24.3"
-pandas = "^2.0.1"
-ipykernel = "^6.22.0"
-torch = "^2.0.0"
-matplotlib = "^3.7.1"
-gdown = "^4.7.1"
-plotly = "^5.14.1"
-sentencepiece = "^0.1.99"
-nltk = "^3.8.1"
-seaborn = "^0.12.2"
-scikit-learn = "^1.2.2"
-sentence-transformers = "^2.2.2"
-
+[tool.poetry]
+packages = [{ include = "nlp_project" }]
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0"]
 build-backend = "poetry.core.masonry.api"

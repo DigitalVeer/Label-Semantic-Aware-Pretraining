@@ -53,13 +53,15 @@ def few_shot(model_name_or_path, train_set_path, test_set_path, val_set_path, ou
 
     tokenizer = AutoTokenizer.from_pretrained(model_name_or_path)
     train_df = pd.read_csv(train_set_path)
-    get_random_sample = lambda x: x.iloc[np.random.randint(0, len(x))]
     shots_list = [] # stores df for 1,2,4,8,16 shot training data
     prev = None
 
     for i in range(16):
-        dummy = train_df.groupby('intent').apply(get_random_sample)
-        curr = dummy.reset_index(drop = True)
+        # One random example per intent. `groupby(...).sample(n=1)` replaces the
+        # old `groupby(...).apply(lambda x: x.iloc[...])`, which now raises a
+        # DeprecationWarning in pandas >= 2.2 about operating on grouping columns.
+        curr = train_df.groupby('intent', group_keys=False).sample(n=1)
+        curr = curr.reset_index(drop = True)
         if i != 0:
             #curr = prev.concat(curr, ignore_index = True)
             curr = pd.concat([prev, curr], ignore_index=True)
@@ -97,7 +99,7 @@ def few_shot(model_name_or_path, train_set_path, test_set_path, val_set_path, ou
         tokenized_datasets = tokenized_datasets.remove_columns(raw_datasets["train"].column_names)
 
         datacollator = DataCollatorForSeq2Seq(tokenizer = tokenizer, return_tensors= "pt", padding=True)
-        training_args = Seq2SeqTrainingArguments(evaluation_strategy = "epoch", output_dir= output_dir,
+        training_args = Seq2SeqTrainingArguments(eval_strategy = "epoch", output_dir= output_dir,
                                 learning_rate= 1e-2,
                                 per_device_train_batch_size=32,
                                 per_device_eval_batch_size=32,
@@ -111,7 +113,7 @@ def few_shot(model_name_or_path, train_set_path, test_set_path, val_set_path, ou
                       train_dataset=tokenized_datasets["train"],
                       eval_dataset=tokenized_datasets["validation"],
                       data_collator = datacollator,
-                      tokenizer = tokenizer,
+                      processing_class = tokenizer,
                       compute_metrics = compute_basic_metrics
                       )
         trainer.train()

@@ -4,8 +4,10 @@
 SCRIPT_DIR="$(dirname "$0")"
 DATA_DIR="$SCRIPT_DIR/../data"
 
-# Activate virtual environment
-source "$SCRIPT_DIR/../.venv/Scripts/activate"
+# Activate virtual environment (cross-platform: bin on Linux/macOS, Scripts on Windows)
+VENV="$SCRIPT_DIR/../.venv"
+if [ -f "$VENV/bin/activate" ]; then source "$VENV/bin/activate";
+elif [ -f "$VENV/Scripts/activate" ]; then source "$VENV/Scripts/activate"; fi
 
 # Check if 'do_pretrain' is set to true
 if [ "$1" = "pretrain" ]; then
