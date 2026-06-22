@@ -9,35 +9,37 @@ In this research project, we explore the effectiveness of LSAP on few-shot inten
   
 </div>
 
-This project is managed using [Poetry](https://python-poetry.org/), an alternative to pip with virtual environment management.
+This project is managed using [Poetry](https://python-poetry.org/), an alternative to pip with virtual environment management. It targets **Python 3.10–3.12** and the modern ML stack (Transformers ≥ 4.46, PyTorch ≥ 2.2, Datasets ≥ 3.0).
 
-1. Install Poetry (Powershell).
+1. Install Poetry.
 ```bash
+# Linux / macOS
+curl -sSL https://install.python-poetry.org | python3 -
+
+# Windows (PowerShell)
 (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
 ```
-2. Add Poetry to PATH:
-```
-C:\Users\NAME\AppData\Roaming\pypoetry\venv\Scripts
-```
-3. Run in project directory:  
-```
-poetry config virtualenvs.in-project true
+2. Make sure Poetry is on your `PATH` (the installer prints the location; on Windows it is typically `%APPDATA%\pypoetry\venv\Scripts`).
+3. Install dependencies in the project directory:
+```bash
+poetry config virtualenvs.in-project true   # creates ./.venv (used by the scripts)
 poetry install
 ```
-4. To activate the virtual environment, run:  
+4. Run commands inside the environment with `poetry run`, e.g.:
+```bash
+poetry run python models/fine_tune.py --help
 ```
-poetry shell
-```
-To deactivate the virtual environment, run:  
-```
-exit
-```
-## Pip Setup (Altnerative)
+(Poetry 2.x removed the built-in `poetry shell`; use `poetry run`, or `poetry env activate` to print an activation command.)
 
-Assuming you have pip installed and configured on your system, you can use pip to install the dependencies.  
-```
+## Pip Setup (Alternative)
+
+Assuming you have pip configured, install the dependencies directly:
+```bash
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
+> For a CUDA build of PyTorch, install `torch` from the official index first
+> (see the comment at the top of `requirements.txt`).
 
 <div align="center">
 
@@ -54,14 +56,32 @@ sh generate_data.sh
 To pretrain models (requires configuration based on environment):
 ```
 cd scripts
-sh pretrain.sh
+sh do_pretrain.sh
 ```
-The training arguments can be changed inside the pretrain.sh to replicate different models attempted in our paper.
+The training arguments can be changed inside `do_pretrain.sh` to replicate the different models attempted in our paper.
 
 To fine-tune models:
 ```
 cd scripts
-sh fine-tune.sh
+sh fine_tuning.sh
+```
+
+### Choosing a base model
+
+Both `models/pretrain.py` and `models/fine_tune.py` take a
+`--model_name_or_path`, so any Hugging Face seq2seq checkpoint works as a
+drop-in replacement for `t5-small`. Two useful upgrades:
+
+- **Larger T5:** `t5-base`, `t5-large` — closer to the scale used in the
+  original LSAP paper (the much smaller `t5-small` is the main reason our
+  accuracies trail theirs).
+- **Instruction-tuned, same architecture:** `google/flan-t5-small`,
+  `google/flan-t5-base` — drop-in replacements with stronger few-shot
+  behavior out of the box.
+
+Example:
+```
+python models/fine_tune.py --model_name_or_path google/flan-t5-base ...
 ```
 
 <div align="center">

@@ -96,8 +96,9 @@ class CosineSimilarity:
         embedding_gold = self.model.encode(gold_intent, convert_to_tensor=True)
         embedding_pred = self.model.encode(pred_intent, convert_to_tensor=True)
 
-        # Compute the cosine similarity between the two embeddings
-        similarity = util.pytorch_cos_sim(embedding_gold, embedding_pred).item()
+        # Compute the cosine similarity between the two embeddings.
+        # `pytorch_cos_sim` is a deprecated alias; `cos_sim` is the current API.
+        similarity = util.cos_sim(embedding_gold, embedding_pred).item()
         return similarity
 
     def compare(self, gold_intent: str, pred_intent: str) -> None:

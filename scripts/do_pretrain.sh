@@ -1,4 +1,9 @@
-source ../.venv/Scripts/activate
+#!/bin/bash
+# Activate the project virtualenv on any OS (.venv/bin on Linux/macOS,
+# .venv/Scripts on Windows). Falls back to the current environment.
+VENV="$(dirname "$0")/../.venv"
+if [ -f "$VENV/bin/activate" ]; then source "$VENV/bin/activate";
+elif [ -f "$VENV/Scripts/activate" ]; then source "$VENV/Scripts/activate"; fi
 
 python ../models/pretrain.py \
     --model_name_or_path 't5-small' \
