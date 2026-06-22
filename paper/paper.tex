@@ -1,0 +1,982 @@
+% =====================================================================
+% Label Semantic Aware Pre-training for Few-shot Text Classification
+% Reconstructed, editable LaTeX source.
+%
+% NOTE ON PROVENANCE
+%   The repository originally contained only the compiled paper.pdf
+%   (built with pdfTeX / "LaTeX with hyperref", 2023-05-20); the LaTeX
+%   source was never committed. This file reconstructs the paper from the
+%   text of that PDF and applies a set of corrections to the prose.
+%
+%   Every substantive change to the original wording is tagged with a
+%   "% CORRECTED:" comment so the authors can audit each edit. A summary
+%   of all corrections is in paper/CORRECTIONS.md.
+%
+%   Figures 1-8 in the original are raster images that are NOT present in
+%   the repository, so they are reproduced here as captioned placeholders
+%   (see the \figplaceholder macro). Drop the original images into
+%   paper/figures/ and replace the placeholders to restore them.
+%
+% Compiles with a plain pdflatex run (article class; no ACL style files
+% required) so the authors can edit and rebuild without external deps.
+% =====================================================================
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{authblk}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+% Placeholder for figures whose source images are not in the repo.
+\newcommand{\figplaceholder}[1]{%
+  \begin{center}
+  \fbox{\parbox{0.8\linewidth}{\centering\vspace{1.5em}%
+  \textit{[Figure source image not available in repository.]}\\[0.3em]%
+  \footnotesize #1\vspace{1.5em}}}
+  \end{center}}
+
+\title{Label Semantic Aware Pre-training for Few-shot Text Classification}
+
+\author[ ]{Veer Singh}
+\author[ ]{Venkata Sai Phanindra}
+\author[ ]{Lokesh Tangella}
+\author[ ]{Sanjana Radhakrishna}
+\affil[ ]{University of Massachusetts Amherst\\
+\texttt{\{veersingh, vpamidimukkala, ltangella, sanjanaradha\}@umass.edu}}
+
+\date{}
+
+\begin{document}
+\maketitle
+
+% CORRECTED: Added an explicit replication-study framing up front so the
+% paper does not later mis-describe LSAP as the authors' own novel method.
+\begin{abstract}
+This is a \emph{replication and analysis study} of the Label Semantic Aware
+Pre-training (LSAP) technique introduced by Mueller and Roth (2022). We
+re-implement LSAP on \mbox{T5-small} (60M parameters) rather than the
+multi-billion-parameter models used in the original work, and evaluate
+few-shot intent classification across 1-, 2-, 4-, 8-, 16-shot, and
+full-resource settings on ATIS, SNIPS, and TOPv2. We confirm the original
+paper's qualitative trend---label denoising is the most effective secondary
+pre-training format and helps most in the lowest-resource settings---while
+also reporting where our small-scale reproduction \emph{diverges} from the
+original: the few-shot accuracy advantage of the LSAP model is smaller and
+noisier at this scale, plain T5-small remains highly competitive (and
+superior on several generation-quality metrics), and from-scratch
+pre-training on our 120K-example corpus failed to produce usable models.
+\end{abstract}
+
+\section{Introduction}
+
+The advancement of large pre-trained language models has greatly enhanced
+performance on natural language processing (NLP) tasks, particularly in
+scenarios with limited training data. However, while these models excel at
+encoding input information, there has been limited investigation into
+providing informative representations of \emph{labels} to the models. Most
+text classification methods commonly utilize label indices, but research
+suggests that employing sequence-to-sequence models to generate labels can
+improve performance. Nonetheless, these generative models only leverage
+label semantics during fine-tuning and prediction, rather than during
+pre-training.
+
+To address this gap, a recent study introduced the Label Semantic Aware
+Pre-training (LSAP) approach (Mueller and Roth, 2022), which integrates
+label semantics and input--label associations into the pre-training phase.
+This approach has shown the potential to achieve superior performance with a
+reduced number of fine-tuning examples across diverse domains. Our research
+aims to assess the effectiveness of LSAP by pre-training two generative
+models, one of which incorporates label semantics and one of which does not.
+We evaluate their few-shot performance on intent and topic classification
+datasets. Furthermore, time permitting, we planned to extend this approach
+to encoder models like BERT-base and evaluate their performance on sentiment
+analysis tasks.
+
+\section{Proposed \& Accomplished Goals}
+
+Our principal aim is to implement the LSAP technique on the T5-small model
+and evaluate its performance across diverse few-shot settings, comparing it
+to our baseline models. We also incorporated a stretch goal alongside our
+initial proposal. All of the planned core experiments were successfully
+conducted, and the code can be found on
+GitHub.\footnote{\url{https://github.com/DigitalVeer/nlp-project}} While we
+made strides toward the stretch goal, it remains incomplete.
+
+In the course of this investigation, we undertook a variety of tasks to
+examine the effectiveness of different pre-training approaches and
+fine-tuning strategies on downstream performance:
+
+\begin{itemize}
+  \item We gathered and preprocessed appropriate datasets for our study
+        (Section~\ref{sec:data}).
+  \item We explored three distinct pre-training formats, scrutinizing their
+        performance under various shot settings (1, 2, 4, 8, 16-shot, and a
+        full-resource scenario) for downstream tasks.
+  \item We implemented the LSAP technique and evaluated its efficiency
+        through secondary pre-training applied to a quartet of T5-small
+        models.
+  \item We performed fine-tuning with respect to hyperparameters for the
+        downstream task of intent classification.
+  \item We evaluated the primary pre-trained T5-small model and the four
+        secondarily pre-trained models under several few-shot scenarios,
+        from 1-shot to full-resource.
+  \item Errors committed by the best-performing model in $k$-shot scenarios
+        were scrutinized to gain a deeper understanding of the model's
+        weaknesses.
+  \item We made a comparative analysis of different metrics across all five
+        models in the $k$-shot settings.
+\end{itemize}
+
+Initially, our study had a broader scope that included an ambitious stretch
+goal. However, we encountered limitations in time and computational
+resources that prevented us from achieving it. We operated on Google
+Colaboratory, which offers limited GPU availability, constraining our
+computational capabilities. The unattained stretch goal involved an in-depth
+analysis of the effectiveness of the LSAP technique when applied to
+encoder-only models, like BERT, for the downstream task of sentiment
+analysis.
+
+\section{Related Work}
+
+Label semantics have been widely used to enhance performance and robustness
+across settings and tasks, even prior to the prevalence of dense embedding
+representations. For instance, Chang et al.\ (2008) achieved over 80\%
+accuracy in binary text classification tasks without any labeled training
+examples, by employing naive Bayes classifiers that utilized rich semantic
+representations of labels (Gabrilovich and Markovitch, 2007). Similarly,
+Song and Roth (2014) adopted a comparable strategy for hierarchical and
+multinomial classification tasks and found that dataless approaches could
+approach, and sometimes outperform, supervised approaches.
+
+More recently, label semantics based on dense embeddings have gained
+popularity, particularly with the advent of contextualized word embeddings
+(Peters et al., 2018). Label-wise attention networks (LWANs) have been
+proposed for datasets with large structured label spaces, where multiple
+labels can apply to a long document. Mullenbach et al.\ (2018) and Rios and
+Kavuluru utilized LWANs based on convolutional neural networks and extended
+the attention mechanism for zero-shot settings. Chalkidis et al.\ (2020)
+employed BERT to embed labels for an LWAN. In contrast, our setting involves
+a smaller label space and shorter input texts. Another label-semantic-aware
+approach, CLESS, performs contrastive pre-training on a question-answering
+dataset with a large and sparse label space for massively multi-label text
+classification. Our setting exhibits a larger discrepancy between
+pre-training and fine-tuning, and we aim for more domain generalization by
+leveraging token and span reconstruction objectives.
+
+In short-text intent and topic classification, other works have integrated
+label embeddings into their systems. Gaonkar et al.\ (2020) and Ma et al.\
+(2022) used label embeddings from BERT and a label attention mechanism to
+improve emotion classification accuracy and few-shot named entity
+recognition, respectively. Generative approaches, such as those of Rongali
+et al.\ (2020), Athiwaratkun et al.\ (2020), and Paolini et al.\ (2021),
+implicitly leverage label semantics for text and token classification tasks
+by generating labels at prediction time.
+
+Few-shot text classification involves classifying text with only a few
+examples from the training set. Recent approaches include
+(Ro)BERT(a)-based methods (Chen et al., 2020; Yang et al., 2019),
+prototypical networks, dynamic memory induction networks, and generative
+classification. In our work, we evaluate the LSAP approach on two subtasks
+of text classification: topic classification (TC) and intent classification
+(IC). In IC, the input is a conversational utterance and the output is the
+label representing the user's intended action. Recent few-shot IC approaches
+include dual encoders (Cer et al., 2018; Casanueva et al., 2020), ConveRT
+(Henderson et al., 2020), prototypical networks and meta-learning (Krone et
+al., 2020), nearest-neighbor discriminative methods (Zhang et al., 2020),
+and span-level contextualized embedding retrieval (Yu et al., 2021).
+
+Generative text classification has become more feasible with recent
+advancements in large pre-trained language models such as GPT (Radford et
+al., 2019) and GPT-3 (Brown et al., 2020). This approach trains a model to
+generate natural-language labels from an input sequence, reducing the
+train--test gap without architectural changes. Pattern-exploiting training
+(PET) formats training and testing examples as cloze-style prompts, where
+the label is typically a single word. Our approach instead provides the
+model with concatenated utterances and labels, allowing it to transduce
+variable-length label sequences without reformatting the evaluation data.
+Seq2seq approaches using pointer/copy mechanisms (Rongali et al., 2020) or
+T5 (Raffel et al., 2020) have shown effectiveness and data efficiency in
+text and token classification tasks. We build upon T5-small but, following
+Mueller and Roth (2022), perform a label-semantic-aware secondary
+pre-training step on a variety of datasets before fine-tuning.
+
+\section{Data}
+\label{sec:data}
+
+% CORRECTED: corpus-size wording made internally consistent with Table 1
+% (10,003 + ~110,000 ~= ~120,000 examples).
+Our pre-training data consists of utterances with intent labels
+(Table~\ref{tab:pretrain}), similar to the original LSAP paper. For
+pre-training we use the same datasets as the original authors: the PolyAI
+Banking dataset\footnote{\url{https://polyai.com/datasets/banking}} and the
+WikiHow intents
+dataset.\footnote{\url{https://github.com/zharry29/wikihow-intent}} The
+PolyAI Banking dataset contains over 10,000 training examples categorized
+into 77 unique intents, focusing on online banking queries.
+
+\figplaceholder{Figure 1: Example utterance from PolyAI Banking.}
+
+The WikiHow intents dataset consists of heuristically labeled examples
+derived from WikiHow articles. Each example is a single line taken from an
+article, typically the longest step, and its intent label is derived from
+the article title by removing the phrase ``How To.''
+
+\figplaceholder{Figure 2: Processing intents from WikiHow.}
+
+The pre-training corpus combines these two datasets, resulting in a little
+over 120,000 examples.
+
+For evaluation, we used samples from
+ATIS,\footnote{\url{https://github.com/howl-anderson/ATIS_dataset/}}
+SNIPS,\footnote{\url{https://github.com/ZhenwenZhang/Slot_Filling}}
+TOPv2 (reminder), and TOPv2 (weather). ATIS is commonly used for
+benchmarking intent classification, and TOPv2 is common for task-oriented
+semantic parsing. SNIPS and ATIS are balanced, while TOPv2 is unbalanced. We
+chose these datasets because they are non-overlapping with our pre-training
+corpus. All datasets used are publicly available.
+
+We categorize the quality of the PolyAI Banking dataset as ``gold'' and the
+WikiHow dataset as ``silver'' based on the labeling method. PolyAI Banking is
+human-labeled (gold); WikiHow is labeled heuristically (silver).
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lllrr}
+\toprule
+Dataset & Quality & Description & Train ex. & Intents \\
+\midrule
+PolyAI Banking & Gold & Online banking queries & 10,003 & 77 \\
+WikiHow Intents & Silver & \begin{tabular}[t]{@{}l@{}}Article titles\\(``How To''\\removed)\end{tabular} & 110,000 & 66,343 \\
+\bottomrule
+\end{tabular}
+\caption{Pre-training datasets. ``Quality'' refers to the source of the
+labels (human-labeled is gold, deterministically labeled is silver).}
+\label{tab:pretrain}
+\end{table}
+
+\subsection{Data preprocessing}
+
+In the LSAP approach, a secondary pre-training step is performed using data
+labeled with semantics. We consider/evaluate the following pre-training
+formats:
+
+\begin{enumerate}
+  \item \textbf{Random Span Denoising:} Each intent is appended to the end
+        of its respective utterance, then 15\% of the tokens in the
+        utterance--intent input sequence are randomly masked; the goal is to
+        reconstruct the noised spans in the output sequence. This is the
+        same objective T5 uses.
+  \item \textbf{Intent Classification:} We prefix ``intent classification:''
+        to the start of every utterance and keep the output sequence as the
+        intent, keeping the data in the same format used for supervised
+        fine-tuning.
+  \item \textbf{Label Denoising:} We always noise the entire intent label
+        and append a mask to the end of each utterance; the pre-training
+        objective is to reconstruct the output from the given mask. As the
+        original authors note, this frames intent classification as an
+        unsupervised denoising task.
+\end{enumerate}
+
+\figplaceholder{Figures 3--5: Random span denoising, intent classification,
+and label denoising formats.}
+
+As our results show, the choice of pre-training format has a large impact.
+We implement different $n$-shot models across all three formats and concur
+with the original authors that label denoising is the preferred format for
+our downstream task.
+
+\section{Baselines}
+
+Our baselines consist of three models:
+\begin{itemize}
+  \item \textbf{Model 1:} T5-small with no secondary pre-training.
+  \item \textbf{Model 2:} T5-small with secondary pre-training on utterances
+        (no intents).
+  \item \textbf{Model 3:} T5-small with secondary pre-training on utterances
+        together with their intents (LSAP).
+\end{itemize}
+
+We evaluate these three models across multiple few-shot settings (1-, 2-,
+4-, 8-, 16-shot, and full resource). A $k$-shot setting denotes fine-tuning
+a pre-trained model using $k$ samples per label, including parameter
+updates. The full-resource setting entails fine-tuning on the entirety of
+the available labeled data.
+
+Because Model 3 was pre-trained with intents, we anticipate favorable
+adaptation to the downstream intent classification task even with few
+labeled examples. We therefore expect Model 3 to outperform both T5-small
+(Model 1) and Model 2 in low-shot settings; T5-small and Model 2 are
+selected as our baselines. The expected ordering is
+Model~1 $<$ Model~2 $<$ Model~3 in low-shot settings, with performance
+converging as $k$ increases.
+
+% CORRECTED: clearly mark Models 4/5 as a from-scratch ablation that, in our
+% runs, failed (see Sections 6 and 6.1), so they are not over-sold here.
+We additionally experimented with two T5-small-based models, Model 4 and
+Model 5, both initialized with \emph{random weights} (erasing the
+domain-specific knowledge obtained from pre-training) and then pre-trained
+on our corpus following the same recipe as Models 2 and 3, respectively.
+Model 5 (with intents) is expected to outperform Model 4 (without), so Model
+4 is the baseline for Model 5. T5-small is still expected to outperform Model
+5 because of its large-scale pre-training. As reported below, this
+from-scratch ablation did not succeed at our scale.
+
+During pre-training, the PolyAI Banking and WikiHow datasets were split into
+training and validation sets in a 96:4 ratio (an 80:20 split would be ideal;
+96:4 was chosen due to computational limits). The validation set was used to
+compute metrics such as perplexity after each epoch. The fine-tuning
+datasets followed a standard 90:5:5 train/test/validation split, with
+stratification to ensure equal label proportions.
+
+\subsection{Hyperparameter Tuning}
+
+During secondary pre-training we adjusted the learning rate, weight decay,
+number of epochs, training batch size, and evaluation batch size, following
+the guidelines in the referenced paper. Due to resource limits we hit
+out-of-memory issues and reduced the batch size from an initial 128 down to
+as low as 1, which let the model run but greatly increased training time. We
+then employed gradient accumulation (factor of 4) with an evaluation batch
+size of 2 and a training batch size of 8 to complete epochs without memory
+constraints. We logged perplexity and loss for both training and evaluation
+throughout.
+
+After further heuristic tuning we settled on: training batch size 16,
+evaluation batch size 2, gradient accumulation steps 4, learning rate
+$5\times10^{-3}$, and 5 training epochs. With these settings all models
+reached train/validation perplexity in the 1--2 range, \emph{except} Models 4
+and 5, which exhibited perplexity above 40 at the end of epoch 5. Extending
+their training to 10 epochs reduced perplexity to roughly 20. The higher
+perplexity of Models 4 and 5 is attributable to their random initialization,
+which discards information from the large pre-training corpus.
+
+In the fine-tuning / few-shot stage we tuned learning rate, weight decay,
+number of epochs, training batch size, and evaluation batch size. Due to
+limited compute and the time cost of each run, we adjusted hyperparameters
+one at a time: holding all others fixed, observing the direction of change
+in validation accuracy, and adjusting accordingly, repeating until results
+were satisfactory. The test set was held out until all hyperparameters were
+tuned. Typical ranges were:
+
+\begin{enumerate}
+  \item Learning rate: $[4\times10^{-3},\, 2\times10^{-2}]$.
+  \item Batch size: $\{16, 32\}$.
+  \item Weight decay: 0.
+  \item Number of epochs: 3 or 10 (varied by dataset).
+\end{enumerate}
+
+% CORRECTED: flag the apparent inconsistency between the single LR used for
+% secondary pre-training and the tuning range, so readers are not misled.
+We note that the single learning rate above ($5\times10^{-3}$) refers to the
+secondary pre-training stage, whereas the range applies to fine-tuning; both
+are high for T5 and contributed to the run-to-run variance we observe.
+
+\section{Approach}
+
+% CORRECTED (key fix): the original text here read "we propose a novel
+% approach called Label Semantic Aware Pre-training (LSAP)". LSAP is NOT our
+% contribution -- it is from Mueller and Roth (2022). Reframed as a
+% replication/analysis study to remove the misattribution.
+Prior work has explored incorporating supplementary details, such as the
+intent of input sequences, into models---but typically during the
+fine-tuning phase. Comparatively little work uses label semantics during
+\emph{pre-training}. This paper \emph{replicates and analyzes} the Label
+Semantic Aware Pre-training (LSAP) approach of Mueller and Roth (2022),
+which leverages label semantics during the pre-training phase to improve
+few-shot performance. Our contribution is not the method itself but a
+small-scale (T5-small) reproduction, an added suite of generation-quality
+metrics, and an honest accounting of where the technique's benefits do and
+do not transfer at this scale.
+
+The goal is to analyze whether the few-shot performance of a language model
+improves when intents are introduced during a secondary pre-training stage.
+We consider five models, all based on T5-small (60M parameters):
+
+\begin{enumerate}
+  \item \textbf{Model 1 --- T5-small:} a pre-trained T5-small model.
+  \item \textbf{Model 2 --- T5-small-Adapted:} T5-small with secondary
+        pre-training on our corpus \emph{without} intents.
+  \item \textbf{Model 3 --- T5-small-LSAP:} T5-small with secondary
+        pre-training on our corpus \emph{with} intent labels.
+  \item \textbf{Model 4 --- T5-small-Nomad-Adapted:} randomly initialized
+        T5-small, then pre-trained on our corpus without intents.
+  \item \textbf{Model 5 --- T5-small-Nomad-LSAP:} randomly initialized
+        T5-small, then pre-trained on our corpus with intents.
+\end{enumerate}
+
+There are various ways to perform secondary pre-training (except for Model
+1). We evaluated three formats: label denoising, random span denoising, and
+intent classification (IC) pre-training. To determine the best format we
+conducted secondary pre-training on three T5-small-based models (the label
+denoising variant is Model 3):
+
+\begin{enumerate}
+  \item \textbf{Model 6 --- T5-small-Random-Span:} secondary pre-training
+        using the random span denoising format.
+  \item \textbf{Model 7 --- T5-small-IC-pre-train:} secondary pre-training
+        using the intent classification format.
+\end{enumerate}
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+Format & one shot & four shot & full res. \\
+\midrule
+Model 3 -- label denoising & 67.30 & 77.48 & 96.86 \\
+Model 6 -- random span      & 25.28 & 42.73 & 97.09 \\
+Model 7 -- IC pre-train      & 3.58 & 46.76 & 97.54 \\
+\bottomrule
+\end{tabular}
+\caption{ATIS fine-tuning accuracies (\%).}
+\label{tab:atis-format}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+Format & one shot & four shot & full res. \\
+\midrule
+Model 3 -- label denoising & 49.71 & 79.00 & 96.71 \\
+Model 6 -- random span      & 67.43 & 84.57 & 0.00$^{\dagger}$ \\
+Model 7 -- IC pre-train      & 42.00 & 80.14 & 0.00$^{\dagger}$ \\
+\bottomrule
+\end{tabular}
+\caption{SNIPS fine-tuning accuracies (\%). $^{\dagger}$Cancelled run, not a
+measured result (see note below).}
+\label{tab:snips-format}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+Format & one shot & four shot & full res. \\
+\midrule
+Model 3 -- label denoising & 95.54 & 51.71 & 0.00$^{\dagger}$ \\
+Model 6 -- random span      & 72.40 & 79.90 & 0.00$^{\dagger}$ \\
+Model 7 -- IC pre-train      & 78.48 & 48.98 & 0.00$^{\dagger}$ \\
+\bottomrule
+\end{tabular}
+\caption{TOPv2 Weather fine-tuning results (\%). $^{\dagger}$Cancelled
+run, not a measured result.}
+\label{tab:tops-format}
+\end{table}
+
+% CORRECTED: added an explicit, prominent caveat that 0.0 entries are
+% cancelled/OOM runs rather than measured zero performance. The original
+% buried this for one table and left it ambiguous for the others.
+\paragraph{Note on ``0.00'' entries.} Throughout this paper, table entries
+of $0.00$ in \emph{full-resource} columns (and the corresponding cells for
+Models 4/5) denote runs that were \emph{cancelled} due to time/memory limits
+or that failed to train, \emph{not} measured zero performance. They should
+not be read as genuine results and are excluded from any comparison.
+
+We conducted secondary pre-training on Models 3, 6, and 7 using our corpus
+and evaluated them in 1-shot, 4-shot, and full-resource settings on SNIPS,
+ATIS, and TOPv2 Weather (Tables~\ref{tab:atis-format}--\ref{tab:tops-format}).
+Setting aside the cancelled full-resource runs, Model 3 (label denoising) is
+the most consistent format across low-shot settings. Intuitively, the label
+denoising format trains the model to predict the masked intent during
+pre-training, which acts as a form of supervision for intent classification.
+
+We therefore use the label denoising format to pre-train Models 2, 3, 4, and
+5 and evaluate LSAP in various few-shot settings. For fine-tuning we evaluate
+these models in $\{1,2,4,8,16\}$-shot and full-resource settings on SNIPS and
+ATIS. The data for $P$-shot is a subset of the data for $N$-shot when
+$P<N$. Results for Models 1--3 are in Tables~\ref{tab:atis-eval} and
+\ref{tab:snips-eval}.
+
+% CORRECTED: the original text claimed Model 3 is "our best model" and that
+% the auxiliary-metric tables agree; in fact Section 6.2 and Tables 7-14
+% show Model 1 often winning on ATIS. Softened to an accurate claim and
+% pointed forward to the metric discussion in 6.2.
+Consistent with our hypothesis, Model 3 leads on few-shot \emph{accuracy} in
+several low-shot ATIS and SNIPS settings, reproducing the qualitative trend
+of the original paper. However, the advantage is small and non-monotonic at
+this scale, and---as discussed in Section~\ref{sec:results}---plain T5-small
+(Model 1) is highly competitive and even superior on generation-quality
+metrics. We could not match the absolute accuracies reported by the original
+authors, which we attribute primarily to model scale: the original work used
+much larger T5 models, whereas we used T5-small (60M parameters) due to
+compute limits. As expected, the gap between models shrinks as $k$ increases,
+and they perform almost equally in the full-resource setting.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & 1 & 2 & 4 & 8 & 16 & full \\
+\midrule
+Model 1 & 51.03 & 37.21 & 53.36 & 72.87 & 80.21 & 97.30 \\
+Model 2 & 50.60 & 66.00 & 47.00 & 38.11 & 82.28 & 96.18 \\
+Model 3 & 67.30 & 69.50 & 77.48 & 79.40 & 84.75 & 96.86 \\
+\bottomrule
+\end{tabular}
+\caption{ATIS evaluation accuracies (\%) by shot count.}
+\label{tab:atis-eval}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & 1 & 2 & 4 & 8 & 16 & full \\
+\midrule
+Model 1 & 51.85 & 59.42 & 75.42 & 86.28 & 91.71 & 97.28 \\
+Model 2 & 26.71 & 48.00 & 81.71 & 91.85 & 93.85 & 96.71 \\
+Model 3 & 49.71 & 77.71 & 79.00 & 93.85 & 94.85 & 96.71 \\
+\bottomrule
+\end{tabular}
+\caption{SNIPS evaluation accuracies (\%) by shot count.}
+\label{tab:snips-eval}
+\end{table}
+
+% CORRECTED: added explicit reproducibility caveat -- the accuracy numbers in
+% these tables do not exactly match the per-model CSVs committed under
+% analysis/ (e.g., analysis/ATIS/acc.csv). They appear to come from
+% different runs.
+\paragraph{Reproducibility caveat.} The accuracy values in
+Tables~\ref{tab:atis-eval}--\ref{tab:snips-eval} were transcribed from our
+experiment logs and do \emph{not} exactly match the per-model CSV files
+committed under \texttt{analysis/} (e.g., \texttt{analysis/ATIS/acc.csv}),
+which appear to reflect different runs. Readers reproducing this work should
+treat the committed CSVs as the canonical artifacts and regenerate the tables
+from them.
+
+Results for Models 4 and 5 are \emph{not} reported in
+Tables~\ref{tab:atis-eval}--\ref{tab:snips-eval} because both models produced
+0\% accuracy across all settings for intent classification. We attribute this
+to the limited size of our pre-training corpus: 120K utterances with intents
+is inadequate to pre-train a T5-small-scale model from random initialization.
+During pre-training, Models 4 and 5 reached a minimum perplexity of about 10,
+versus about 1.5 for Models 2 and 3. Extending their pre-training to 20
+epochs yielded no notable improvement. Inspecting their fine-tuned outputs,
+we found they often emitted nearly half the input utterance as the predicted
+intent, yielding zero accuracy.
+
+\subsection{Implementation Details}
+
+\begin{itemize}
+  \item We imported the T5-small model from the Hugging Face library and used
+        the Transformers library to pre-train, fine-tune, evaluate, and test.
+  \item We used the Datasets and pandas libraries to work with data in
+        memory.
+  \item We used PyTorch throughout the codebase.
+  \item We used NumPy for efficient matrix operations where necessary.
+\end{itemize}
+
+A major portion of our experiments ran on Google Colab, which limits usage
+to roughly 4 hours per user per day. Pre-training would abort once the limit
+was reached, and the issue worsened during hyperparameter tuning and
+full-resource fine-tuning. We saved checkpoints regularly and continued from
+a different account to complete tasks. Toward the end we also used the Unity
+cluster at UMass Amherst, which has no time limit but limited per-user RAM;
+we frequently hit out-of-memory issues during pre-training, which is why we
+pre-trained on a smaller dataset---and a key reason we failed to obtain the
+expected results for Models 4 and 5.
+
+\subsection{Result Analysis}
+\label{sec:results}
+
+During evaluation we went beyond the original authors' accuracy-only
+protocol and computed additional metrics:
+
+\begin{enumerate}
+  \item \textbf{Cosine Similarity:} the cosine of the angle between the
+        predicted and ground-truth intents in embedding space. This lets us
+        measure whether the model predicts \emph{semantically} similar
+        intents, with a measure of closeness, rather than only exact match.
+  \item \textbf{BLEU Score:} measures n-gram precision ($n=2$) between the
+        truth and prediction labels, catching cases where the generation has
+        an extra word or two.
+  \item \textbf{Jaccard Similarity:} the intersection over union of the
+        predicted and ground-truth label token sets, capturing how many
+        words of the true intent the model nearly generated. We expect
+        Jaccard and BLEU ($n=2$) to be similar in most cases.
+\end{enumerate}
+
+\figplaceholder{Figures 6--8: cosine-similarity heatmap and BLEU/Jaccard
+illustrations.}
+
+% CORRECTED: This is the central self-contradiction in the original. The
+% original simultaneously called Model 3 "our best model" and then stated
+% Model 1 "consistently demonstrates superior performance across all
+% evaluation measures for the ATIS dataset." Rewritten to present the genuine,
+% reconcilable finding: Model 3 leads on few-shot ACCURACY, but Model 1 leads
+% on the generation-quality metrics (BLEU/cosine/Jaccard) on ATIS, and we
+% explain why.
+These metrics let us examine the models with more depth than accuracy alone.
+A nuanced---and at first surprising---picture emerges. On \emph{accuracy} in
+low-shot settings, Model 3 (LSAP) tends to lead, reproducing the original
+trend (Tables~\ref{tab:atis-eval}--\ref{tab:snips-eval}). On the
+\emph{generation-quality} metrics for ATIS, however, Model 1 (plain
+T5-small) consistently scores highest on BLEU, cosine similarity, and
+Jaccard similarity (Tables~\ref{tab:atis-bleu}--\ref{tab:snips-jaccard}),
+while Models 2 and 3 score lower.
+
+We reconcile these two observations as follows. ATIS has a small,
+formulaic label space, and a plain T5-small that was \emph{not} adapted to
+our banking/WikiHow corpus tends to emit fluent, well-formed label strings
+that overlap lexically and semantically with the references---inflating
+BLEU, cosine, and Jaccard even when exact-match accuracy is no higher.
+Secondary pre-training nudges Models 2 and 3 toward the pre-training label
+distribution, which helps few-shot \emph{exact-match accuracy} but can lower
+surface-overlap metrics on a different downstream label space. In other
+words, LSAP's benefit at this scale is specifically a few-shot accuracy
+benefit, and is narrower than the original large-scale study; it is
+\emph{not} a uniform improvement across all metrics. Models 4 and 5 score 0
+across essentially all metrics, confirming they are neither semantically nor
+lexically close to the references---i.e., they truly failed, rather than
+being ``close but wrong.''
+
+% --- Auxiliary metric tables (ATIS) ---
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & 1 & 2 & 4 & 8 & 16 & full \\
+\midrule
+Model 1 & 12.54 & 12.12 & 13.15 & 15.77 & 15.64 & 17.98 \\
+Model 2 & 2.94 & 11.87 & 4.50 & 13.28 & 16.12 & 18.24 \\
+Model 3 & 0.06 & 8.71 & 3.61 & 8.47 & 14.75 & 18.21 \\
+Model 4 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+Model 5 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+\bottomrule
+\end{tabular}
+\caption{ATIS BLEU scores by shot count. Models 4/5 = failed runs.}
+\label{tab:atis-bleu}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & 1 & 2 & 4 & 8 & 16 & full \\
+\midrule
+Model 1 & 0.83 & 0.86 & 0.89 & 0.95 & 0.91 & 0.98 \\
+Model 2 & 0.26 & 0.83 & 0.77 & 0.89 & 0.94 & 0.99 \\
+Model 3 & 0.18 & 0.69 & 0.54 & 0.87 & 0.94 & 0.99 \\
+Model 4 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+Model 5 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+\bottomrule
+\end{tabular}
+\caption{ATIS cosine similarity by shot count. Models 4/5 = failed runs.}
+\label{tab:atis-cos}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & 1 & 2 & 4 & 8 & 16 & full \\
+\midrule
+Model 1 & 68.90 & 64.65 & 71.59 & 85.23 & 83.67 & 96.42 \\
+Model 2 & 1.34 & 66.89 & 24.38 & 71.14 & 86.58 & 97.76 \\
+Model 3 & 0.00 & 49.22 & 16.55 & 43.62 & 78.75 & 97.76 \\
+Model 4 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+Model 5 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+\bottomrule
+\end{tabular}
+\caption{ATIS first-word accuracy (\%) by shot count.}
+\label{tab:atis-fw}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & 1 & 2 & 4 & 8 & 16 & full \\
+\midrule
+Model 1 & 67.19 & 64.28 & 70.32 & 84.60 & 83.37 & 96.27 \\
+Model 2 & 9.51 & 66.29 & 22.31 & 70.30 & 85.90 & 97.61 \\
+Model 3 & 0.22 & 48.32 & 16.82 & 43.43 & 78.30 & 97.61 \\
+Model 4 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+Model 5 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+\bottomrule
+\end{tabular}
+\caption{ATIS Jaccard scores by shot count.}
+\label{tab:atis-jaccard}
+\end{table}
+
+% --- Auxiliary metric tables (SNIPS) ---
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & 1 & 2 & 4 & 8 & 16 & full \\
+\midrule
+Model 1 & 23.61 & 31.52 & 36.03 & 36.61 & 39.02 & 39.80 \\
+Model 2 & 18.74 & 29.16 & 30.81 & 37.75 & 39.07 & 0.00$^{\dagger}$ \\
+Model 3 & 13.29 & 31.03 & 33.33 & 0.00$^{\dagger}$ & 39.44 & 0.00$^{\dagger}$ \\
+Model 4 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+Model 5 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+\bottomrule
+\end{tabular}
+\caption{SNIPS BLEU scores. $^{\dagger}$Cancelled run; Models 4/5 = failed.}
+\label{tab:snips-bleu}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & 1 & 2 & 4 & 8 & 16 & full \\
+\midrule
+Model 1 & 0.57 & 0.74 & 0.87 & 0.86 & 0.92 & 0.95 \\
+Model 2 & 0.44 & 0.71 & 0.73 & 0.89 & 0.93 & 0.00$^{\dagger}$ \\
+Model 3 & 0.27 & 0.73 & 0.78 & 0.00$^{\dagger}$ & 0.93 & 0.00$^{\dagger}$ \\
+Model 4 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+Model 5 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+\bottomrule
+\end{tabular}
+\caption{SNIPS cosine similarity. $^{\dagger}$Cancelled run.}
+\label{tab:snips-cos}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & 1 & 2 & 4 & 8 & 16 & full \\
+\midrule
+Model 1 & 61.86 & 83.86 & 92.86 & 92.00 & 95.14 & 96.43 \\
+Model 2 & 55.57 & 74.29 & 82.43 & 92.00 & 94.43 & 0.00$^{\dagger}$ \\
+Model 3 & 35.29 & 81.57 & 82.71 & 0.00$^{\dagger}$ & 94.57 & 0.00$^{\dagger}$ \\
+Model 4 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+Model 5 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+\bottomrule
+\end{tabular}
+\caption{SNIPS first-word accuracy (\%). $^{\dagger}$Cancelled run.}
+\label{tab:snips-fw}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & 1 & 2 & 4 & 8 & 16 & full \\
+\midrule
+Model 1 & 58.99 & 76.27 & 87.82 & 87.54 & 92.97 & 95.29 \\
+Model 2 & 47.92 & 72.51 & 75.06 & 89.35 & 93.17 & 0.00$^{\dagger}$ \\
+Model 3 & 28.10 & 75.23 & 79.42 & 0.00$^{\dagger}$ & 93.66 & 0.00$^{\dagger}$ \\
+Model 4 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+Model 5 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+\bottomrule
+\end{tabular}
+\caption{SNIPS Jaccard scores. $^{\dagger}$Cancelled run.}
+\label{tab:snips-jaccard}
+\end{table}
+
+\section{Error Analysis}
+
+We focused on few-shot learning and, in particular, investigated how the
+model processed sentences when trained on a 4-shot SNIPS dataset. Out of
+approximately 120 examples, we found that about 80\% of the sentences were
+incorrectly predicted as either
+% CORRECTED: original listed "SearchScreeningEvent" twice; the second was a
+% typo. The two confused labels are SearchScreeningEvent and
+% SearchCreativeWork (consistent with the rest of the analysis below).
+``SearchScreeningEvent'' or ``SearchCreativeWork.'' This may be attributable
+to biasing toward the first word of the label as the model's (Model 3)
+initial prediction, since we used whitespace for word splitting. With only
+four training examples, the model struggled to capture intricate details of
+the intent.
+
+The SNIPS intents are:
+\begin{itemize}
+  \item ``SearchCreativeWork'' (e.g., \emph{Find me the I, Robot television
+        show}).
+  \item ``GetWeather'' (e.g., \emph{Is it windy in Boston, MA right now?}).
+  \item ``BookRestaurant'' (e.g., \emph{I want to book a highly rated
+        restaurant in Paris tomorrow night}).
+  \item ``PlayMusic'' (e.g., \emph{Play the last track from Beyonc\'e off
+        Spotify}).
+  \item ``AddToPlaylist'' (e.g., \emph{Add Diamonds to my roadtrip
+        playlist}).
+  \item ``RateBook'' (e.g., \emph{Give 6 stars to Of Mice and Men}).
+  \item ``SearchScreeningEvent.''
+\end{itemize}
+
+The model was prone to confusion when a location was specified. For example,
+for ``what is the forecast for \=Otone Prefectural Natural Park in 1 hour and
+within the same area,'' the model predicted ``RateBook,'' overlooking the
+word \emph{forecast} and misconstruing the intent as booking-related due to
+the presence of a location. The same tendency appeared for ``what is the
+forecast for Costa Rica'' and ``Tell me the forecast for 6\,am in
+Tatra-Nationalpark.'' Trained with only 4-shot examples, the model struggled
+to comprehend the ``GetWeather'' and ``PlayMusic'' labels and was biased
+toward ``SearchScreeningEvent,'' ``RateBook,'' and ``SearchCreativeWork.''
+
+Further confusions arose with search-related intents such as ``Find the
+album Orphan Girl at the Cemetery,'' where the model produced
+``SearchScreeningEvent'' instead of the expected ``SearchCreativeWork.'' It
+also struggled with sentences containing the word ``music,'' even though
+``PlayMusic'' and ``SearchCreativeWork'' are intrinsically related---e.g.,
+``Let's hear good Mohammad Mamle on Vimeo.''
+
+Escalating to 8-shot training significantly improved predictions, reducing
+errors to 49. The model shed its bias toward ``RateBook'' and could
+distinguish ``SearchCreativeWork'' from ``SearchScreeningEvent,'' trimming
+erroneous predictions by 12 in subsequent evaluations.
+
+\section{Conclusion}
+
+% CORRECTED: "Awware" -> "Aware".
+Our replication of the Label Semantic Aware Pre-training (LSAP) technique
+surfaced several insights about its applicability and limits in few-shot
+settings at small model scale. A key observation is that, with appropriate
+domain-general knowledge, a pre-trained language model can perform well from
+even a single downstream example. At the same time, our reproduction shows
+that LSAP's benefit at T5-small scale is narrower than in the original
+large-scale study: it manifests primarily as a low-shot \emph{accuracy}
+advantage for the label-denoising (Model 3) variant, while plain T5-small
+remains competitive overall and stronger on surface-overlap metrics for
+ATIS. We also found that pre-training from random initialization was more
+challenging than anticipated; the data volume and compute required to
+randomize existing weights and pre-train from scratch (Models 4 and 5) were
+beyond our resources, and those models failed.
+
+Given sufficient compute, future work would complete the comparison of
+Models 4 and 5, which would more definitively isolate the contribution of
+intents during pre-training (their only intended difference). We would also
+assess LSAP across additional downstream tasks and a wider range of language
+model architectures to better characterize where its benefits transfer.
+
+% =====================================================================
+% References. Kept as a manual thebibliography so this file compiles with a
+% plain pdflatex run (no .bib / ACL style needed). Transcribed from the
+% original PDF; verify against the original .bib if it resurfaces.
+% =====================================================================
+\begin{thebibliography}{99}
+\small
+
+\bibitem{mueller2022} A.~Mueller, J.~Krone, S.~Romeo, S.~Mansour,
+E.~Maharaj, Y.~Zhang, and D.~Roth. 2022. Label semantic aware pre-training
+for few-shot text classification. In \emph{Proc.\ ACL} (Vol.\ 1: Long
+Papers).
+
+\bibitem{athiwaratkun2020} B.~Athiwaratkun, C.~N.~dos Santos, J.~Krone, and
+B.~Xiang. 2020. Augmented natural language for generative sequence labeling.
+In \emph{Proc.\ EMNLP}, pages 375--385.
+
+\bibitem{brown2020} T.~Brown et al. 2020. Language models are few-shot
+learners. In \emph{NeurIPS}, vol.\ 33, pages 1877--1901.
+
+\bibitem{casanueva2020} I.~Casanueva, T.~Tem\v{c}inas, D.~Gerz,
+M.~Henderson, and I.~Vuli\'c. 2020. Efficient intent detection with dual
+sentence encoders. In \emph{Proc.\ 2nd Workshop on NLP for Conversational
+AI}, pages 38--45.
+
+\bibitem{cer2018} D.~Cer et al. 2018. Universal sentence encoder.
+arXiv:1803.11175.
+
+\bibitem{chalkidis2020} I.~Chalkidis, M.~Fergadiotis, S.~Kotitsas,
+P.~Malakasiotis, N.~Aletras, and I.~Androutsopoulos. 2020. An empirical
+study on large-scale multi-label text classification including few and
+zero-shot labels. In \emph{Proc.\ EMNLP}, pages 7503--7515.
+
+\bibitem{chang2008} M.-W.~Chang, L.-A.~Ratinov, D.~Roth, and V.~Srikumar.
+2008. Importance of semantic representation: Dataless classification. In
+\emph{Proc.\ AAAI}, vol.\ 2, pages 830--835.
+
+\bibitem{chen2020} X.~Chen, A.~Ghoshal, Y.~Mehdad, L.~Zettlemoyer, and
+S.~Gupta. 2020. Low-resource domain adaptation for compositional
+task-oriented semantic parsing. In \emph{Proc.\ EMNLP}, pages 5090--5100.
+
+\bibitem{gabrilovich2007} E.~Gabrilovich and S.~Markovitch. 2007. Computing
+semantic relatedness using Wikipedia-based explicit semantic analysis. In
+\emph{Proc.\ IJCAI}, pages 1606--1611.
+
+\bibitem{gaonkar2020} R.~Gaonkar, H.~Kwon, M.~Bastan, N.~Balasubramanian,
+and N.~Chambers. 2020. Modeling label semantics for predicting emotional
+reactions. In \emph{Proc.\ ACL}, pages 4687--4692.
+
+\bibitem{henderson2020} M.~Henderson, I.~Casanueva, N.~Mrk\v{s}i\'c,
+P.-H.~Su, T.-H.~Wen, and I.~Vuli\'c. 2020. ConveRT: Efficient and accurate
+conversational representations from transformers. In \emph{Findings of
+EMNLP}, pages 2161--2174.
+
+\bibitem{krone2020} J.~Krone, Y.~Zhang, and M.~Diab. 2020. Learning to
+classify intents and slot labels given a handful of examples. In \emph{Proc.\
+2nd Workshop on NLP for Conversational AI}, pages 96--108.
+
+\bibitem{ma2022} J.~Ma, M.~Ballesteros, S.~Doss, R.~Anubhai, S.~Mallya,
+Y.~Al-Onaizan, and D.~Roth. 2022. Label semantics for few-shot named entity
+recognition. In \emph{Findings of ACL}, pages 1065--1073.
+
+\bibitem{mullenbach2018} J.~Mullenbach, S.~Wiegreffe, J.~Duke, J.~Sun, and
+J.~Eisenstein. 2018. Explainable prediction of medical codes from clinical
+text. In \emph{Proc.\ NAACL-HLT}, pages 1101--1111.
+
+\bibitem{paolini2021} G.~Paolini, B.~Athiwaratkun, J.~Krone, J.~Ma,
+A.~Achille, R.~Anubhai, C.~N.~dos Santos, B.~Xiang, and S.~Soatto. 2021.
+Structured prediction as translation between augmented natural languages. In
+\emph{ICLR}.
+
+\bibitem{peters2018} M.~E.~Peters, M.~Neumann, M.~Iyyer, M.~Gardner,
+C.~Clark, K.~Lee, and L.~Zettlemoyer. 2018. Deep contextualized word
+representations. In \emph{Proc.\ NAACL-HLT}, pages 2227--2237.
+
+\bibitem{radford2019} A.~Radford, J.~Wu, R.~Child, D.~Luan, D.~Amodei, and
+I.~Sutskever. 2019. Language models are unsupervised multitask learners.
+\emph{OpenAI Blog}, 1(8):9.
+
+\bibitem{raffel2020} C.~Raffel, N.~Shazeer, A.~Roberts, K.~Lee, S.~Narang,
+M.~Matena, Y.~Zhou, W.~Li, and P.~J.~Liu. 2020. Exploring the limits of
+transfer learning with a unified text-to-text transformer. \emph{JMLR},
+21(140):1--67.
+
+\bibitem{rongali2020} S.~Rongali, L.~Soldaini, E.~Monti, and W.~Hamza. 2020.
+Don't parse, generate! A sequence to sequence architecture for task-oriented
+semantic parsing. In \emph{Proc.\ The Web Conference}, pages 2962--2968.
+
+\bibitem{song2014} Y.~Song and D.~Roth. 2014. On dataless hierarchical text
+classification. In \emph{Proc.\ AAAI}, vol.\ 28, pages 1864--1870.
+
+\bibitem{yang2019} Z.~Yang, Z.~Dai, Y.~Yang, J.~Carbonell, R.~Salakhutdinov,
+and Q.~V.~Le. 2019. XLNet: Generalized autoregressive pretraining for
+language understanding. In \emph{NeurIPS}, vol.\ 32.
+
+\bibitem{yu2021} D.~Yu, L.~He, Y.~Zhang, X.~Du, P.~Pasupat, and Q.~Li. 2021.
+Few-shot intent classification and slot filling with retrieved examples. In
+\emph{Proc.\ NAACL-HLT}, pages 734--749.
+
+\bibitem{zhang2020} J.~Zhang, K.~Hashimoto, W.~Liu, C.-S.~Wu, Y.~Wan, P.~Yu,
+R.~Socher, and C.~Xiong. 2020. Discriminative nearest neighbor few-shot
+intent detection by transferring natural language inference. In \emph{Proc.\
+EMNLP}, pages 5064--5082.
+
+\end{thebibliography}
+
+\end{document}
